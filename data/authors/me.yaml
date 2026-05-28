@@ -1,100 +1,150 @@
 schema: hugoblox/author/v1
 slug: me
 is_owner: true
+
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Dr. Renston Jake Fernandes
+  given: Renston Jake
+  family: Fernandes
+
 postnominals: []
+
 status:
-  icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
-role: Full-Stack Developer
-email: alex@example.com
+  icon: "🔬"
+
+role: Researcher in Clean Fuels, LCA, TEA & Process Modelling
+
+email: renston.fernandes@kaust.edu.sa
+
 bio: |
-  Full-stack developer with 5+ years of experience building scalable web applications.
-  Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
+  I am a researcher working at the intersection of clean fuels, circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and combustion. My work focuses on developing integrated biomass-to-e-methanol and CO₂-to-fuel pathways using Aspen Plus, LCA, TEA, and uncertainty analysis to support sustainable transport fuel strategies.
 
 affiliations:
-  - name: Tech Corp
-    url: https://techcorp.example.com
+  - name: King Abdullah University of Science and Technology
+    url: https://www.kaust.edu.sa/
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
+    url: mailto:renston.fernandes@kaust.edu.sa
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/alexjohnson
+    url: https://github.com/renstonferns
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
-  - icon: brands/x
-    url: https://x.com/alexjohnson
+    url: https://www.linkedin.com/in/renstonfernandes
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-2769-6397
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/profile/Renston_Fernandes
 
 interests:
-  - Web Development
-  - Cloud Architecture
-  - Open Source
-  - Developer Experience
+  - Circular carbon e-fuels
+  - Life cycle assessment
+  - Techno-economic analysis
+  - Aspen Plus process modelling
+  - CO₂ capture and utilization
+  - Biomass-to-methanol pathways
+  - Clean combustion
 
 education:
-  - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
+  - degree: PhD in Environmental Science and Engineering
+    institution: King Abdullah University of Science and Technology
+    start: 2021-08-01
+    end: 2026-04-29
     summary: |
-      Focus on software engineering and distributed systems.
-      Senior project on distributed caching systems.
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
+      Thesis: Circular Carbon E-Fuels from Biomass: Techno-Economic, Environmental, and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy.
+      Research focused on integrated biomass-to-e-methanol pathways, CO₂ capture, Aspen Plus process simulation, life cycle assessment, techno-economic analysis, and clean combustion.
+  - degree: MSc Engineering Business Management
+    institution: University of Sussex
+    start: 2018-09-01
+    end: 2019-09-01
+    summary: |
+      Focused on engineering management, innovation, business strategy, and technology commercialization.
+  - degree: M.Tech Energy Systems Engineering
+    institution: NMAM Institute of Technology, Nitte
+    start: 2014-08-01
+    end: 2016-06-01
+    summary: |
+      Specialized in renewable energy systems, energy conversion, and sustainable engineering.
+  - degree: B.E. Mechanical Engineering
+    institution: Visvesvaraya Technological University
+    start: 2010-08-01
+    end: 2014-06-01
+    summary: |
+      Foundation in mechanical engineering, thermodynamics, fluid mechanics, energy systems, and machine design.
 
 experience:
-  - role: Senior Software Engineer
-    org: Tech Corp
-    start: 2023-01-01
+  - role: PhD Researcher
+    org: King Abdullah University of Science and Technology
+    start: 2021-08-01
+    end: 2026-04-29
     summary: |
-      Lead development of microservices architecture serving 1M+ users.
-      Improved API response time by 40% through optimization.
-      Mentored team of 5 junior developers.
-  - role: Full-Stack Developer
-    org: Startup Inc
-    start: 2021-06-01
-    end: 2022-12-31
+      Developed Aspen Plus models for circular carbon e-fuel systems using biomass, agricultural residues, captured CO₂, and electrolytic hydrogen.
+      Conducted life cycle assessment and techno-economic analysis for e-methanol production pathways.
+      Evaluated combustion and emissions performance of alcohol fuel blends using engine-based experimental methods.
+  - role: Research Intern
+    org: Aramco
+    start: 2025-06-01
     summary: |
-      Built and deployed 3 production applications from scratch.
-      Implemented CI/CD pipeline reducing deployment time by 60%.
-      Led migration from monolith to microservices architecture.
-  - role: Junior Developer
-    org: Web Agency
-    start: 2020-01-01
-    end: 2021-05-31
+      Worked on techno-economic analysis of flue gas separation and e-methanol production.
+      Contributed to process modelling and sustainability assessment of CO₂ utilization pathways.
+  - role: Assistant Professor
+    org: Srinivas Institute of Technology, Mangalore
+    start: 2016-08-01
+    end: 2018-08-01
     summary: |
-      Developed client websites using React and modern web technologies.
-      Participated in code reviews and agile ceremonies.
+      Taught mechanical and energy engineering subjects.
+      Mentored student projects in renewable fuels, energy systems, and applied mechanical engineering.
 
 skills:
-  - name: Development
+  - name: Process Modelling
     items:
-      - label: TypeScript
+      - label: Aspen Plus
         level: 5
-      - label: React
+      - label: Process simulation
         level: 5
-      - label: Node.js
+      - label: CO₂ hydrogenation modelling
+        level: 4
+      - label: Biomass gasification modelling
+        level: 4
+  - name: Sustainability Assessment
+    items:
+      - label: Life Cycle Assessment
         level: 5
+      - label: Techno-economic Analysis
+        level: 5
+      - label: GREET
+        level: 4
+      - label: Sphera/GaBi
+        level: 4
+  - name: Data & Analysis
+    items:
       - label: Python
         level: 4
-  - name: DevOps
-    items:
-      - label: Docker
+      - label: MATLAB
         level: 4
-      - label: AWS
+      - label: Monte Carlo uncertainty analysis
         level: 4
-      - label: CI/CD
-        level: 5
+      - label: Scientific visualization
+        level: 4
 
 languages:
   - name: English
     level: 5
+    label: Fluent
+  - name: French
+    level: 2
+    label: Basic
+  - name: Hindi
+    level: 4
+    label: Professional
+  - name: Konkani
+    level: 5
     label: Native
 
-awards: []
+awards:
+  - title: KAUST PhD Fellowship
+    date: 2021-08-01
+    summary: Full doctoral fellowship awarded by King Abdullah University of Science and Technology.
+  - title: Sussex India Scholarship
+    date: 2018-09-01
+    summary: Scholarship awarded for postgraduate study at the University of Sussex.
