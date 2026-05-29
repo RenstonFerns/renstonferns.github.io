@@ -9,6 +9,7 @@ sections:
     id: profile-photo
     content:
       title: ""
+      text: ""
         <div style="text-align:center; margin-top:-25px; margin-bottom:35px;">
           <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.28);" />
         </div>
