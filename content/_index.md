@@ -11,7 +11,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:center; margin-top:-25px; margin-bottom:25px;">
-          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:40%; box-shadow:0 14px 40px rgba(0,0,0,0.30);" />
+          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:50%; box-shadow:0 28px 40px rgba(0,0,0,0.30);" />
         </div>
     design:
       background:
