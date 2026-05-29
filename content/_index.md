@@ -159,68 +159,103 @@ sections:
           direction: 135
       text_color_light: true
 
-  - block: markdown
+- block: markdown
     id: core-technical-tools
     content:
       title: "Core Technical Expertise"
       text: |
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:24px; margin-top:30px;">
-          <a href="https://www.aspentech.com/en/products/engineering/aspen-plus" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Aspen Plus.png" alt="Aspen Plus" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Aspen Plus</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Process simulation</p>
+        <p style="max-width:880px; margin:0 auto 38px auto; text-align:center; color:#475569; font-size:1.05rem; line-height:1.75;">
+          A structured research toolkit organized by how each platform contributes to my workflow across process modelling, sustainability assessment, data analysis, design, and scientific communication.
+        </p>
+        <div style="display:grid; grid-template-columns:1fr; gap:28px; margin-top:25px;">
+          <-- Process Modelling & Simulation -->
+          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
+            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
+              Process Modelling & Simulation
+            </h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
+              <a href="https://www.aspentech.com/en/products/engineering/aspen-plus" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Aspen%20Plus.png" alt="Aspen Plus" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">Aspen Plus</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Process simulation, gasification, CO₂ hydrogenation, methanol synthesis</div>
+                </div>
+              </a>
+              <a href="https://www.comsol.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/comsol.png" alt="COMSOL" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">COMSOL</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Multiphysics modelling and transport phenomena</div>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="https://www.mathworks.com/products/matlab.html" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Matlab.png" alt="MATLAB" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">MATLAB</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Numerical analysis</p>
+          </div>
+          <-- LCA & Sustainability Assessment -->
+          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
+            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
+              LCA & Sustainability Assessment
+            </h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
+              <a href="https://sphera.com/life-cycle-assessment-software-gabi/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Sphera.png" alt="Sphera GaBi" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">Sphera / GaBi</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Professional LCA modelling and impact assessment</div>
+                </div>
+              </a>
+              <a href="https://greet.es.anl.gov/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/GREEt.png" alt="GREET" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">GREET</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Fuel-cycle analysis and well-to-tank emissions modelling</div>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="https://www.python.org/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Python.png" alt="Python" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Python</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Data & automation</p>
+          </div>
+          <-- Data Analysis & Automation -->
+          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
+            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
+              Data Analysis & Automation
+            </h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
+              <a href="https://www.python.org/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Python.png" alt="Python" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">Python</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Monte Carlo analysis, plotting, automation, and data processing</div>
+                </div>
+              </a>
+              <a href="https://www.mathworks.com/products/matlab.html" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Matlab.png" alt="MATLAB" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">MATLAB</div>
+                  <div style="font-size:0.92rem; color:#64748b;">Numerical analysis and engineering calculations</div>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="https://sphera.com/life-cycle-assessment-software-gabi/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Sphera.png" alt="Sphera GaBi" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Sphera / GaBi</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Professional LCA</p>
+          </div>
+          <-- Design & Scientific Communication -->
+          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
+            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
+              Design & Scientific Communication
+            </h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
+              <a href="https://www.solidworks.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Solidworks.png" alt="SolidWorks" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">SolidWorks</div>
+                  <div style="font-size:0.92rem; color:#64748b;">3D CAD, engineering design, and mechanical modelling</div>
+                </div>
+              </a>
+              <a href="https://www.overleaf.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
+                <img src="/uploads/skills/Overleaf.png" alt="Overleaf" style="width:58px; height:58px; object-fit:contain;" />
+                <div>
+                  <div style="font-weight:850; color:#061923;">Overleaf</div>
+                  <div style="font-size:0.92rem; color:#64748b;">LaTeX-based scientific writing and manuscript preparation</div>
+                </div>
+              </a>
             </div>
-          </a>
-          <a href="https://greet.es.anl.gov/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/GREET.png" alt="GREET" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">GREET</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Fuel-cycle analysis</p>
-            </div>
-          </a>
-          <a href="https://www.comsol.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/comsol.png" alt="COMSOL" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">COMSOL</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Multiphysics modelling</p>
-            </div>
-          </a>
-          <a href="https://www.solidworks.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Solidworks.png" alt="SolidWorks" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">SolidWorks</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">3D CAD design</p>
-            </div>
-          </a>
-          <a href="https://www.overleaf.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
-              <img src="assets/media/skills/Overleaf.png" alt="Overleaf" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
-              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Overleaf</h3>
-              <p style="margin:0; color:#475569; font-size:0.95rem;">Scientific writing</p>
-            </div>
-          </a>
+          </div>
         </div>
     design:
       background:
