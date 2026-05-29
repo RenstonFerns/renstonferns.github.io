@@ -24,12 +24,12 @@ sections:
         enable: true
         prefix: "I work on"
         strings:
-          - circular carbon e-fuels
-          - biomass-to-methanol pathways
-          - CO₂ capture and utilization
-          - life cycle assessment
-          - techno-economic analysis
-          - clean combustion
+          - "circular carbon e-fuels"
+          - "biomass-to-methanol pathways"
+          - "CO₂ capture and utilization"
+          - "life cycle assessment"
+          - "techno-economic analysis"
+          - "clean combustion"
         type_speed: 65
         delete_speed: 35
         pause_time: 2200
@@ -38,20 +38,20 @@ sections:
       links:
         - icon: brands/github
           url: "https://github.com/renstonferns"
-          label: GitHub
+          label: "GitHub"
         - icon: brands/linkedin
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-          label: LinkedIn
+          label: "LinkedIn"
         - icon: academicons/orcid
           url: "https://orcid.org/0000-0003-2769-6397"
-          label: ORCID
+          label: "ORCID"
         - icon: academicons/google-scholar
           url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-          label: Google Scholar
+          label: "Google Scholar"
         - icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-          label: ResearchGate
-        design:
+          label: "ResearchGate"
+    design:
       style: centered
       avatar_shape: circle
       show_avatar: true
@@ -77,7 +77,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:center; margin-top:-30px; margin-bottom:40px;">
-          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.25);" />
+          <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.25);" />
         </div>
     design:
       background:
