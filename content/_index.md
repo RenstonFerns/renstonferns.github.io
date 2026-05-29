@@ -159,24 +159,69 @@ sections:
           direction: 135
       text_color_light: true
 
-  - block: features
-    id: expertise
+    - block: markdown
+    id: core-technical-tools
     content:
-      title: "Technical Expertise"
-      subtitle: "Core tools and methods used across my research"
-      items:
-        - name: "Aspen Plus"
-          description: "Process simulation for biomass conversion, CO₂ hydrogenation, gasification, and methanol synthesis."
-          icon: hero/cog-6-tooth
-        - name: "Life Cycle Assessment"
-          description: "GREET, Sphera/GaBi, ReCiPe 2016, GLAM-oriented impact assessment, and WTT fuel analysis."
-          icon: hero/scale
-        - name: "Techno-Economic Analysis"
-          description: "CAPEX/OPEX estimation, MFSP, LCOM, scenario matrices, and sensitivity analysis."
-          icon: hero/banknotes
-        - name: "Uncertainty & Data Analysis"
-          description: "Monte Carlo simulation, Spearman correlation, Python-based analysis, and scientific visualization."
-          icon: hero/chart-pie
+      title: "Core Technical Expertise"
+      text: |
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:24px; margin-top:30px;">
+          <a href="https://www.aspentech.com/en/products/engineering/aspen-plus" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Aspen Plus.png" alt="Aspen Plus" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Aspen Plus</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Process simulation</p>
+            </div>
+          </a>
+          <a href="https://www.mathworks.com/products/matlab.html" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Matlab.png" alt="MATLAB" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">MATLAB</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Numerical analysis</p>
+            </div>
+          </a>
+          <a href="https://www.python.org/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Python.png" alt="Python" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Python</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Data & automation</p>
+            </div>
+          </a>
+          <a href="https://sphera.com/life-cycle-assessment-software-gabi/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Sphera.png" alt="Sphera GaBi" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Sphera / GaBi</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Professional LCA</p>
+            </div>
+          </a>
+          <a href="https://greet.es.anl.gov/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/GREEt.png" alt="GREET" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">GREET</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Fuel-cycle analysis</p>
+            </div>
+          </a>
+          <a href="https://www.comsol.com/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/comsol.png" alt="COMSOL" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">COMSOL</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Multiphysics modelling</p>
+            </div>
+          </a>
+          <a href="https://www.solidworks.com/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Solidworks.png" alt="SolidWorks" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">SolidWorks</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">3D CAD design</p>
+            </div>
+          </a>
+          <a href="https://www.overleaf.com/" target="_blank" style="text-decoration:none; color:inherit;">
+            <div style="background:#ffffff; border-radius:22px; padding:28px 20px; text-align:center; box-shadow:0 12px 35px rgba(15,118,110,0.10); border:1px solid #dbeafe; height:100%;">
+              <img src="/media/skills/Overleaf.png" alt="Overleaf" style="height:64px; width:auto; margin-bottom:18px; object-fit:contain;" />
+              <h3 style="margin:0 0 8px 0; font-size:1.15rem; font-weight:800; color:#061923;">Overleaf</h3>
+              <p style="margin:0; color:#475569; font-size:0.95rem;">Scientific writing</p>
+            </div>
+          </a>
+        </div>
     design:
       background:
         color:
