@@ -71,7 +71,7 @@ sections:
           animation: pulse
           intensity: bold
     - block: markdown
-    id: profile-photo
+      id: profile-photo
     content:
       title: ""
       text: |
