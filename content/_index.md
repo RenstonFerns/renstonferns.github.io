@@ -65,8 +65,8 @@ sections:
       animations: true
       background:
         color:
-          light: "#e6f4f1"
-          dark: "#03141f"
+          light: "#061923"
+          dark: "#061923"
         gradient_mesh:
           enable: true
           style: orbs
