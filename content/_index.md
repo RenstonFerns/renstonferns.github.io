@@ -105,31 +105,6 @@ sections:
           light: "#f4fbfa"
           dark: "#061923"
 
-  - block: features
-    id: core-technical-tools
-    content:
-      title: "Core Technical Expertise"
-      subtitle: "Tools and methods organized by research workflow"
-      items:
-        - name: "Process Modelling & Simulation"
-          description: "Aspen Plus, biomass gasification modelling, CO₂ hydrogenation, methanol synthesis, process integration, and COMSOL-based multiphysics workflows."
-          icon: hero/cog-6-tooth
-        - name: "LCA & Sustainability Assessment"
-          description: "GREET, Sphera/GaBi, ReCiPe 2016 Midpoint, GLAM-oriented impact assessment, well-to-tank fuel analysis, and sustainability benchmarking."
-          icon: hero/scale
-        - name: "Data Analysis & Automation"
-          description: "Python and MATLAB for Monte Carlo simulation, sensitivity analysis, Spearman correlation, plotting, automation, and scientific visualization."
-          icon: hero/code-bracket
-        - name: "Design & Scientific Communication"
-          description: "SolidWorks for engineering design and Overleaf/LaTeX for manuscript preparation, thesis writing, and scientific communication."
-          icon: hero/document-text
-    design:
-      Layout: cards
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#07151c"
-
   - block: stats
     id: impact
     content:
@@ -160,11 +135,12 @@ sections:
     id: research-vision
     content:
       title: "Research Vision"
-      text: |
-        My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.
+      text:
+        "My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.
         My doctoral work developed integrated Aspen Plus models for biomass-to-e-methanol systems and connected them with life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation. This allows fuel pathways to be assessed not only by yield, but also by carbon utilization, life-cycle emissions, cost structure, and end-use performance.
-        Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems.
+        Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems".
     design:
+      layout: cards
       background:
         color:
           light: "#f4fbfa"
