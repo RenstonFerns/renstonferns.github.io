@@ -160,106 +160,190 @@ sections:
     content:
       title: "Featured Research & Publications"
       text: |
-        <div style="max-width: 1180px; margin: 0 auto;">
-        <p style="text-align:center; max-width:850px; margin:0 auto 2.2rem auto; font-size:1.05rem; line-height:1.7; color:inherit;">
-        Selected research themes and scholarly outputs from my work on circular carbon e-fuels, biomass valorization, CO₂ utilization, process modelling, life cycle assessment, techno-economic analysis, and clean combustion.
+        <div style="width: 90vw; max-width: 1400px; margin-left: 50%; transform: translateX(-50%);">
+        <p style="text-align:center; max-width:900px; margin:0 auto 2.5rem auto; font-size:1.05rem; line-height:1.7; color:inherit;">
+        Selected research themes and scholarly outputs from my work on circular carbon e-fuels, biomass valorization, CO₂ utilization, process modelling, life cycle assessment, techno-economic analysis, hydrogen and ammonia fuels, waste heat recovery, and clean combustion.
         </p>
         <div style="display:grid; gap:1.4rem;">
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Doctoral Thesis</div>
         <div style="color:#ffffff; font-weight:700;">2026</div>
         </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.25781/KAUST-914YT" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
         Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy
+        </a>
         </h3>
         <p style="margin:0; color:#d8e4e7; line-height:1.65;">
         R. J. Fernandes
         </p>
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Integrated assessment of circular bio-e-fuel pathways linking biomass fermentation, residue gasification, CO₂ capture, CO₂ hydrogenation, methanol synthesis, LCA, TEA, uncertainty analysis, and combustion evaluation.
+        Doctoral thesis integrating Aspen Plus process modelling, life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion assessment for circular carbon e-fuel pathways from agro-biomass.
         </p>
-        <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Thesis</span>
+        <a href="https://doi.org/10.25781/KAUST-914YT" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
-        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Biomass & Bioenergy / SSRN Preprint</div>
-        <div style="color:#ffffff; font-weight:700;">2026</div>
-        </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
-        Quantifying the potential of Saudi date palm fruit and its waste for e-methanol production using integrated process modelling, techno-economic analysis and life-cycle assessment
-        </h3>
-        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
-        R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. Im, J. Turner
-        </p>
-        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Saudi Arabia-focused circular bio-e-fuel pathway using date palm fruit, seeds, date palm waste, captured CO₂, low-carbon hydrogen, Aspen Plus process modelling, LCA, and TEA.
-        </p>
-        <a href="http://dx.doi.org/10.2139/ssrn.6569602" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Preprint</a>
-        </div>
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
-        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
-        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">EUBCE 2025</div>
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
         </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
-        Circular carbon biofuel and e-fuel production using date palm fruit and waste from Saudi Arabia
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.4271/2025-01-0182" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Techno-Economic Analysis of an Integrated E-Methanol Production Plant Utilizing First and Second Generation Biomass Resources
+        </a>
         </h3>
         <p style="margin:0; color:#d8e4e7; line-height:1.65;">
-        R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. Im, J. Turner
+        R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. G. Im, J. W. G. Turner
         </p>
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Conference contribution presenting an integrated circular carbon pathway for producing ethanol, bio-methanol, and e-methanol from Saudi date palm resources.
+        First-author study on the techno-economic performance of integrated e-methanol production using first- and second-generation biomass resources.
         </p>
-        <a href="https://www.doi.org/10.5071/33rdEUBCE2025-5DO.3.3" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
+        <a href="https://doi.org/10.4271/2025-01-0182" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
-        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">CIRP LCE</div>
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Procedia CIRP</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
         </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
-        Evaluating regional sustainability of e-methanol production through GLAM-based life cycle impact assessment
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.1016/j.procir.2025.01.057" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment
+        </a>
+        </h3>
+        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
+        Renston Jake Fernandes, Ducduy Nguyen, Mohammad Raghib Shakeel, James W. G. Turner
+        </p>
+        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
+        First-author regional sustainability assessment of e-methanol production using GLAM-based life cycle impact assessment.
+        </p>
+        <a href="https://doi.org/10.1016/j.procir.2025.01.057" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
+        </div>
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
+        <div style="color:#ffffff; font-weight:700;">2024</div>
+        </div>
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.4271/2024-01-2449" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO₂ Utilization
+        </a>
         </h3>
         <p style="margin:0; color:#d8e4e7; line-height:1.65;">
         R. J. Fernandes, D. Nguyen, M. R. Shakeel, J. W. G. Turner
         </p>
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Regional life cycle assessment of e-methanol pathways using Aspen-derived inventories, GREET-based emissions, and GLAM/ReCiPe-oriented impact assessment.
+        First-author study on sustainable e-methanol production from biomass with enhanced CO₂ utilization.
         </p>
-        <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Conference Paper</span>
+        <a href="https://doi.org/10.4271/2024-01-2449" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
-        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE / KSAE</div>
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Biomass and Bioenergy / Under Review</div>
+        <div style="color:#ffffff; font-weight:700;">2026</div>
+        </div>
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://dx.doi.org/10.2139/ssrn.6569602" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Quantifying the potential of Saudi date palm fruit and its waste for e-methanol production using integrated process modelling, techno-economic analysis and life-cycle assessment
+        </a>
+        </h3>
+        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
+        R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. G. Im, J. W. G. Turner
+        </p>
+        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
+        First-author manuscript on Saudi date palm fruit and waste valorization for e-methanol production using integrated process modelling, TEA, and LCA.
+        </p>
+        <a href="https://dx.doi.org/10.2139/ssrn.6569602" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Preprint</a>
+        </div>
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">International Journal of Hydrogen Energy</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
         </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
-        Techno-economic analysis of an integrated e-methanol production plant utilizing first and second generation biomass resources
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.1016/j.ijhydene.2025.02.331" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines
+        </a>
         </h3>
         <p style="margin:0; color:#d8e4e7; line-height:1.65;">
-        R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. Im, J. W. G. Turner
+        Ducduy Nguyen, Renston Jake Fernandes, James W. G. Turner, David Robert Emberson
         </p>
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Techno-economic assessment of integrated biomass-to-e-methanol systems, including CAPEX, OPEX, methanol production cost, and scenario-based economic evaluation.
+        Second-author journal article assessing ammonia and hydrogen as alternative fuels for marine internal combustion engines using life cycle assessment.
         </p>
-        <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Conference Paper</span>
+        <a href="https://doi.org/10.1016/j.ijhydene.2025.02.331" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
-        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Future Research Direction</div>
-        <div style="color:#ffffff; font-weight:700;">Ongoing</div>
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
+        <div style="color:#ffffff; font-weight:700;">2023</div>
         </div>
-        <h3 style="margin:0.7rem 0 0.45rem 0; color:#ffffff; font-size:1.35rem; line-height:1.35;">
-        Dynamic LCA/TEA, AI-assisted process assessment, and digital-twin-enabled decision support for CO₂-to-X systems
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.4271/2023-24-0067" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Variable Compression Ratio Hydrogen-Fueled Homogeneous Charge Compression Ignition Engine
+        </a>
         </h3>
         <p style="margin:0; color:#d8e4e7; line-height:1.65;">
-        Research direction in development
+        Duc Duy Nguyen, Renston Fernandes, James W. G. Turner
         </p>
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
-        Extending circular fuel assessment toward dynamic inventories, time-resolved sustainability metrics, AI-assisted modelling, uncertainty-aware decision tools, and digital twin platforms.
+        Second-author technical paper on hydrogen-fueled HCCI engine operation using variable compression ratio strategies.
         </p>
-        <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Research Theme</span>
+        <a href="https://doi.org/10.4271/2023-24-0067" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
+        </div>
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Powertrain Systems for a Sustainable Future</div>
+        <div style="color:#ffffff; font-weight:700;">2023</div>
+        </div>
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.1201/9781032687568-23" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Investigating the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics
+        </a>
+        </h3>
+        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
+        Duc Duy Nguyen, Renston Fernandes, James W. G. Turner
+        </p>
+        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
+        Second-author publication on the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics.
+        </p>
+        <a href="https://doi.org/10.1201/9781032687568-23" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
+        </div>
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Energy</div>
+        <div style="color:#ffffff; font-weight:700;">2025</div>
+        </div>
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.1016/j.energy.2025.138755" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        A Joule cycle-based approach to recover waste heat from marine and heavy-duty vehicles
+        </a>
+        </h3>
+        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
+        S. R. Gubba, R. V. Kodaboina, K. Y. Kenkoh, R. Fernandes, J. W. G. Turner
+        </p>
+        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
+        Second-author journal article on a Joule cycle-based waste heat recovery approach for marine and heavy-duty vehicle applications.
+        </p>
+        <a href="https://doi.org/10.1016/j.energy.2025.138755" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
+        </div>
+        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
+        <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">ASME ICEF</div>
+        <div style="color:#ffffff; font-weight:700;">2025</div>
+        </div>
+        <h3 style="margin:0.7rem 0 0.45rem 0; font-size:1.35rem; line-height:1.35;">
+        <a href="https://doi.org/10.1115/ICEF2025-164599" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none;">
+        Evaluating the Performance, Emissions, and Well-to-Tank Carbon Footprint of Hydrogen-Enriched Euro-6 Gasoline in a Modified CFR Engine
+        </a>
+        </h3>
+        <p style="margin:0; color:#d8e4e7; line-height:1.65;">
+        A. Alrams, R. Fernandes, X. Wang, M. S. Panithasan, J. Turner
+        </p>
+        <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
+        Second-author conference publication evaluating hydrogen-enriched Euro-6 gasoline in a modified CFR engine, including performance, emissions, and well-to-tank carbon footprint.
+        </p>
+        <a href="https://doi.org/10.1115/ICEF2025-164599" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
         </div>
         </div>
