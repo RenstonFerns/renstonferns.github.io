@@ -15,7 +15,7 @@ sections:
       bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
       cta_buttons:
         - text: "Download CV"
-          url: "/uploads/resume.pdf"
+          url: "/uploads/FERNANDES_CV.pdf"
           icon: document-arrow-down
         - text: "Connect on LinkedIn"
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
@@ -70,7 +70,19 @@ sections:
           orb_count: 3
           animation: pulse
           intensity: bold
-
+    - block: markdown
+    id: profile-photo
+    content:
+      title: ""
+      text: |
+        <div style="text-align:center; margin-top:-30px; margin-bottom:40px;">
+          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.25);" />
+        </div>
+    design:
+      background:
+        color:
+          light: "#eef7f6"
+          dark: "#061923"
   - block: features
     id: networks
     content:
