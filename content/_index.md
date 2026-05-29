@@ -11,7 +11,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:center; margin-top:-25px; margin-bottom:25px;">
-          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:200px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.28);" />
+          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:40%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.28);" />
         </div>
     design:
       background:
@@ -67,20 +67,18 @@ sections:
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
           label: "ResearchGate"
     design:
-      style: centered
-      avatar_shape: circle
-      animations: true
-      background:
-        color:
-          light: "#eef7f6"
-          dark: "#061923"
-        gradient_mesh:
-          enable: true
-          style: orbs
-          colors:
-            - "#0f766e/35"
-            - "#0b3d4a/35"
-            - "#14b8a6/25"
+      design:
+  style: centered
+  avatar_shape: circle
+  animations: true
+  background:
+    gradient:
+      start: "#020617"
+      end: "#0f766e"
+      direction: 135
+    color:
+      light: "#edf7f5"
+      dark: "#020617"
           orb_count: 3
           animation: pulse
           intensity: bold
@@ -154,8 +152,8 @@ sections:
         - statistic: "4"
           description: "Regional biomass case studies"
           icon: hero/globe-alt
-        - statistic: "10,000"
-          description: "Monte Carlo uncertainty runs"
+        - statistic: "50+"
+          description: "Citations"
           icon: hero/cpu-chip
         - statistic: "5+"
           description: "International conference presentations"
