@@ -105,6 +105,30 @@ sections:
           light: "#f4fbfa"
           dark: "#061923"
 
+  - block: markdown
+    id: teaching
+    content:
+      title: "Teaching & Mentorship"
+      text: |
+        <div style="width: 90vw; max-width: 1400px; margin-left: 50%; transform: translateX(-50%);">
+        <blockquote style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; text-align: justify; font-size: 1.15rem; line-height: 1.85; padding: 2.2rem 3rem; border-left: 6px solid #0f766e; background: rgba(15, 118, 110, 0.07); border-radius: 18px; margin: 0 auto;">
+        <p>
+        I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability, energy, and research challenges.
+        </p>
+        <p>
+        I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, scientific reasoning, and research-oriented thinking.
+        </p>
+        <p>
+        As a mentor, I aim to help students move beyond simply understanding concepts toward asking better questions, designing stronger solutions, and developing the confidence to apply technical knowledge in academic, industrial, and societal contexts.
+        </p>
+        </blockquote>
+        </div>
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#07151c"
+
   - block: stats
     id: impact
     content:
@@ -361,61 +385,6 @@ sections:
     design:
       date_format: "Jan 2006"
       is_education_first: true
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#07151c"
-
-  - block: features
-    id: networks
-    content:
-      title: "Find Me Online"
-      subtitle: "Research profiles, professional networks, and project repositories"
-      items:
-        - name: "LinkedIn"
-          description: "Professional updates and networking"
-          icon: brands/linkedin
-          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-          target_blank: true
-        - name: "ORCID"
-          description: "Researcher identity and publication record"
-          icon: academicons/orcid
-          url: "https://orcid.org/0000-0003-2769-6397"
-          target_blank: true
-        - name: "Google Scholar"
-          description: "Citation metrics and scholarly works"
-          icon: academicons/google-scholar
-          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-          target_blank: true
-        - name: "ResearchGate"
-          description: "Collaborations and open research"
-          icon: academicons/researchgate
-          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-          target_blank: true
-        - name: "GitHub"
-          description: "Code, tools, and datasets"
-          icon: brands/github
-          url: "https://github.com/renstonferns"
-          target_blank: true
-        - name: "Instagram"
-          description: "Science outreach, music, and creative work"
-          icon: brands/instagram
-          url: "https://www.instagram.com/renston_fernandes"
-          target_blank: true
-    design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
-
-  - block: markdown
-    id: teaching
-    content:
-      title: "Teaching & Mentorship"
-      text: |
-        I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability and energy challenges.
-        I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, and research-oriented thinking.
-    design:
       background:
         color:
           light: "#ffffff"
