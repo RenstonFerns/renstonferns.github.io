@@ -60,7 +60,7 @@ sections:
       animations: true
       background:
         color:
-          light: "#eef7f6"
+          light: "#061923"
           dark: "#061923"
         gradient_mesh:
           enable: true
