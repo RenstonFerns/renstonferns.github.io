@@ -1,6 +1,7 @@
 schema: hugoblox/author/v1
-slug: me
+slug: admin
 is_owner: true
+avatar: avatar.png
 
 name:
   display: Dr. Renston Jake Fernandes
@@ -12,12 +13,14 @@ postnominals: []
 status:
   icon: "🔬"
 
-role: "Researcher in Clean Fuels, LCA, TEA & Process Modelling"
+role: "Clean Fuels Researcher | LCA, TEA & Process Modelling"
 
 email: renston.fernandes@kaust.edu.sa
 
 bio: |
-  I am a researcher working at the intersection of clean fuels, circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and combustion. My work focuses on developing integrated biomass-to-e-methanol and CO₂-to-fuel pathways using Aspen Plus, LCA, TEA, and uncertainty analysis to support sustainable transport fuel strategies.
+  I am a clean fuels researcher working at the intersection of process modelling, circular carbon e-fuels, life cycle assessment, techno-economic analysis, and combustion. My research develops integrated biomass-to-e-methanol and CO₂-to-fuel pathways using Aspen Plus, GREET/Sphera-based LCA, TEA, Monte Carlo uncertainty analysis, and engine-based fuel evaluation.
+
+  My broader goal is to support sustainable transport fuel strategies by connecting process design, environmental performance, cost analysis, and real-world fuel deployment.
 
 affiliations:
   - name: King Abdullah University of Science and Technology
@@ -26,24 +29,36 @@ affiliations:
 links:
   - icon: at-symbol
     url: mailto:renston.fernandes@kaust.edu.sa
-    label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/renstonferns
+    label: E-mail
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/renstonfernandes
+    url: https://www.linkedin.com/in/renston-jake-fernandes-9154b143
+    label: LinkedIn
   - icon: academicons/orcid
     url: https://orcid.org/0000-0003-2769-6397
+    label: ORCID
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3
+    label: Google Scholar
   - icon: academicons/researchgate
-    url: https://www.researchgate.net/profile/Renston_Fernandes
+    url: https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf
+    label: ResearchGate
+  - icon: brands/github
+    url: https://github.com/renstonferns
+    label: GitHub
+  - icon: brands/instagram
+    url: https://www.instagram.com/renston_fernandes
+    label: Instagram
 
 interests:
   - Circular carbon e-fuels
+  - Biomass-to-methanol pathways
+  - CO₂ capture and utilization
   - Life cycle assessment
   - Techno-economic analysis
   - Aspen Plus process modelling
-  - CO₂ capture and utilization
-  - Biomass-to-methanol pathways
-  - Clean combustion
+  - Clean combustion and alcohol fuels
+  - Uncertainty and scenario analysis
+  - Sustainable transport fuels
 
 education:
   - degree: PhD in Environmental Science and Engineering
@@ -52,25 +67,29 @@ education:
     end: 2026-04-29
     summary: |
       Thesis: Circular Carbon E-Fuels from Biomass: Techno-Economic, Environmental, and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy.
-      Research focused on integrated biomass-to-e-methanol pathways, CO₂ capture, Aspen Plus process simulation, life cycle assessment, techno-economic analysis, and clean combustion.
+
+      Developed integrated circular bio-e-fuel pathways connecting biomass fermentation, residue gasification, CO₂ capture, CO₂ hydrogenation, life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation.
+
   - degree: MSc Engineering Business Management
     institution: University of Sussex
     start: 2018-09-01
     end: 2019-09-01
     summary: |
-      Focused on engineering management, innovation, business strategy, and technology commercialization.
+      Focused on engineering management, innovation, technology strategy, business decision-making, and commercialization of engineering systems.
+
   - degree: M.Tech Energy Systems Engineering
     institution: NMAM Institute of Technology, Nitte
     start: 2014-08-01
     end: 2016-06-01
     summary: |
-      Specialized in renewable energy systems, energy conversion, and sustainable engineering.
+      Specialized in renewable energy systems, energy conversion, sustainable engineering, and applied energy technologies.
+
   - degree: B.E. Mechanical Engineering
     institution: Visvesvaraya Technological University
     start: 2010-08-01
     end: 2014-06-01
     summary: |
-      Foundation in mechanical engineering, thermodynamics, fluid mechanics, energy systems, and machine design.
+      Built a foundation in thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing, and mechanical energy systems.
 
 experience:
   - role: PhD Researcher
@@ -78,34 +97,57 @@ experience:
     start: 2021-08-01
     end: 2026-04-29
     summary: |
-      Developed Aspen Plus models for circular carbon e-fuel systems using biomass, agricultural residues, captured CO₂, and electrolytic hydrogen.
-      Conducted life cycle assessment and techno-economic analysis for e-methanol production pathways.
-      Evaluated combustion and emissions performance of alcohol fuel blends using engine-based experimental methods.
+      Developed Aspen Plus process models for circular carbon e-fuel production from biomass, agricultural residues, captured CO₂, and electrolytic hydrogen.
+
+      Integrated process simulation outputs with life cycle assessment, techno-economic analysis, and Monte Carlo uncertainty analysis to evaluate environmental and economic performance.
+
+      Conducted engine-based assessment of alcohol fuel blends with attention to combustion performance, efficiency, and emissions behaviour.
+
   - role: Research Intern
     org: Aramco
     start: 2025-06-01
     summary: |
       Worked on techno-economic analysis of flue gas separation and e-methanol production.
-      Contributed to process modelling and sustainability assessment of CO₂ utilization pathways.
+
+      Contributed to process modelling, CO₂ utilization assessment, and sustainability-oriented evaluation of low-carbon fuel pathways.
+
   - role: Assistant Professor
     org: Srinivas Institute of Technology, Mangalore
     start: 2016-08-01
     end: 2018-08-01
     summary: |
-      Taught mechanical and energy engineering subjects.
-      Mentored student projects in renewable fuels, energy systems, and applied mechanical engineering.
+      Taught mechanical engineering and energy-related subjects, including applied thermal engineering and renewable energy topics.
+
+      Mentored undergraduate engineering projects in renewable fuels, energy systems, and applied mechanical engineering.
+
+  - role: Business Development Manager
+    org: Lido Learning
+    start: 2020-01-01
+    end: 2021-01-01
+    summary: |
+      Worked on education-sector business development, stakeholder communication, and growth-oriented strategy.
+
+  - role: Senior HR Associate II
+    org: Amazon
+    start: 2019-01-01
+    end: 2020-01-01
+    summary: |
+      Supported operational workflows, employee-facing processes, and large-scale organizational coordination.
 
 skills:
   - name: Process Modelling
     items:
       - label: Aspen Plus
         level: 5
-      - label: Process simulation
-        level: 5
-      - label: CO₂ hydrogenation modelling
-        level: 4
       - label: Biomass gasification modelling
         level: 4
+      - label: CO₂ hydrogenation modelling
+        level: 4
+      - label: Methanol synthesis pathways
+        level: 4
+      - label: Process integration
+        level: 4
+
   - name: Sustainability Assessment
     items:
       - label: Life Cycle Assessment
@@ -116,7 +158,12 @@ skills:
         level: 4
       - label: Sphera/GaBi
         level: 4
-  - name: Data & Analysis
+      - label: ReCiPe 2016 Midpoint
+        level: 4
+      - label: GLAM-oriented impact assessment
+        level: 4
+
+  - name: Data, Uncertainty & Visualization
     items:
       - label: Python
         level: 4
@@ -124,8 +171,23 @@ skills:
         level: 4
       - label: Monte Carlo uncertainty analysis
         level: 4
+      - label: Spearman rank correlation
+        level: 4
+      - label: Scenario matrix analysis
+        level: 4
       - label: Scientific visualization
         level: 4
+
+  - name: Combustion & Fuels
+    items:
+      - label: Alcohol fuel blends
+        level: 4
+      - label: Engine emissions assessment
+        level: 4
+      - label: CFR engine testing
+        level: 4
+      - label: Sustainable transport fuels
+        level: 5
 
 languages:
   - name: English
@@ -145,6 +207,15 @@ awards:
   - title: KAUST PhD Fellowship
     date: 2021-08-01
     summary: Full doctoral fellowship awarded by King Abdullah University of Science and Technology.
+
   - title: Sussex India Scholarship
     date: 2018-09-01
     summary: Scholarship awarded for postgraduate study at the University of Sussex.
+
+  - title: KSCST Student Project Grant
+    date: 2015-01-01
+    summary: Grant support for applied renewable fuel and engineering experimentation.
+
+  - title: International Conference Presentations
+    date: 2025-01-01
+    summary: Accepted presentations across international conferences in biomass conversion, life cycle engineering, fuels, and combustion.
