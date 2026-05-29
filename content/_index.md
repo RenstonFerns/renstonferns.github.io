@@ -66,7 +66,7 @@ sections:
         - icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
           label: "ResearchGate"
-        design:
+    design:
       style: centered
       avatar_shape: circle
       animations: true
@@ -162,7 +162,7 @@ sections:
         - statistic: "Aspen + LCA + TEA"
           description: "Integrated assessment workflow"
           icon: hero/beaker
-        design:
+    design:
       layout: cards
       background:
         color:
