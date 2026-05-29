@@ -15,15 +15,12 @@ sections:
             Hello, I'm
           </div>
         <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:230px; height:230px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
-
-    <h1 style="font-size:3.2rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
-      Dr. Renston Jake Fernandes
-    </h1>
-
-    <div style="font-size:1.35rem; color:#d1fae5; margin-bottom:18px;">
-      Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling
-    </div>
-
+        <h1 style="font-size:3.2rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
+        Dr. Renston Jake Fernandes
+        </h1>
+        <div style="font-size:1.35rem; color:#d1fae5; margin-bottom:18px;">
+        Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling
+        </div>
     <div style="font-size:1.25rem; color:#5eead4; font-weight:700; margin:18px auto 24px auto; max-width:1050px;">
       I research circular carbon e-fuels • biomass-to-methanol pathways • CO₂ capture and utilization • life cycle assessment • techno-economic analysis • clean combustion
     </div>
