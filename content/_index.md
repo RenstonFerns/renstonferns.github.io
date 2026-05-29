@@ -165,7 +165,7 @@ sections:
         Selected research themes and scholarly outputs from my work on circular carbon e-fuels, biomass valorization, CO₂ utilization, process modelling, life cycle assessment, techno-economic analysis, hydrogen and ammonia fuels, waste heat recovery, and clean combustion.
         </p>
         <div style="display:grid; gap:1.4rem;">
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Doctoral Thesis</div>
         <div style="color:#ffffff; font-weight:700;">2026</div>
@@ -183,7 +183,7 @@ sections:
         </p>
         <a href="https://doi.org/10.25781/KAUST-914YT" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
@@ -201,7 +201,7 @@ sections:
         </p>
         <a href="https://doi.org/10.4271/2025-01-0182" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Procedia CIRP</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
@@ -219,7 +219,7 @@ sections:
         </p>
         <a href="https://doi.org/10.1016/j.procir.2025.01.057" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
         <div style="color:#ffffff; font-weight:700;">2024</div>
@@ -237,7 +237,7 @@ sections:
         </p>
         <a href="https://doi.org/10.4271/2024-01-2449" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Biomass and Bioenergy / Under Review</div>
         <div style="color:#ffffff; font-weight:700;">2026</div>
@@ -255,7 +255,7 @@ sections:
         </p>
         <a href="https://dx.doi.org/10.2139/ssrn.6569602" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Preprint</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">International Journal of Hydrogen Energy</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
@@ -273,7 +273,7 @@ sections:
         </p>
         <a href="https://doi.org/10.1016/j.ijhydene.2025.02.331" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE Technical Paper</div>
         <div style="color:#ffffff; font-weight:700;">2023</div>
@@ -291,7 +291,7 @@ sections:
         </p>
         <a href="https://doi.org/10.4271/2023-24-0067" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Powertrain Systems for a Sustainable Future</div>
         <div style="color:#ffffff; font-weight:700;">2023</div>
@@ -309,7 +309,7 @@ sections:
         </p>
         <a href="https://doi.org/10.1201/9781032687568-23" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Energy</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
@@ -327,7 +327,7 @@ sections:
         </p>
         <a href="https://doi.org/10.1016/j.energy.2025.138755" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-        <div style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
+        <div class="publication-card" style="position:relative; padding:1.8rem 2.2rem; border:1px solid rgba(15,118,110,0.40); border-top:4px solid #0f766e; border-radius:16px; background:rgba(6,25,35,0.94); box-shadow:0 10px 30px rgba(0,0,0,0.20);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">ASME ICEF</div>
         <div style="color:#ffffff; font-weight:700;">2025</div>
