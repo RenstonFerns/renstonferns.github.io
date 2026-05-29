@@ -131,7 +131,7 @@ sections:
                   icon: custom/overleaf
     design:
         style: grid
-        show_levels: false
+        show_levels: true
         background:
           color:
             light: "#f5f5f5"
@@ -162,7 +162,7 @@ sections:
             direction: 135
           text_color_light: true
     id: impact
-    demo: false
+    demo: true
   - block: markdown
     content:
         title: "Research Philosophy & Vision"
