@@ -160,7 +160,7 @@ sections:
           direction: 135
       text_color_light: true
 
-  - block: markdown
+  - block: features
     id: core-technical-tools
     content:
       title: "Core Technical Expertise"
