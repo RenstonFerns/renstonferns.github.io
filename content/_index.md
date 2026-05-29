@@ -132,6 +132,7 @@ sections:
         color:
           light: "#eef7f6"
           dark: "#061923"
+    
   - block: stats
     id: impact
     content:
@@ -158,7 +159,7 @@ sections:
           direction: 135
       text_color_light: true
 
-    - block: markdown
+  - block: markdown
     id: core-technical-tools
     content:
       title: "Core Technical Expertise"
