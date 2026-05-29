@@ -65,7 +65,7 @@ sections:
             animation: pulse
             intensity: bold
     id: hero
-    - block: features
+  - block: features
     content:
       title: "Find Me Online"
       subtitle: "Research profiles, professional networks, and project repositories"
@@ -74,27 +74,22 @@ sections:
           description: "Professional updates & networking"
           icon: brands/linkedin
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-
         - name: "ORCID"
           description: "Researcher identity & publication record"
           icon: academicons/orcid
           url: "https://orcid.org/0000-0003-2769-6397"
-
         - name: "Google Scholar"
           description: "Citation metrics & scholarly works"
           icon: academicons/google_scholar
           url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-
         - name: "ResearchGate"
           description: "Collaborations & open research"
           icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-
         - name: "GitHub"
           description: "Code, tools, and datasets"
           icon: brands/github
           url: "https://github.com/renstonferns"
-
         - name: "Instagram"
           description: "Science outreach, music, and creative work"
           icon: brands/instagram
