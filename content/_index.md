@@ -198,7 +198,7 @@ sections:
             </h3>
             <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
               <a href="https://sphera.com/life-cycle-assessment-software-gabi/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Sphera.png" alt="Sphera GaBi" style="width:58px; height:58px; object-fit:contain;" />
+                <img src="static/uploads/skills/Sphera.png" alt="Sphera GaBi" style="width:58px; height:58px; object-fit:contain;" />
                 <div>
                   <div style="font-weight:850; color:#061923;">Sphera / GaBi</div>
                   <div style="font-size:0.92rem; color:#64748b;">Professional LCA modelling and impact assessment</div>
