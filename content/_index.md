@@ -78,11 +78,9 @@ sections:
       color:
         light: "#edf7f5"
         dark: "#020617"
-          orb_count: 3
-          animation: pulse
-          intensity: bold
-
-
+        orb_count: 3
+        animation: pulse
+        intensity: bold
   - block: features
     id: networks
     content:
