@@ -1,5 +1,4 @@
 ---
-
 title: "Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA & E-Fuels"
 summary: "Academic portfolio of Dr. Renston Jake Fernandes — circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and clean combustion."
 date: 2026-05-28
