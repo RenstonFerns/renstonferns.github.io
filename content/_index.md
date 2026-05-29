@@ -51,7 +51,7 @@ sections:
         - icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
           label: ResearchGate
-    design:
+        design:
       style: centered
       avatar_shape: circle
       show_avatar: true
@@ -70,8 +70,9 @@ sections:
           orb_count: 3
           animation: pulse
           intensity: bold
-    - block: markdown
-      id: profile-photo
+
+  - block: markdown
+    id: profile-photo
     content:
       title: ""
       text: |
@@ -83,6 +84,7 @@ sections:
         color:
           light: "#eef7f6"
           dark: "#061923"
+
   - block: features
     id: networks
     content:
