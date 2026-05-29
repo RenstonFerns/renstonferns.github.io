@@ -1,12 +1,12 @@
----
 
+---
 title: "Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA & E-Fuels"
 summary: "Academic portfolio of Dr. Renston Jake Fernandes — circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and clean combustion."
 date: 2026-05-28
 type: landing
 
 sections:
-  - block: dev-hero
+  - block: hero
     id: hero
     content:
       username: admin
@@ -75,42 +75,6 @@ sections:
           intensity: bold
 
   - block: features
-    id: networks
-    content:
-      title: "Find Me Online"
-      subtitle: "Research profiles, professional networks, and project repositories"
-      items:
-        - name: "LinkedIn"
-          description: "Professional updates & networking"
-          icon: brands/linkedin
-          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-        - name: "ORCID"
-          description: "Researcher identity & publication record"
-          icon: academicons/orcid
-          url: "https://orcid.org/0000-0003-2769-6397"
-        - name: "Google Scholar"
-          description: "Citation metrics & scholarly works"
-          icon: academicons/google-scholar
-          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-        - name: "ResearchGate"
-          description: "Collaborations & open research"
-          icon: academicons/researchgate
-          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-        - name: "GitHub"
-          description: "Code, tools, and datasets"
-          icon: brands/github
-          url: "https://github.com/renstonferns"
-        - name: "Instagram"
-          description: "Science outreach, music, and creative work"
-          icon: brands/instagram
-          url: "https://www.instagram.com/renston_fernandes"
-    design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
-
-  - block: features
     id: research-areas
     content:
       title: "Research Areas"
@@ -131,26 +95,50 @@ sections:
     design:
       background:
         color:
-          light: "#eef7f6"
+          light: "#f4fbfa"
           dark: "#061923"
-    
+
+  - block: features
+    id: core-technical-tools
+    content:
+      title: "Core Technical Expertise"
+      subtitle: "Tools and methods organized by research workflow"
+      items:
+        - name: "Process Modelling & Simulation"
+          description: "Aspen Plus, biomass gasification modelling, CO₂ hydrogenation, methanol synthesis, process integration, and COMSOL-based multiphysics workflows."
+          icon: hero/cog-6-tooth
+        - name: "LCA & Sustainability Assessment"
+          description: "GREET, Sphera/GaBi, ReCiPe 2016 Midpoint, GLAM-oriented impact assessment, well-to-tank fuel analysis, and sustainability benchmarking."
+          icon: hero/scale
+        - name: "Data Analysis & Automation"
+          description: "Python and MATLAB for Monte Carlo simulation, sensitivity analysis, Spearman correlation, plotting, automation, and scientific visualization."
+          icon: hero/code-bracket
+        - name: "Design & Scientific Communication"
+          description: "SolidWorks for engineering design and Overleaf/LaTeX for manuscript preparation, thesis writing, and scientific communication."
+          icon: hero/document-text
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#07151c"
+
   - block: stats
     id: impact
     content:
-      title: "Research Impact"
+      title: "Impact by the Numbers"
       items:
+        - statistic: "50+"
+          description: "Citations"
+          icon: academicons/google-scholar
+        - statistic: "12+"
+          description: "Peer-reviewed publications and research outputs"
+          icon: hero/document-text
+        - statistic: "20+"
+          description: "Talks, presentations, and academic engagements"
+          icon: hero/microphone
         - statistic: "4"
           description: "Regional biomass case studies"
           icon: hero/globe-alt
-        - statistic: "10,000"
-          description: "Monte Carlo uncertainty runs"
-          icon: hero/cpu-chip
-        - statistic: "5+"
-          description: "International conference presentations"
-          icon: hero/microphone
-        - statistic: "Aspen + LCA + TEA"
-          description: "Integrated assessment workflow"
-          icon: hero/beaker
     design:
       layout: cards
       background:
@@ -159,110 +147,6 @@ sections:
           end: "#0f766e"
           direction: 135
       text_color_light: true
-
-  - block: features
-    id: core-technical-tools
-    content:
-      title: "Core Technical Expertise"
-      text: |
-        <p style="max-width:880px; margin:0 auto 38px auto; text-align:center; color:#475569; font-size:1.05rem; line-height:1.75;">
-          A structured research toolkit organized by how each platform contributes to my workflow across process modelling, sustainability assessment, data analysis, design, and scientific communication.
-        </p>
-        <div style="display:grid; grid-template-columns:1fr; gap:28px; margin-top:25px;">
-          <-- Process Modelling & Simulation -->
-          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
-            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
-              Process Modelling & Simulation
-            </h3>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
-              <a href="https://www.aspentech.com/en/products/engineering/aspen-plus" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Aspen%20Plus.png" alt="Aspen Plus" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">Aspen Plus</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Process simulation, gasification, CO₂ hydrogenation, methanol synthesis</div>
-                </div>
-              </a>
-              <a href="https://www.comsol.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/comsol.png" alt="COMSOL" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">COMSOL</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Multiphysics modelling and transport phenomena</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <-- LCA & Sustainability Assessment -->
-          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
-            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
-              LCA & Sustainability Assessment
-            </h3>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
-              <a href="https://sphera.com/life-cycle-assessment-software-gabi/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="static/uploads/skills/Sphera.png" alt="Sphera GaBi" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">Sphera / GaBi</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Professional LCA modelling and impact assessment</div>
-                </div>
-              </a>
-              <a href="https://greet.es.anl.gov/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/GREEt.png" alt="GREET" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">GREET</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Fuel-cycle analysis and well-to-tank emissions modelling</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <-- Data Analysis & Automation -->
-          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
-            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
-              Data Analysis & Automation
-            </h3>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
-              <a href="https://www.python.org/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Python.png" alt="Python" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">Python</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Monte Carlo analysis, plotting, automation, and data processing</div>
-                </div>
-              </a>
-              <a href="https://www.mathworks.com/products/matlab.html" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Matlab.png" alt="MATLAB" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">MATLAB</div>
-                  <div style="font-size:0.92rem; color:#64748b;">Numerical analysis and engineering calculations</div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <-- Design & Scientific Communication -->
-          <div style="background:#ffffff; border-radius:26px; padding:30px 28px; box-shadow:0 14px 38px rgba(15,118,110,0.10); border:1px solid #dbeafe;">
-            <h3 style="margin:0 0 22px 0; font-size:1.35rem; color:#061923; font-weight:850;">
-              Design & Scientific Communication
-            </h3>
-            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;">
-              <a href="https://www.solidworks.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Solidworks.png" alt="SolidWorks" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">SolidWorks</div>
-                  <div style="font-size:0.92rem; color:#64748b;">3D CAD, engineering design, and mechanical modelling</div>
-                </div>
-              </a>
-              <a href="https://www.overleaf.com/" target="_blank" style="display:flex; align-items:center; gap:16px; text-decoration:none; color:inherit; background:#f8fafc; border-radius:18px; padding:18px; border:1px solid #e2e8f0;">
-                <img src="/uploads/skills/Overleaf.png" alt="Overleaf" style="width:58px; height:58px; object-fit:contain;" />
-                <div>
-                  <div style="font-weight:850; color:#061923;">Overleaf</div>
-                  <div style="font-size:0.92rem; color:#64748b;">LaTeX-based scientific writing and manuscript preparation</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-    design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
 
   - block: markdown
     id: research-vision
@@ -275,8 +159,8 @@ sections:
     design:
       background:
         color:
-          light: "#ffffff"
-          dark: "#07151c"
+          light: "#f4fbfa"
+          dark: "#081f2a"
 
   - block: features
     id: featured-projects
@@ -299,8 +183,8 @@ sections:
     design:
       background:
         color:
-          light: "#eef7f6"
-          dark: "#061923"
+          light: "#ffffff"
+          dark: "#07151c"
 
   - block: markdown
     id: publications
@@ -319,8 +203,8 @@ sections:
     design:
       background:
         color:
-          light: "#ffffff"
-          dark: "#07151c"
+          light: "#f4fbfa"
+          dark: "#081f2a"
 
   - block: resume-experience
     id: experience
@@ -330,6 +214,46 @@ sections:
     design:
       date_format: "Jan 2006"
       is_education_first: true
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#07151c"
+
+  - block: features
+    id: networks
+    content:
+      title: "Find Me Online"
+      subtitle: "Research profiles, professional networks, and project repositories"
+      items:
+        - name: "LinkedIn"
+          description: "Professional updates and networking"
+          icon: brands/linkedin
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+        - name: "ORCID"
+          description: "Researcher identity and publication record"
+          icon: academicons/orcid
+          url: "https://orcid.org/0000-0003-2769-6397"
+        - name: "Google Scholar"
+          description: "Citation metrics and scholarly works"
+          icon: academicons/google-scholar
+          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+        - name: "ResearchGate"
+          description: "Collaborations and open research"
+          icon: academicons/researchgate
+          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+        - name: "GitHub"
+          description: "Code, tools, and datasets"
+          icon: brands/github
+          url: "https://github.com/renstonferns"
+        - name: "Instagram"
+          description: "Science outreach, music, and creative work"
+          icon: brands/instagram
+          url: "https://www.instagram.com/renston_fernandes"
+    design:
+      background:
+        color:
+          light: "#f4fbfa"
+          dark: "#081f2a"
 
   - block: markdown
     id: teaching
@@ -337,7 +261,6 @@ sections:
       title: "Teaching & Mentorship"
       text: |
         I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability and energy challenges.
-
         I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, and research-oriented thinking.
     design:
       background:
@@ -394,3 +317,4 @@ sections:
           light: "#e6f4f1"
           dark: "#041217"
 ---
+```
