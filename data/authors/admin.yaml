@@ -8,8 +8,11 @@ name:
   given: Renston Jake
   family: Fernandes
 
-postnominals: []
-
+postnominals: 
+  - B.Tech
+  - M.Tech
+  - M.Sc
+  - Ph.D
 status:
   icon: "🔬"
 
@@ -106,6 +109,7 @@ experience:
   - role: Research Intern
     org: Aramco
     start: 2025-06-01
+    end: 2025-08-01
     summary: |
       Worked on techno-economic analysis of flue gas separation and e-methanol production.
 
@@ -114,7 +118,7 @@ experience:
   - role: Assistant Professor
     org: Srinivas Institute of Technology, Mangalore
     start: 2016-08-01
-    end: 2018-08-01
+    end: 2018-05-01
     summary: |
       Taught mechanical engineering and energy-related subjects, including applied thermal engineering and renewable energy topics.
 
@@ -122,15 +126,15 @@ experience:
 
   - role: Business Development Manager
     org: Lido Learning
-    start: 2020-01-01
-    end: 2021-01-01
+    start: 2020-09-01
+    end: 2020-11-30
     summary: |
       Worked on education-sector business development, stakeholder communication, and growth-oriented strategy.
 
   - role: Senior HR Associate II
     org: Amazon
-    start: 2019-01-01
-    end: 2020-01-01
+    start: 2020-12-01
+    end: 2021-05-01
     summary: |
       Supported operational workflows, employee-facing processes, and large-scale organizational coordination.
 
