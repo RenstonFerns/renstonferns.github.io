@@ -155,19 +155,16 @@ sections:
           light: "#f4fbfa"
           dark: "#081f2a"
 
-    - block: markdown
+  - block: markdown
     id: featured-publications
     content:
       title: "Featured Research & Publications"
       text: |
         <div style="max-width: 1180px; margin: 0 auto;">
-
         <p style="text-align:center; max-width:850px; margin:0 auto 2.2rem auto; font-size:1.05rem; line-height:1.7; color:inherit;">
         Selected research themes and scholarly outputs from my work on circular carbon e-fuels, biomass valorization, CO₂ utilization, process modelling, life cycle assessment, techno-economic analysis, and clean combustion.
         </p>
-
         <div style="display:grid; gap:1.4rem;">
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Doctoral Thesis</div>
@@ -184,7 +181,6 @@ sections:
         </p>
         <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Thesis</span>
         </div>
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Biomass & Bioenergy / SSRN Preprint</div>
@@ -199,9 +195,8 @@ sections:
         <p style="margin:0.8rem 0 1.1rem 0; color:#c7d5d9; line-height:1.65;">
         Saudi Arabia-focused circular bio-e-fuel pathway using date palm fruit, seeds, date palm waste, captured CO₂, low-carbon hydrogen, Aspen Plus process modelling, LCA, and TEA.
         </p>
-        <a href="https://ssrn.com/abstract=6569602" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Preprint</a>
+        <a href="http://dx.doi.org/10.2139/ssrn.6569602" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Preprint</a>
         </div>
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">EUBCE 2025</div>
@@ -218,7 +213,6 @@ sections:
         </p>
         <a href="https://www.doi.org/10.5071/33rdEUBCE2025-5DO.3.3" target="_blank" rel="noopener" style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">DOI</a>
         </div>
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">CIRP LCE</div>
@@ -235,7 +229,6 @@ sections:
         </p>
         <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Conference Paper</span>
         </div>
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">SAE / KSAE</div>
@@ -252,7 +245,6 @@ sections:
         </p>
         <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Conference Paper</span>
         </div>
-
         <div style="position:relative; padding:1.7rem 2rem; border:1px solid rgba(15,118,110,0.35); border-top:4px solid #0f766e; border-radius:14px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:1rem;">
         <div style="letter-spacing:0.16em; text-transform:uppercase; color:#14b8a6; font-size:0.78rem; font-weight:700;">Future Research Direction</div>
@@ -269,7 +261,6 @@ sections:
         </p>
         <span style="display:inline-block; padding:0.45rem 0.8rem; border:1px solid #14b8a6; color:#14b8a6; border-radius:8px; font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase;">Research Theme</span>
         </div>
-
         </div>
         </div>
     design:
