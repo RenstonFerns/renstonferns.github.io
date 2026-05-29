@@ -1,7 +1,7 @@
 schema: hugoblox/author/v1
 slug: admin
 is_owner: true
-avatar: authors/admin/avatar.png
+avatar: avatar.png
 
 name:
   display: Dr. Renston Jake Fernandes
