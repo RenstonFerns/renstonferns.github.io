@@ -10,21 +10,22 @@ sections:
         greeting: "Hello, I'm"
         title: Dr. Renston Jake Fernandes
         tagline: "Clean Fuels | E-Fuels | LCA | TEA | Aspen Plus | Combustion"
-        bio: "Postdoctoral Research Associate in Process Modelling, Carbon Dioxide Removal, Life Cycle Assessment, and Techno-economic Analysis. Developing frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂."
+        bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
         cta_buttons:
           - text: Connect on LinkedIn
-            url: "https://www.linkedin.com/in/renstonfernandes"
+            url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
             icon: brands/linkedin
           - text: Download Full CV
             url: /uploads/resume.pdf
             icon: document-arrow-down
         typewriter:
           enable: true
-          prefix: I research
+          prefix: I research on
           strings:
             - clean e-fuels
             - circular carbon solutions
             - life cycle assessment
+            - Techno-economic analysis
             - sustainable transport
             - process modelling
           type_speed: 65
@@ -43,7 +44,7 @@ sections:
             url: "https://orcid.org/0000-0003-2769-6397"
             label: ORCID
           - icon: academicons/researchgate
-            url: "https://www.researchgate.net/profile/Renston_Fernandes"
+            url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
             label: ResearchGate
     design:
         style: centered
@@ -64,33 +65,45 @@ sections:
             animation: pulse
             intensity: bold
     id: hero
-  - block: features
+    - block: features
     content:
-        title: Find Me Online
-        items:
-          - name: LinkedIn
-            description: "Professional updates & networking"
-            icon: brands/linkedin
-          - name: ORCID
-            description: "Publications & identity"
-            icon: academicons/orcid
-          - name: Google Scholar
-            description: "Citation metrics & works"
-            icon: academicons/google_scholar
-          - name: ResearchGate
-            description: "Collaborations & open research"
-            icon: academicons/researchgate
-          - name: GitHub
-            description: "Code, tools, and datasets"
-            icon: brands/github
-          - name: Instagram
-            description: "Science outreach & more"
-            icon: brands/instagram
+      title: "Find Me Online"
+      subtitle: "Research profiles, professional networks, and project repositories"
+      items:
+        - name: "LinkedIn"
+          description: "Professional updates & networking"
+          icon: brands/linkedin
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+
+        - name: "ORCID"
+          description: "Researcher identity & publication record"
+          icon: academicons/orcid
+          url: "https://orcid.org/0000-0003-2769-6397"
+
+        - name: "Google Scholar"
+          description: "Citation metrics & scholarly works"
+          icon: academicons/google_scholar
+          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+
+        - name: "ResearchGate"
+          description: "Collaborations & open research"
+          icon: academicons/researchgate
+          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+
+        - name: "GitHub"
+          description: "Code, tools, and datasets"
+          icon: brands/github
+          url: "https://github.com/renstonferns"
+
+        - name: "Instagram"
+          description: "Science outreach, music, and creative work"
+          icon: brands/instagram
+          url: "PASTE_YOUR_INSTAGRAM_LINK_HERE"
     design:
-        background:
-          color:
-            light: "#fafafa"
-            dark: "#12141b"
+      background:
+        color:
+          light: "#f4fbfa"
+          dark: "#081f2a"
     id: networks
   - block: tech-stack
     content:
