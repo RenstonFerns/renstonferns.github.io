@@ -10,7 +10,7 @@ sections:
   id: hero
   content:
   title: ""
-  text:|
+  text: |
   
   Hello, I'm </div>
 
