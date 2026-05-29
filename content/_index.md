@@ -98,7 +98,7 @@ sections:
         - name: "Instagram"
           description: "Science outreach, music, and creative work"
           icon: brands/instagram
-          url: "PASTE_YOUR_INSTAGRAM_LINK_HERE"
+          url: "https://www.instagram.com/renston_fernandes"
     design:
       background:
         color:
