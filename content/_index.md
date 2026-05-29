@@ -11,7 +11,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:center; margin-top:-25px; margin-bottom:25px;">
-          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:40%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.28);" />
+          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:40%; box-shadow:0 14px 40px rgba(0,0,0,0.30);" />
         </div>
     design:
       background:
@@ -85,41 +85,6 @@ sections:
           orb_count: 4
           animation: pulse
           intensity: bold
-  - block: features
-    id: networks
-    content:
-      title: "Find Me Online"
-      subtitle: "Research profiles, professional networks, and project repositories"
-      items:
-        - name: "LinkedIn"
-          description: "Professional updates & networking"
-          icon: brands/linkedin
-          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-        - name: "ORCID"
-          description: "Researcher identity & publication record"
-          icon: academicons/orcid
-          url: "https://orcid.org/0000-0003-2769-6397"
-        - name: "Google Scholar"
-          description: "Citation metrics & scholarly works"
-          icon: academicons/google-scholar
-          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-        - name: "ResearchGate"
-          description: "Collaborations & open research"
-          icon: academicons/researchgate
-          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-        - name: "GitHub"
-          description: "Code, tools, and datasets"
-          icon: brands/github
-          url: "https://github.com/renstonferns"
-        - name: "Instagram"
-          description: "Science outreach, music, and creative work"
-          icon: brands/instagram
-          url: "https://www.instagram.com/renston_fernandes"
-    design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
 
   - block: features
     id: research-areas
@@ -292,6 +257,42 @@ sections:
         - name: "Science, Teaching & Creative Work"
           description: "Researcher, educator, and musician with a multidisciplinary approach to communication and creativity."
           icon: hero/musical-note
+    design:
+      background:
+        color:
+          light: "#f4fbfa"
+          dark: "#081f2a"
+
+  - block: features
+    id: networks
+    content:
+      title: "Find Me Online"
+      subtitle: "Research profiles, professional networks, and project repositories"
+      items:
+        - name: "LinkedIn"
+          description: "Professional updates & networking"
+          icon: brands/linkedin
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+        - name: "ORCID"
+          description: "Researcher identity & publication record"
+          icon: academicons/orcid
+          url: "https://orcid.org/0000-0003-2769-6397"
+        - name: "Google Scholar"
+          description: "Citation metrics & scholarly works"
+          icon: academicons/google-scholar
+          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+        - name: "ResearchGate"
+          description: "Collaborations & open research"
+          icon: academicons/researchgate
+          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+        - name: "GitHub"
+          description: "Code, tools, and datasets"
+          icon: brands/github
+          url: "https://github.com/renstonferns"
+        - name: "Instagram"
+          description: "Science outreach, music, and creative work"
+          icon: brands/instagram
+          url: "https://www.instagram.com/renston_fernandes"
     design:
       background:
         color:
