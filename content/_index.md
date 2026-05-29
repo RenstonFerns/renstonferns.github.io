@@ -38,7 +38,8 @@ sections:
         pause_time: 2200
       show_status: true
       show_scroll_indicator: true
-      links:
+
+    links:
         - icon: brands/github
           url: "https://github.com/renstonferns"
           label: "GitHub"
