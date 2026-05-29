@@ -105,30 +105,6 @@ sections:
           light: "#f4fbfa"
           dark: "#061923"
 
-  - block: markdown
-    id: teaching
-    content:
-      title: "Teaching & Mentorship"
-      text: |
-        <div style="width: 90vw; max-width: 1400px; margin-left: 50%; transform: translateX(-50%);">
-        <blockquote style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; text-align: justify; font-size: 1.15rem; line-height: 1.85; padding: 2.2rem 3rem; border-left: 6px solid #0f766e; background: rgba(15, 118, 110, 0.07); border-radius: 18px; margin: 0 auto;">
-        <p>
-        I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability, energy, and research challenges.
-        </p>
-        <p>
-        I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, scientific reasoning, and research-oriented thinking.
-        </p>
-        <p>
-        As a mentor, I aim to help students move beyond simply understanding concepts toward asking better questions, designing stronger solutions, and developing the confidence to apply technical knowledge in academic, industrial, and societal contexts.
-        </p>
-        </blockquote>
-        </div>
-    design:
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#07151c"
-
   - block: stats
     id: impact
     content:
@@ -178,6 +154,30 @@ sections:
         color:
           light: "#f4fbfa"
           dark: "#081f2a"
+
+  - block: markdown
+    id: teaching
+    content:
+      title: "Teaching & Mentorship"
+      text: |
+        <div style="width: 90vw; max-width: 1400px; margin-left: 50%; transform: translateX(-50%);">
+        <blockquote style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; text-align: justify; font-size: 1.15rem; line-height: 1.85; padding: 2.2rem 3rem; border-left: 6px solid #0f766e; background: rgba(15, 118, 110, 0.07); border-radius: 18px; margin: 0 auto;">
+        <p>
+        I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability, energy, and research challenges.
+        </p>
+        <p>
+        I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, scientific reasoning, and research-oriented thinking.
+        </p>
+        <p>
+        As a mentor, I aim to help students move beyond simply understanding concepts toward asking better questions, designing stronger solutions, and developing the confidence to apply technical knowledge in academic, industrial, and societal contexts.
+        </p>
+        </blockquote>
+        </div>
+    design:
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#07151c"
 
   - block: markdown
     id: featured-publications
