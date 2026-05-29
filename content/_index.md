@@ -5,7 +5,7 @@ date: 2026-05-28
 type: landing
 
 sections:
-  - block: dev-hero
+  - block: markdown
     id: hero
     content:
       username: admin
