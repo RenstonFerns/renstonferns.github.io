@@ -5,24 +5,17 @@ date: 2026-05-28
 type: landing
 
 sections:
-  - block: markdown
-    id: profile-photo
-    content:
-      title: ""
-      text: |
-        <div style="text-align:center; margin-top:-25px; margin-bottom:25px;">
-          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:300px; height:300px; object-fit:cover; border-radius:50%; box-shadow:0 28px 40px rgba(0,0,0,0.30);" />
-        </div>
-    design:
-      background:
-        color:
-          light: "#eef7f6"
-          dark: "#061923"
   - block: dev-hero
     id: hero
     content:
       username: admin
-      greeting: "Hello, I'm"
+      greeting: |
+  <div style="text-align:center;">
+    <div style="font-size:1.05rem; color:#14b8a6; font-weight:600; letter-spacing:0.04em; margin-bottom:18px;">
+      Hello, I'm
+    </div>
+    <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 24px auto; width:230px; height:230px; object-fit:cover; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.38);" />
+  </div>
       title: "Dr. Renston Jake Fernandes"
       tagline: "Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling"
       bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
