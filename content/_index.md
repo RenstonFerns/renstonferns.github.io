@@ -10,7 +10,8 @@ sections:
   id: hero
   content:
   title: ""
-  text: | <section style="text-align:center; padding:75px 20px 85px 20px; background: radial-gradient(circle at top, #0f766e 0%, #061923 42%, #020617 100%); color:white;"> <div style="font-size:1.05rem; color:#5eead4; font-weight:700; letter-spacing:0.06em; margin-bottom:18px;">
+  text: |
+  
   Hello, I'm </div>
     <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:230px; height:230px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
     <h1 style="font-size:3.2rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
