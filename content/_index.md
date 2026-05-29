@@ -10,7 +10,7 @@ sections:
   id: hero
   content:
   title: ""
-  text: |
+  text:|
   
   Hello, I'm </div>
     <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:230px; height:230px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
