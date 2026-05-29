@@ -18,18 +18,18 @@ sections:
       bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
       cta_buttons:
         - text: "Download CV"
-          url: "/uploads/resume.pdf"
+          url: "static/uploads/skills/FERNANDES_CV.pdf"
           icon: hero/document-arrow-down
         - text: "Connect on LinkedIn"
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
           icon: brands/linkedin
       typewriter:
         enable: true
-        prefix: "I work on"
+        prefix: "I work on research pertaining to: "
         strings:
           - "circular carbon e-fuels"
-          - "biomass-to-methanol pathways"
-          - "CO₂ capture and utilization"
+          - "low-carbon fuel pathways"
+          - "integrated process modelling"
           - "life cycle assessment"
           - "techno-economic analysis"
           - "clean combustion"
@@ -78,20 +78,26 @@ sections:
     id: research-areas
     content:
       title: "Research Areas"
-      subtitle: "Connecting process engineering, sustainability assessment, and fuel performance"
+      subtitle: "Connecting process engineering, sustainability assessment, clean combustion, and data-driven decision support"
       items:
         - name: "Circular Carbon E-Fuels"
-          description: "Integrated fuel pathways using biomass, residues, captured CO₂, and low-carbon hydrogen."
+          description: "Development of integrated bio-e-fuel pathways that convert biomass, agricultural residues, captured biogenic CO₂, and low-carbon hydrogen into ethanol, bio-methanol, and e-methanol."
           icon: hero/arrow-path-rounded-square
-        - name: "Biomass-to-Methanol Pathways"
-          description: "Aspen Plus modelling of fermentation, gasification, CO₂ capture, and methanol synthesis systems."
+        - name: "Biomass Valorization & Methanol Pathways"
+          description: "Region-specific assessment of sugarcane, sugar beet, corn, date palm fruit, and agricultural residues for ethanol production, residue gasification, CO₂ capture, and methanol synthesis."
           icon: hero/fire
+        - name: "Process Modelling & Simulation"
+          description: "Aspen Plus-based modelling of fermentation, gasification, syngas conditioning, CO₂ hydrogenation, methanol synthesis, separation systems, and integrated circular fuel biorefineries."
+          icon: hero/cog-6-tooth
         - name: "Life Cycle & Techno-Economic Assessment"
-          description: "LCA, TEA, uncertainty analysis, and scenario-based evaluation of low-carbon fuel systems."
+          description: "Well-to-tank LCA, TEA, uncertainty analysis, and scenario-based evaluation of low-carbon fuel pathways using Aspen-derived inventories, GREET, Sphera/GaBi, ReCiPe, and GLAM-oriented methods."
           icon: hero/chart-bar-square
-        - name: "Combustion & Fuel Performance"
-          description: "Assessment of alcohol fuels and blends for clean combustion, efficiency, and emissions behaviour."
+        - name: "Clean Combustion & Fuel Performance"
+          description: "Experimental and modelling-based assessment of alcohol fuels and blends for engine efficiency, emissions behaviour, knock resistance, and sustainable transport fuel applications."
           icon: hero/bolt
+        - name: "AI, Digital Twins & Decision Support"
+          description: "Future-focused development of AI-assisted LCA/TEA workflows, dynamic sustainability assessment, uncertainty-aware decision tools, and digital-twin-enabled platforms for CO₂-to-X fuel systems."
+          icon: hero/cpu-chip
     design:
       background:
         color:
