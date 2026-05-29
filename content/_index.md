@@ -376,26 +376,32 @@ sections:
           description: "Professional updates and networking"
           icon: brands/linkedin
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+          target_blank: true
         - name: "ORCID"
           description: "Researcher identity and publication record"
           icon: academicons/orcid
           url: "https://orcid.org/0000-0003-2769-6397"
+          target_blank: true
         - name: "Google Scholar"
           description: "Citation metrics and scholarly works"
           icon: academicons/google-scholar
           url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+          target_blank: true
         - name: "ResearchGate"
           description: "Collaborations and open research"
           icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+          target_blank: true
         - name: "GitHub"
           description: "Code, tools, and datasets"
           icon: brands/github
           url: "https://github.com/renstonferns"
+          target_blank: true
         - name: "Instagram"
           description: "Science outreach, music, and creative work"
           icon: brands/instagram
           url: "https://www.instagram.com/renston_fernandes"
+          target_blank: true
     design:
       background:
         color:
