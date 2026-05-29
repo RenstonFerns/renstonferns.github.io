@@ -5,58 +5,109 @@ date: 2026-05-28
 type: landing
 
 sections:
-  - block: markdown
+  - block: hero
     id: hero
     content:
-      title: ""
-      text: |
-        <section style="text-align:center; padding:60px 20px 70px 20px; background: radial-gradient(circle at top, #0f766e 0%, #061923 42%, #020617 100%); color:white; overflow:visible;">
-          
-          <div style="font-size:1.05rem; color:#5eead4; font-weight:700; letter-spacing:0.06em; margin-bottom:18px;">
-            Hello, I'm
-          </div>
-
-          <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:220px; height:220px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
-
-          <h1 style="font-size:3.1rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
-            Dr. Renston Jake Fernandes
-          </h1>
-
-          <div style="font-size:1.3rem; color:#d1fae5; margin-bottom:18px;">
-            Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling
-          </div>
-
-          <div style="font-size:1.15rem; color:#5eead4; font-weight:700; margin:18px auto 24px auto; max-width:1050px; line-height:1.6;">
-            I research circular carbon e-fuels • biomass-to-methanol pathways • CO₂ capture and utilization • life cycle assessment • techno-economic analysis • clean combustion
-          </div>
-
-          <p style="max-width:880px; margin:0 auto 30px auto; color:#e5f7f4; font-size:1.05rem; line-height:1.75;">
-            I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies.
-          </p>
-
-          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:22px;">
-            <a href="/uploads/FERNANDES_CV.pdf" style="background:#14b8a6; color:#02131c; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none;">
-              Download CV
-            </a>
-            <a href="https://www.linkedin.com/in/renston-jake-fernandes-9154b143" style="background:transparent; color:#d1fae5; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none; border:1px solid #5eead4;">
-              Connect on LinkedIn
-            </a>
-          </div>
-
-          <div style="margin-top:28px; display:flex; justify-content:center; gap:18px; flex-wrap:wrap; font-size:0.95rem;">
-            <a href="https://github.com/renstonferns" style="color:#d1fae5;">GitHub</a>
-            <a href="https://orcid.org/0000-0003-2769-6397" style="color:#d1fae5;">ORCID</a>
-            <a href="https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3" style="color:#d1fae5;">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf" style="color:#d1fae5;">ResearchGate</a>
-          </div>
-
-        </section>
+      username: admin
+      image:
+        filename: avatar.png
+      greeting: "Hello, I'm"
+      title: "Dr. Renston Jake Fernandes"
+      tagline: "Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling"
+      bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
+      cta_buttons:
+        - text: "Download CV"
+          url: "/uploads/resume.pdf"
+          icon: hero/document-arrow-down
+        - text: "Connect on LinkedIn"
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+          icon: brands/linkedin
+      typewriter:
+        enable: true
+        prefix: "I work on"
+        strings:
+          - "circular carbon e-fuels"
+          - "biomass-to-methanol pathways"
+          - "CO₂ capture and utilization"
+          - "life cycle assessment"
+          - "techno-economic analysis"
+          - "clean combustion"
+        type_speed: 65
+        delete_speed: 35
+        pause_time: 2200
+      show_status: true
+      show_scroll_indicator: true
+      links:
+        - icon: brands/github
+          url: "https://github.com/renstonferns"
+          label: "GitHub"
+        - icon: brands/linkedin
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+          label: "LinkedIn"
+        - icon: academicons/orcid
+          url: "https://orcid.org/0000-0003-2769-6397"
+          label: "ORCID"
+        - icon: academicons/google-scholar
+          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+          label: "Google Scholar"
+        - icon: academicons/researchgate
+          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+          label: "ResearchGate"
     design:
-      columns: "1"
+      style: centered
+      avatar_shape: circle
+      show_avatar: true
+      animations: true
       background:
         color:
-          light: "#061923"
+          light: "#eef7f6"
           dark: "#061923"
+        gradient_mesh:
+          enable: true
+          style: orbs
+          colors:
+            - "#0f766e/35"
+            - "#0b3d4a/35"
+            - "#14b8a6/25"
+          orb_count: 3
+          animation: pulse
+          intensity: bold
+
+  - block: features
+    id: networks
+    content:
+      title: "Find Me Online"
+      subtitle: "Research profiles, professional networks, and project repositories"
+      items:
+        - name: "LinkedIn"
+          description: "Professional updates & networking"
+          icon: brands/linkedin
+          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+        - name: "ORCID"
+          description: "Researcher identity & publication record"
+          icon: academicons/orcid
+          url: "https://orcid.org/0000-0003-2769-6397"
+        - name: "Google Scholar"
+          description: "Citation metrics & scholarly works"
+          icon: academicons/google-scholar
+          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+        - name: "ResearchGate"
+          description: "Collaborations & open research"
+          icon: academicons/researchgate
+          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+        - name: "GitHub"
+          description: "Code, tools, and datasets"
+          icon: brands/github
+          url: "https://github.com/renstonferns"
+        - name: "Instagram"
+          description: "Science outreach, music, and creative work"
+          icon: brands/instagram
+          url: "https://www.instagram.com/renston_fernandes"
+    design:
+      background:
+        color:
+          light: "#f4fbfa"
+          dark: "#081f2a"
 
   - block: features
     id: research-areas
@@ -90,8 +141,8 @@ sections:
         - statistic: "4"
           description: "Regional biomass case studies"
           icon: hero/globe-alt
-        - statistic: "50+"
-          description: "Citations"
+        - statistic: "10,000"
+          description: "Monte Carlo uncertainty runs"
           icon: hero/cpu-chip
         - statistic: "5+"
           description: "International conference presentations"
@@ -102,9 +153,10 @@ sections:
     design:
       layout: cards
       background:
-        color:
-          light: "#0f766e"
-          dark: "#06202b"
+        gradient:
+          start: "#06202b"
+          end: "#0f766e"
+          direction: 135
       text_color_light: true
 
   - block: features
@@ -117,7 +169,7 @@ sections:
           description: "Process simulation for biomass conversion, CO₂ hydrogenation, gasification, and methanol synthesis."
           icon: hero/cog-6-tooth
         - name: "Life Cycle Assessment"
-          description: "GREET, Sphera/GaBi, ReCiPe 2016, GLAM-oriented impact assessment, and well-to-tank fuel analysis."
+          description: "GREET, Sphera/GaBi, ReCiPe 2016, GLAM-oriented impact assessment, and WTT fuel analysis."
           icon: hero/scale
         - name: "Techno-Economic Analysis"
           description: "CAPEX/OPEX estimation, MFSP, LCOM, scenario matrices, and sensitivity analysis."
@@ -137,9 +189,7 @@ sections:
       title: "Research Vision"
       text: |
         My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.
-
         My doctoral work developed integrated Aspen Plus models for biomass-to-e-methanol systems and connected them with life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation. This allows fuel pathways to be assessed not only by yield, but also by carbon utilization, life-cycle emissions, cost structure, and end-use performance.
-
         Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems.
     design:
       background:
@@ -177,19 +227,13 @@ sections:
       title: "Selected Publications & Presentations"
       text: |
         **Journal Manuscripts & Papers**
-
         - *Quantifying the potential of Saudi date palm fruit and its waste for e-methanol production using integrated process modelling, techno-economic analysis and life-cycle assessment* — Submitted to **Biomass & Bioenergy**, invited EUBCE 2025 special issue.
-
         - *Circular carbon biofuel and e-fuel production using date palm fruit and waste from Saudi Arabia* — Presented at **EUBCE 2025**.
-
         - Research outputs on biomass-derived e-methanol, CO₂ capture, Aspen Plus process modelling, LCA, TEA, and clean combustion.
-
         **Conference Presentations**
-
         - EUBCE 2025 — Circular carbon biofuel and e-fuel production from date palm resources.
         - CIRP LCE — Life cycle engineering and circular fuel systems.
         - SAE / Fuel Science / ASME ICEF — Alcohol fuels, combustion, and sustainable transport fuel pathways.
-
         A complete publication list will be updated with DOI links, preprints, and journal articles.
     design:
       background:
@@ -237,42 +281,6 @@ sections:
         - name: "Science, Teaching & Creative Work"
           description: "Researcher, educator, and musician with a multidisciplinary approach to communication and creativity."
           icon: hero/musical-note
-    design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
-
-  - block: features
-    id: networks
-    content:
-      title: "Find Me Online"
-      subtitle: "Research profiles, professional networks, and project repositories"
-      items:
-        - name: "LinkedIn"
-          description: "Professional updates & networking"
-          icon: brands/linkedin
-          url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
-        - name: "ORCID"
-          description: "Researcher identity & publication record"
-          icon: academicons/orcid
-          url: "https://orcid.org/0000-0003-2769-6397"
-        - name: "Google Scholar"
-          description: "Citation metrics & scholarly works"
-          icon: academicons/google-scholar
-          url: "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
-        - name: "ResearchGate"
-          description: "Collaborations & open research"
-          icon: academicons/researchgate
-          url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
-        - name: "GitHub"
-          description: "Code, tools, and datasets"
-          icon: brands/github
-          url: "https://github.com/renstonferns"
-        - name: "Instagram"
-          description: "Science outreach, music, and creative work"
-          icon: brands/instagram
-          url: "https://www.instagram.com/renston_fernandes"
     design:
       background:
         color:
