@@ -9,7 +9,7 @@ sections:
     id: hero
     content:
       username: admin
-      greeting: |
+      greeting: Hello, I'm
       title: "Dr. Renston Jake Fernandes"
       tagline: "Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling"
       bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
