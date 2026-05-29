@@ -5,6 +5,19 @@ date: 2026-05-28
 type: landing
 
 sections:
+  - block: markdown
+    id: profile-photo
+    content:
+      title: ""
+      text: |
+        <div style="text-align:center; margin-top:-25px; margin-bottom:35px;">
+          <img src="uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:5px solid #0f766e; box-shadow:0 12px 35px rgba(0,0,0,0.28);" />
+        </div>
+    design:
+      background:
+        color:
+          light: "#eef7f6"
+          dark: "#061923"
   - block: dev-hero
     id: hero
     content:
