@@ -66,21 +66,25 @@ sections:
         - icon: academicons/researchgate
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
           label: "ResearchGate"
-    design:
+        design:
       style: centered
       avatar_shape: circle
       animations: true
       background:
-        gradient:
-        start: "#020617"
-        end: "#0f766e"
-        direction: 135
-      color:
-        light: "#edf7f5"
-        dark: "#020617"
-        orb_count: 3
-        animation: pulse
-        intensity: bold
+        color:
+          light: "#e6f4f1"
+          dark: "#03141f"
+        gradient_mesh:
+          enable: true
+          style: orbs
+          colors:
+            - "#020617"
+            - "#03141f"
+            - "#0f766e"
+            - "#14b8a6"
+          orb_count: 4
+          animation: pulse
+          intensity: bold
   - block: features
     id: networks
     content:
@@ -158,13 +162,12 @@ sections:
         - statistic: "Aspen + LCA + TEA"
           description: "Integrated assessment workflow"
           icon: hero/beaker
-    design:
+        design:
       layout: cards
       background:
-        gradient:
-          start: "#06202b"
-          end: "#0f766e"
-          direction: 135
+        color:
+          light: "#0f766e"
+          dark: "#06202b"
         text_color_light: true
 
   - block: features
