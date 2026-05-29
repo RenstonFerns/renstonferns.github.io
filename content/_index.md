@@ -1,53 +1,63 @@
 ---
+
 title: "Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA & E-Fuels"
 summary: "Academic portfolio of Dr. Renston Jake Fernandes — circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and clean combustion."
 date: 2026-05-28
 type: landing
 
 sections:
-   - block: markdown
-     id: hero
-     content:
-       title: ""
-       text: |
-         <section style="text-align:center; padding:75px 20px 85px 20px; background: radial-gradient(circle at top, #0f766e 0%, #061923 42%, #020617 100%); color:white;">
-            <div style="font-size:1.05rem; color:#5eead4; font-weight:700; letter-spacing:0.06em; margin-bottom:18px;">
-              Hello, I'm
-            </div>
-            <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:230px; height:230px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
-            <h1 style="font-size:3.2rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
-              Dr. Renston Jake Fernandes
-            </h1>
-            <div style="font-size:1.35rem; color:#d1fae5; margin-bottom:18px;">
-              Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling
-            </div>
-            <div style="font-size:1.25rem; color:#5eead4; font-weight:700; margin:18px auto 24px auto; max-width:1050px;">
-              I research circular carbon e-fuels • biomass-to-methanol pathways • CO₂ capture and utilization • life cycle assessment • techno-economic analysis • clean combustion
-            </div>
-          <p style="max-width:880px; margin:0 auto 30px auto; color:#e5f7f4; font-size:1.05rem; line-height:1.75;">
-            I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies.
-          </p>
-          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:22px;">
-            <a href="/uploads/FERNANDES_CV.pdf" style="background:#14b8a6; color:#02131c; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none;">
-              Download CV
-            </a>
-            <a href="https://www.linkedin.com/in/renston-jake-fernandes-9154b143" style="background:transparent; color:#d1fae5; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none; border:1px solid #5eead4;">
-              Connect on LinkedIn
-            </a>
-          </div>
-          <div style="margin-top:28px; display:flex; justify-content:center; gap:18px; flex-wrap:wrap; font-size:0.95rem;">
-            <a href="https://github.com/renstonferns" style="color:#d1fae5;">GitHub</a>
-            <a href="https://orcid.org/0000-0003-2769-6397" style="color:#d1fae5;">ORCID</a>
-            <a href="https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3" style="color:#d1fae5;">Google Scholar</a>
-            <a href="https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf" style="color:#d1fae5;">ResearchGate</a>
-          </div>
-        </section>
-   design:
-     columns: "1"
-     background:
-       color:
-         light: "#061923"
-         dark: "#061923"
+
+- block: markdown
+  id: hero
+  content:
+  title: ""
+  text: | <section style="text-align:center; padding:75px 20px 85px 20px; background: radial-gradient(circle at top, #0f766e 0%, #061923 42%, #020617 100%); color:white;"> <div style="font-size:1.05rem; color:#5eead4; font-weight:700; letter-spacing:0.06em; margin-bottom:18px;">
+  Hello, I'm </div>
+
+  
+    <img src="/uploads/avatar.png" alt="Dr. Renston Jake Fernandes" style="display:block; margin:0 auto 26px auto; width:230px; height:230px; object-fit:cover; object-position:center top; border-radius:50%; box-shadow:0 18px 45px rgba(0,0,0,0.42);" />
+
+    <h1 style="font-size:3.2rem; line-height:1.1; margin:0 0 14px 0; font-weight:800; color:#ffffff;">
+      Dr. Renston Jake Fernandes
+    </h1>
+
+    <div style="font-size:1.35rem; color:#d1fae5; margin-bottom:18px;">
+      Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling
+    </div>
+
+    <div style="font-size:1.25rem; color:#5eead4; font-weight:700; margin:18px auto 24px auto; max-width:1050px;">
+      I research circular carbon e-fuels • biomass-to-methanol pathways • CO₂ capture and utilization • life cycle assessment • techno-economic analysis • clean combustion
+    </div>
+
+    <p style="max-width:880px; margin:0 auto 30px auto; color:#e5f7f4; font-size:1.05rem; line-height:1.75;">
+      I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies.
+    </p>
+
+    <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:22px;">
+      <a href="/uploads/FERNANDES_CV.pdf" style="background:#14b8a6; color:#02131c; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none;">
+        Download CV
+      </a>
+      <a href="https://www.linkedin.com/in/renston-jake-fernandes-9154b143" style="background:transparent; color:#d1fae5; padding:12px 24px; border-radius:999px; font-weight:800; text-decoration:none; border:1px solid #5eead4;">
+        Connect on LinkedIn
+      </a>
+    </div>
+
+    <div style="margin-top:28px; display:flex; justify-content:center; gap:18px; flex-wrap:wrap; font-size:0.95rem;">
+      <a href="https://github.com/renstonferns" style="color:#d1fae5;">GitHub</a>
+      <a href="https://orcid.org/0000-0003-2769-6397" style="color:#d1fae5;">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3" style="color:#d1fae5;">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf" style="color:#d1fae5;">ResearchGate</a>
+    </div>
+  </section>
+  
+
+  design:
+  columns: "1"
+  background:
+  color:
+  light: "#061923"
+  dark: "#061923"
+
           
   - block: features
     id: research-areas
