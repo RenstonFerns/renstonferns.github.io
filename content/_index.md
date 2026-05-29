@@ -154,10 +154,10 @@ sections:
         - statistic: "4"
           description: "Regional biomass case studies"
           icon: hero/globe-alt
-        - statistic: "50+"
-          description: "Citations"
+        - statistic: "10,000"
+          description: "Monte Carlo uncertainty runs"
           icon: hero/cpu-chip
-        - statistic: "9+"
+        - statistic: "5+"
           description: "International conference presentations"
           icon: hero/microphone
         - statistic: "Aspen + LCA + TEA"
@@ -269,6 +269,7 @@ sections:
       title: "Teaching & Mentorship"
       text: |
         I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability and energy challenges.
+
         I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, and research-oriented thinking.
     design:
       background:
