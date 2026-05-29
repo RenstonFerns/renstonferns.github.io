@@ -132,7 +132,6 @@ sections:
         color:
           light: "#eef7f6"
           dark: "#061923"
-
   - block: stats
     id: impact
     content:
