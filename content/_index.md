@@ -131,15 +131,18 @@ sections:
           direction: 135
       text_color_light: true
 
-  - block: features
+  
+  - block: markdown
     id: research-vision
     content:
       title: "Research Vision"
-      text: "My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.
+      text: |
+        <blockquote style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; text-align: justify; font-size: 1.16rem; line-height: 1.9; max-width: 980px; margin: 0 auto; padding: 1.5rem 2rem; border-left: 5px solid #0f766e; background: rgba(15, 118, 110, 0.07); border-radius: 14px;">
+        “My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.
         My doctoral work developed integrated Aspen Plus models for biomass-to-e-methanol systems and connected them with life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation. This allows fuel pathways to be assessed not only by yield, but also by carbon utilization, life-cycle emissions, cost structure, and end-use performance.
-        Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems."
+        Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems.”
+        </blockquote>
     design:
-      layout:
       background:
         color:
           light: "#f4fbfa"
