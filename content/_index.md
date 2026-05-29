@@ -67,18 +67,17 @@ sections:
           url: "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
           label: "ResearchGate"
     design:
-      design:
-  style: centered
-  avatar_shape: circle
-  animations: true
-  background:
-    gradient:
-      start: "#020617"
-      end: "#0f766e"
-      direction: 135
-    color:
-      light: "#edf7f5"
-      dark: "#020617"
+      style: centered
+      avatar_shape: circle
+      animations: true
+      background:
+        gradient:
+        start: "#020617"
+        end: "#0f766e"
+        direction: 135
+      color:
+        light: "#edf7f5"
+        dark: "#020617"
           orb_count: 3
           animation: pulse
           intensity: bold
