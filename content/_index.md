@@ -124,6 +124,7 @@ sections:
           description: "SolidWorks for engineering design and Overleaf/LaTeX for manuscript preparation, thesis writing, and scientific communication."
           icon: hero/document-text
     design:
+      Layout: cards
       background:
         color:
           light: "#ffffff"
@@ -143,8 +144,8 @@ sections:
         - statistic: "20+"
           description: "Talks, presentations, and academic engagements"
           icon: hero/microphone
-        - statistic: "4"
-          description: "Regional biomass case studies"
+        - statistic: "14+"
+          description: "Journals served as peer-reviwer (Elsevier)"
           icon: hero/globe-alt
     design:
       layout: cards
