@@ -6,15 +6,21 @@ main:
   - name: Projects and Publications
     url: /#projects
     weight: 10
-  - name: Skills
+  - name: Technical Toolkit
     url: /#skills
     weight: 20
-  - name: Experience
+  - name: Education and Work Experience
     url: /#experience
     weight: 30
   - name: Blog
     url: /#blog
     weight: 40
-  - name: Contact
-    url: /#contact
+  - name: Research Talks
+    url: /#talks
     weight: 50
+  - name: Gallery
+    url: /#blog
+    weight: 50
+  - name: Contact Me
+    url: /#contact
+    weight: 60
