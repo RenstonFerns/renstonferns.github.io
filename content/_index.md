@@ -75,35 +75,37 @@ sections:
           animation: pulse
           intensity: bold
 
+
   - block: features
     id: research-areas
     content:
       title: "Research Areas"
-      subtitle: "Connecting process engineering, sustainability assessment, clean combustion, and data-driven decision support"
+      subtitle: "Connecting process engineering, sustainability assessment, clean combustion, circular economy, and data-driven decision support"
       items:
         - name: "Circular Carbon E-Fuels"
           description: "Development of integrated bio-e-fuel pathways that convert biomass, agricultural residues, captured biogenic CO₂, and low-carbon hydrogen into ethanol, bio-methanol, and e-methanol."
           icon: hero/arrow-path-rounded-square
-        - name: "Biomass Valorization & Methanol Pathways"
-          description: "Region-specific assessment of sugarcane, sugar beet, corn, date palm fruit, and agricultural residues for ethanol production, residue gasification, CO₂ capture, and methanol synthesis."
+        - name: "Biomass Valorization & Waste-to-Fuel Pathways"
+          description: "Region-specific assessment of sugarcane, sugar beet, corn, date palm fruit, agricultural residues, waste plastic, and waste-derived resources for circular fuel and resource recovery systems."
           icon: hero/fire
         - name: "Process Modelling & Simulation"
-          description: "Aspen Plus-based modelling of fermentation, gasification, syngas conditioning, CO₂ hydrogenation, methanol synthesis, separation systems, and integrated circular fuel biorefineries."
+          description: "Aspen Plus-based modelling of fermentation, gasification, syngas conditioning, CO₂ capture, CO₂ hydrogenation, methanol synthesis, separation systems, recycle loops, and integrated circular fuel biorefineries."
           icon: hero/cog-6-tooth
         - name: "Life Cycle & Techno-Economic Assessment"
-          description: "Well-to-tank LCA, TEA, uncertainty analysis, and scenario-based evaluation of low-carbon fuel pathways using Aspen-derived inventories, GREET, Sphera/GaBi, ReCiPe, and GLAM-oriented methods."
+          description: "ISO-aligned LCA, TEA, foreground LCI development, well-to-tank assessment, CAPEX/OPEX analysis, and scenario-based evaluation using GREET, Sphera/GaBi, ReCiPe 2016, GLAM, and Aspen-derived inventories."
           icon: hero/chart-bar-square
         - name: "Clean Combustion & Fuel Performance"
-          description: "Experimental and modelling-based assessment of alcohol fuels and blends for engine efficiency, emissions behaviour, knock resistance, and sustainable transport fuel applications."
+          description: "Experimental and modelling-based assessment of alcohol fuels, hydrogen, ammonia, and fuel blends for engine efficiency, emissions behaviour, knock resistance, HCCI operation, and sustainable transport applications."
           icon: hero/bolt
-        - name: "AI, Digital Twins & Decision Support"
-          description: "Future-focused development of AI-assisted LCA/TEA workflows, dynamic sustainability assessment, uncertainty-aware decision tools, and digital-twin-enabled platforms for CO₂-to-X fuel systems."
+        - name: "AI, Uncertainty & Decision Support"
+          description: "Development of Python-based workflows for Monte Carlo uncertainty, sensitivity analysis, KPI generation, AI-assisted LCA/TEA, surrogate modelling, NSGA-II optimization, and digital-twin-enabled decision support for CO₂-to-X systems."
           icon: hero/cpu-chip
     design:
       background:
         color:
           light: "#f4fbfa"
           dark: "#061923"
+
 
   - block: stats
     id: impact
