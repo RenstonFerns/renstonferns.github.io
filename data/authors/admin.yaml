@@ -66,7 +66,7 @@ interests:
 education:
   - degree: PhD in Environmental Science and Engineering
     institution: King Abdullah University of Science and Technology
-    start: 2021-08-01
+    start: 2021-10-01
     end: 2026-04-29
     summary: |
       Thesis: Circular Carbon E-Fuels from Biomass: Techno-Economic, Environmental, and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy.
@@ -115,15 +115,6 @@ experience:
 
       Contributed to process modelling, CO₂ utilization assessment, and sustainability-oriented evaluation of low-carbon fuel pathways.
 
-  - role: Assistant Professor
-    org: Srinivas Institute of Technology, Mangalore
-    start: 2016-08-01
-    end: 2018-05-01
-    summary: |
-      Taught mechanical engineering and energy-related subjects, including applied thermal engineering and renewable energy topics.
-
-      Mentored undergraduate engineering projects in renewable fuels, energy systems, and applied mechanical engineering.
-
   - role: Business Development Manager
     org: Lido Learning
     start: 2020-09-01
@@ -137,6 +128,15 @@ experience:
     end: 2021-05-01
     summary: |
       Supported operational workflows, employee-facing processes, and large-scale organizational coordination.
+
+  - role: Assistant Professor
+    org: Srinivas Institute of Technology, Mangalore
+    start: 2016-08-01
+    end: 2018-05-01
+    summary: |
+      Taught mechanical engineering and energy-related subjects, including applied thermal engineering and renewable energy topics.
+
+      Mentored undergraduate engineering projects in renewable fuels, energy systems, and applied mechanical engineering.
 
 skills:
   - name: Process Modelling
