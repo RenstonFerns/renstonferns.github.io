@@ -26,6 +26,39 @@
   color: #ffffff !important;
 }
 
+/* Research area card hover effect */
+#research-areas .feature,
+#research-areas .card,
+#research-areas .group,
+#research-areas [class*="feature"] {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+#research-areas .feature:hover,
+#research-areas .card:hover,
+#research-areas .group:hover,
+#research-areas [class*="feature"]:hover {
+  transform: translateY(-7px) scale(1.01);
+  border-color: #14b8a6 !important;
+  box-shadow: 0 22px 55px rgba(20, 184, 166, 0.22), 0 0 0 1px rgba(20, 184, 166, 0.16) !important;
+  background: rgba(15, 118, 110, 0.08) !important;
+}
+
+#research-areas .feature:hover h3,
+#research-areas .card:hover h3,
+#research-areas .group:hover h3,
+#research-areas [class*="feature"]:hover h3 {
+  color: #0f766e !important;
+}
+
+.dark #research-areas .feature:hover h3,
+.dark #research-areas .card:hover h3,
+.dark #research-areas .group:hover h3,
+.dark #research-areas [class*="feature"]:hover h3 {
+  color: #5eead4 !important;
+}
+
+
 #networks .feature,
 #networks .card,
 #networks .group {
