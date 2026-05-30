@@ -19,8 +19,8 @@ main:
     url: /#talks
     weight: 50
   - name: Gallery
-    url: /#blog
-    weight: 50
+    url: /#gallery
+    weight: 60
   - name: Contact Me
     url: /#contact
-    weight: 60
+    weight: 70
