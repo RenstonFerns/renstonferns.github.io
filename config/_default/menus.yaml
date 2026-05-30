@@ -3,7 +3,7 @@
 #   The weight parameter defines the order that the links appear.
 
 main:
-  - name: Projects
+  - name: Projects and Publications
     url: /#projects
     weight: 10
   - name: Skills
