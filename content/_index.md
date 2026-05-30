@@ -101,10 +101,13 @@ sections:
           description: "Development of Python-based workflows for Monte Carlo uncertainty, sensitivity analysis, KPI generation, AI-assisted LCA/TEA, surrogate modelling, NSGA-II optimization, and digital-twin-enabled decision support for CO₂-to-X systems."
           icon: hero/cpu-chip
     design:
+      layout: cards
       background:
-        color:
-          light: "#f4fbfa"
-          dark: "#061923"
+        gradient:
+          start: "#06202b"
+          end: "#0f766e"
+          direction: 135
+      text_color_light: true
 
 
   - block: stats
