@@ -382,17 +382,43 @@ sections:
           light: "#ffffff"
           dark: "#07151c"
 
-  - block: resume-skills
-    id: skills
+  - block: tech-stack
     content:
-      username: admin
-      title: "Technical Skills"
-      text: "Core tools, methods, and technical capabilities across process modelling, LCA, TEA, uncertainty analysis, and fuel assessment."
+        title: Technical Expertise
+        subtitle: "Key tools, platforms, and software"
+        categories:
+          - name: "Process & LCA Tools"
+            items:
+                - name: Aspen Plus
+                  icon: custom/Aspen Plus
+                - name: Sphera (GaBi)
+                  icon: custom/Sphera
+                - name: GREET
+                  icon: custom/GREET
+          - name: "Simulation & Analysis"
+            items:
+                - name: MATLAB
+                  icon: devicon/matlab
+                - name: Python
+                  icon: devicon/python
+          - name: "Modelling & CAD"
+            items:
+                - name: COMSOL
+                  icon: custom/comsol
+                - name: SolidWorks
+                  icon: custom/solidworks
+          - name: Writing
+            items:
+                - name: Overleaf
+                  icon: custom/overleaf
     design:
-      background:
-        color:
-          light: "#f4fbfa"
-          dark: "#061923"
+        style: grid
+        show_levels: false
+        background:
+          color:
+            light: "#f5f5f5"
+            dark: "#0d0d12"
+    id: skills
 
   - block: resume-experience
     id: experience
