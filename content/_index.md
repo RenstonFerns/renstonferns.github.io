@@ -100,11 +100,13 @@ sections:
         - name: "AI, Uncertainty & Decision Support"
           description: "Development of Python-based workflows for Monte Carlo uncertainty, sensitivity analysis, KPI generation, AI-assisted LCA/TEA, surrogate modelling, NSGA-II optimization, and digital-twin-enabled decision support for CO₂-to-X systems."
           icon: hero/cpu-chip
-    design:
+  design:
+      layout: cards
+      columns: 3
       background:
         color:
-          light: "#ffffff"
-          dark: "#07151c"
+          light: "#f4fbfa"
+          dark: "#061923"
 
 
   - block: stats
