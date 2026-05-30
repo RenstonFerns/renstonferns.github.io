@@ -374,6 +374,7 @@ sections:
         </div>
         </div>
     design:
+      layout: cards
       background:
         color:
           light: "#ffffff"
