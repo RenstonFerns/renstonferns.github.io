@@ -103,8 +103,8 @@ sections:
     design:
       background:
         color:
-          light: "#f4fbfa"
-          dark: "#081f2a"
+          light: "#ffffff"
+          dark: "#07151c"
 
 
   - block: stats
