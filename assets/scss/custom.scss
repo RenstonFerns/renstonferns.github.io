@@ -168,3 +168,30 @@ body {
 }
 */
 
+/* Technical toolkit icon sizing */
+#skills img,
+#skills svg {
+  width: 72px !important;
+  height: 72px !important;
+  max-width: 72px !important;
+  max-height: 72px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto 1rem auto !important;
+}
+
+/* Make tiny logo SVGs visually larger */
+#skills img[src*="aspen"],
+#skills img[src*="sphera"],
+#skills svg[class*="aspen"],
+#skills svg[class*="sphera"] {
+  width: 96px !important;
+  height: 96px !important;
+  max-width: 96px !important;
+  max-height: 96px !important;
+}
+
+/* Prevent white logo boxes from looking ugly */
+#skills img {
+  background: transparent !important;
+}
