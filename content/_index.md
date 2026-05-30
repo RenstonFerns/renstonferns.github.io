@@ -184,7 +184,7 @@ sections:
           dark: "#07151c"
 
   - block: markdown
-    id: featured-publications
+    id: projects
     content:
       title: "Featured Research & Publications"
       text: |
