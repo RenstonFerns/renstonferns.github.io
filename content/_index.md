@@ -383,42 +383,42 @@ sections:
           dark: "#07151c"
 
   - block: tech-stack
-    content:
-        title: Technical Expertise
-        subtitle: "Key tools, platforms, and software"
-        categories:
-          - name: "Process & LCA Tools"
-            items:
-                - name: Aspen Plus
-                  icon: skills/Aspen Plus
-                - name: Sphera (GaBi)
-                  icon: custom/Sphera
-                - name: GREET
-                  icon: custom/GREET
-          - name: "Simulation & Analysis"
-            items:
-                - name: MATLAB
-                  icon: devicon/matlab
-                - name: Python
-                  icon: devicon/python
-          - name: "Modelling & CAD"
-            items:
-                - name: COMSOL
-                  icon: custom/comsol
-                - name: SolidWorks
-                  icon: custom/solidworks
-          - name: Writing
-            items:
-                - name: Overleaf
-                  icon: custom/overleaf
-    design:
-        style: grid
-        show_levels: false
-        background:
-          color:
-            light: "#f5f5f5"
-            dark: "#0d0d12"
     id: skills
+    content:
+      title: "Technical Toolkit"
+      subtitle: "Key tools, platforms, and software"
+      categories:
+        - name: "Process & LCA Tools"
+          items:
+            - name: Aspen Plus
+              icon: custom/aspen-plus
+            - name: Sphera / GaBi
+              icon: custom/sphera
+            - name: GREET
+              icon: custom/greet
+        - name: "Simulation & Analysis"
+          items:
+            - name: MATLAB
+              icon: devicon/matlab
+            - name: Python
+              icon: devicon/python
+        - name: "Modelling & CAD"
+          items:
+            - name: COMSOL
+              icon: custom/comsol
+            - name: SolidWorks
+              icon: custom/solidworks
+        - name: "Writing"
+          items:
+            - name: Overleaf
+              icon: custom/overleaf
+    design:
+      style: grid
+      show_levels: false
+      background:
+        color:
+          light: "#f5f5f5"
+          dark: "#0d0d12"
 
   - block: resume-experience
     id: experience
