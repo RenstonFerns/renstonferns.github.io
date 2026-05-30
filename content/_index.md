@@ -390,7 +390,7 @@ sections:
           - name: "Process & LCA Tools"
             items:
                 - name: Aspen Plus
-                  icon: custom/Aspen Plus
+                  icon: skills/Aspen Plus
                 - name: Sphera (GaBi)
                   icon: custom/Sphera
                 - name: GREET
