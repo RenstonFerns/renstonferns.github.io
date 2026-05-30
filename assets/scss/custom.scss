@@ -1,13 +1,30 @@
 
-/* Featured publication cards hover effect */
+/* =========================================================
+   Custom hover effects for academic portfolio
+   File location: assets/scss/custom.scss
+   ========================================================= */
+
+
+/* =========================================================
+   1. Featured Publication Cards
+   Works for cards where you added class="publication-card"
+   ========================================================= */
+
 .publication-card {
-  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    background 0.28s ease;
+  will-change: transform;
 }
 
 .publication-card:hover {
-  transform: translateY(-7px) scale(1.01);
+  transform: translateY(-7px) scale(1.01) !important;
   border-color: #14b8a6 !important;
-  box-shadow: 0 22px 55px rgba(20, 184, 166, 0.24), 0 0 0 1px rgba(20, 184, 166, 0.18) !important;
+  box-shadow:
+    0 22px 55px rgba(20, 184, 166, 0.24),
+    0 0 0 1px rgba(20, 184, 166, 0.18) !important;
   background: rgba(8, 38, 48, 0.98) !important;
 }
 
@@ -26,41 +43,128 @@
   color: #ffffff !important;
 }
 
-/* Research area card hover effect */
-#research-areas .feature,
-#research-areas .card,
-#research-areas .group,
-#research-areas [class*="feature"] {
-  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+
+/* =========================================================
+   2. Research Areas Hover Effect
+   Strong selectors for HugoBlox features block
+   ========================================================= */
+
+section#research-areas a,
+section#research-areas article,
+section#research-areas .hb-card,
+section#research-areas .feature-card,
+section#research-areas .blox-feature,
+section#research-areas [class*="card"],
+section#research-areas [class*="Card"],
+section#research-areas [class*="feature"],
+section#research-areas [class*="Feature"] {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    background 0.28s ease,
+    color 0.28s ease !important;
+  border-radius: 16px !important;
+  will-change: transform;
 }
 
-#research-areas .feature:hover,
-#research-areas .card:hover,
-#research-areas .group:hover,
-#research-areas [class*="feature"]:hover {
-  transform: translateY(-7px) scale(1.01);
+section#research-areas a:hover,
+section#research-areas article:hover,
+section#research-areas .hb-card:hover,
+section#research-areas .feature-card:hover,
+section#research-areas .blox-feature:hover,
+section#research-areas [class*="card"]:hover,
+section#research-areas [class*="Card"]:hover,
+section#research-areas [class*="feature"]:hover,
+section#research-areas [class*="Feature"]:hover {
+  transform: translateY(-7px) scale(1.01) !important;
   border-color: #14b8a6 !important;
-  box-shadow: 0 22px 55px rgba(20, 184, 166, 0.22), 0 0 0 1px rgba(20, 184, 166, 0.16) !important;
-  background: rgba(15, 118, 110, 0.08) !important;
+  box-shadow:
+    0 22px 55px rgba(20, 184, 166, 0.24),
+    0 0 0 1px rgba(20, 184, 166, 0.18) !important;
+  background: rgba(15, 118, 110, 0.09) !important;
 }
 
-#research-areas .feature:hover h3,
-#research-areas .card:hover h3,
-#research-areas .group:hover h3,
-#research-areas [class*="feature"]:hover h3 {
+section#research-areas a:hover h2,
+section#research-areas a:hover h3,
+section#research-areas article:hover h2,
+section#research-areas article:hover h3,
+section#research-areas [class*="card"]:hover h2,
+section#research-areas [class*="card"]:hover h3,
+section#research-areas [class*="Card"]:hover h2,
+section#research-areas [class*="Card"]:hover h3,
+section#research-areas [class*="feature"]:hover h2,
+section#research-areas [class*="feature"]:hover h3,
+section#research-areas [class*="Feature"]:hover h2,
+section#research-areas [class*="Feature"]:hover h3 {
   color: #0f766e !important;
 }
 
-.dark #research-areas .feature:hover h3,
-.dark #research-areas .card:hover h3,
-.dark #research-areas .group:hover h3,
-.dark #research-areas [class*="feature"]:hover h3 {
+.dark section#research-areas a:hover h2,
+.dark section#research-areas a:hover h3,
+.dark section#research-areas article:hover h2,
+.dark section#research-areas article:hover h3,
+.dark section#research-areas [class*="card"]:hover h2,
+.dark section#research-areas [class*="card"]:hover h3,
+.dark section#research-areas [class*="Card"]:hover h2,
+.dark section#research-areas [class*="Card"]:hover h3,
+.dark section#research-areas [class*="feature"]:hover h2,
+.dark section#research-areas [class*="feature"]:hover h3,
+.dark section#research-areas [class*="Feature"]:hover h2,
+.dark section#research-areas [class*="Feature"]:hover h3 {
   color: #5eead4 !important;
 }
 
 
-#networks .feature,
-#networks .card,
-#networks .group {
-  cursor: pointer;
+/* =========================================================
+   3. Networks Section
+   Makes network cards feel clickable
+   ========================================================= */
+
+section#networks a,
+section#networks article,
+section#networks .hb-card,
+section#networks .feature-card,
+section#networks .blox-feature,
+section#networks [class*="card"],
+section#networks [class*="Card"],
+section#networks [class*="feature"],
+section#networks [class*="Feature"] {
+  cursor: pointer !important;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    background 0.28s ease !important;
+  border-radius: 16px !important;
 }
+
+section#networks a:hover,
+section#networks article:hover,
+section#networks .hb-card:hover,
+section#networks .feature-card:hover,
+section#networks .blox-feature:hover,
+section#networks [class*="card"]:hover,
+section#networks [class*="Card"]:hover,
+section#networks [class*="feature"]:hover,
+section#networks [class*="Feature"]:hover {
+  transform: translateY(-6px) scale(1.01) !important;
+  border-color: #14b8a6 !important;
+  box-shadow:
+    0 20px 50px rgba(20, 184, 166, 0.22),
+    0 0 0 1px rgba(20, 184, 166, 0.16) !important;
+  background: rgba(15, 118, 110, 0.08) !important;
+}
+
+/* =========================================================
+   4. Optional test
+   Uncomment only to check if custom.scss is loading.
+   If you see a red border around the page, the file is loaded.
+   ========================================================= */
+
+/*
+body {
+  outline: 10px solid red !important;
+}
+*/
+
