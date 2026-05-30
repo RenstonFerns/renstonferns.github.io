@@ -433,28 +433,111 @@ sections:
           light: "#ffffff"
           dark: "#07151c"
 
-  - block: features
+  - block: markdown
     id: accomplishments
     content:
       title: "Selected Accomplishments"
-      items:
-        - name: "KAUST PhD Fellowship"
-          description: "Full doctoral fellowship awarded for research in clean fuels and sustainable energy systems."
-          icon: hero/star
-        - name: "International Conference Presentations"
-          description: "Accepted presentations across leading conferences in LCA, biomass conversion, fuels, and combustion."
-          icon: hero/presentation-chart-line
-        - name: "Integrated E-Fuel Assessment"
-          description: "Developed Aspen Plus, LCA, TEA, and combustion-linked frameworks for circular carbon fuel pathways."
-          icon: hero/beaker
-        - name: "Science, Teaching & Creative Work"
-          description: "Researcher, educator, and musician with a multidisciplinary approach to communication and creativity."
-          icon: hero/musical-note
+      text: |
+        <p style="text-align:center; max-width:900px; margin:0 auto 2.4rem auto; font-size:1.05rem; line-height:1.7; color:inherit;">
+        Highlights from my academic, research, teaching, and creative journey across clean fuels, sustainability assessment, process modelling, and international research engagement.
+        </p>
+        <div style="width:90vw; max-width:1250px; margin-left:50%; transform:translateX(-50%); display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.4rem;">
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147 12 3l7.74 7.147M4.26 10.147a50.636 50.636 0 0 0 15.48 0M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347M12 13.489v7.415" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">KAUST PhD Fellowship</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Awarded a fully funded doctoral fellowship at KAUST to pursue research in clean fuels, process engineering, circular carbon systems, and sustainable energy technologies.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3s-4.5 4.03-4.5 9 2.015 9 4.5 9Zm-7.5-9h15" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">International Research Visibility</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Presented research at leading international venues including CIRP LCE, EUBCE, SAE/KSAE, RWTH Aachen Fuel Science, and the International Conference on Life Cycle Management.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5.16 14.34a6.75 6.75 0 1 0 9.55 0l-3.93-3.93a2.25 2.25 0 0 1-.659-1.591V3.104m-2.25 0h4.5" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Integrated E-Fuel Assessment Framework</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Developed Aspen Plus-based circular e-fuel pathways and connected them with LCA, TEA, uncertainty analysis, and combustion assessment for biomass-derived ethanol, bio-methanol, and e-methanol systems.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 21V8.25l7.5-4.5 7.5 4.5V21M9 21v-6h6v6M9 10.5h.008v.008H9V10.5Zm3 0h.008v.008H12V10.5Zm3 0h.008v.008H15V10.5Z" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Industrial Research Experience</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Conducted techno-economic analysis at Aramco on a dual-PSA flue gas separation concept integrated with CO₂ hydrogenation to methanol, focusing on feasibility, uncertainty, and scale-up implications.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3 7.478a12.06 12.06 0 0 1-3 0m3 0a3 3 0 1 0-3 0M9.75 9.75a2.25 2.25 0 1 1 4.5 0c0 .596-.237 1.169-.659 1.591L12 12.932l-1.591-1.591A2.25 2.25 0 0 1 9.75 9.75Z" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Funded Student Research Projects</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Secured KSCST-supported research grants for alternative fuel and waste-to-fuel projects, including HFO blended with cooking oil and waste plastic conversion into fuel using a heliostat concept.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1-3 3h-3a3 3 0 0 1-3-3m9 0V6.75A2.25 2.25 0 0 0 14.25 4.5h-4.5A2.25 2.25 0 0 0 7.5 6.75v12m9 0H18a2.25 2.25 0 0 0 2.25-2.25V9.75A2.25 2.25 0 0 0 18 7.5h-1.5m-9 11.25H6A2.25 2.25 0 0 1 3.75 16.5V9.75A2.25 2.25 0 0 1 6 7.5h1.5" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Academic Distinction & Scholarship</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Graduated with distinction in postgraduate studies and received the Sussex India Scholarship, reflecting strong academic performance and an interdisciplinary foundation in engineering, management, and sustainability.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a8.25 8.25 0 0 1 15 0M15.75 19.5l2.25 2.25 3.75-4.5" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Teaching & Research Mentorship</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Taught mechanical, marine, energy, and sustainability-related engineering subjects, while mentoring undergraduate research projects in alternative fuels, waste-to-fuel conversion, and renewable energy systems.
+        </p>
+        </div>
+        <div class="achievement-card" style="padding:1.8rem; border:1px solid rgba(20,184,166,0.25); border-radius:18px; background:rgba(6,25,35,0.92); box-shadow:0 10px 30px rgba(0,0,0,0.18);">
+        <div class="achievement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 0v9.75A3.75 3.75 0 1 1 15.75 12H19.5V6Zm-10.5 3v9.75A3.75 3.75 0 1 1 5.25 15H9V9Z" />
+        </svg>
+        </div>
+        <h3 style="margin:0 0 0.6rem 0; color:#ffffff; font-size:1.2rem;">Science, Music & Creative Communication</h3>
+        <p style="margin:0; color:#c7d5d9; line-height:1.65;">
+        Co-founder of The Speksy Pscyentist, combining research life with music composition, creative storytelling, international collaboration, and public-facing communication.
+        </p>
+        </div>
+        </div>
     design:
       background:
         color:
           light: "#f4fbfa"
           dark: "#081f2a"
+
+
 
   - block: contact-info
     id: contact
