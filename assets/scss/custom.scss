@@ -195,3 +195,36 @@ body {
 #skills img {
   background: transparent !important;
 }
+
+/* Selected Accomplishments cards */
+.achievement-card {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-7px) scale(1.01) !important;
+  border-color: #14b8a6 !important;
+  box-shadow: 0 22px 55px rgba(20, 184, 166, 0.24), 0 0 0 1px rgba(20, 184, 166, 0.18) !important;
+  background: rgba(8, 38, 48, 0.98) !important;
+}
+
+.achievement-card:hover h3 {
+  color: #5eead4 !important;
+}
+
+.achievement-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.95rem;
+  border-radius: 14px;
+  background: rgba(20, 184, 166, 0.12);
+  color: #5eead4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon svg {
+  width: 26px;
+  height: 26px;
+}
