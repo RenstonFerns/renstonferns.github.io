@@ -382,6 +382,18 @@ sections:
           light: "#ffffff"
           dark: "#07151c"
 
+  - block: resume-skills
+    id: skills
+    content:
+      username: admin
+      title: "Technical Skills"
+      text: "Core tools, methods, and technical capabilities across process modelling, LCA, TEA, uncertainty analysis, and fuel assessment."
+    design:
+      background:
+        color:
+          light: "#f4fbfa"
+          dark: "#061923"
+
   - block: resume-experience
     id: experience
     content:
