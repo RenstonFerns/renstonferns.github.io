@@ -150,17 +150,6 @@ But they are an important part of the broader conversation on how we can use car
 
 For me, the most interesting work happens at the intersection of process design, sustainability assessment, economic feasibility, and real-world fuel performance. That is where this blog begins.
 
-## Suggested Visuals for This Post
-
-To make this blog post more attractive, I would add three images:
-
-1. **Cover image:** biomass, CO₂ capture, hydrogen, and liquid fuel pathway.
-2. **Middle figure:** circular carbon pathway diagram.
-3. **Final figure:** process modelling → LCA → TEA → combustion → decision support.
-
-Example image code:
-
-<img src="/uploads/blog/featured.jpg" alt="Circular carbon e-fuels pathway" style="width:100%; border-radius:18px; box-shadow:0 14px 35px rgba(0,0,0,0.25); margin:1.5rem 0;">
 
 ## Resources
 
