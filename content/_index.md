@@ -105,17 +105,6 @@ sections:
         color:
           light: "#f4fbfa"
           dark: "#061923"
-        gradient_mesh:
-          enable: true
-          style: orbs
-          colors:
-            - "#0f766e/35"
-            - "#0b3d4a/35"
-            - "#14b8a6/25"
-          orb_count: 3
-          animation: pulse
-          intensity: bold
-
 
   - block: stats
     id: impact
