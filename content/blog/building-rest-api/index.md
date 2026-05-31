@@ -168,5 +168,3 @@ Example image code:
 * ISO 14040/14044 life cycle assessment standards
 * Literature on e-methanol, CO₂ utilization, biomass valorization, and sustainable transport fuels
 
-```
-```
