@@ -15,7 +15,7 @@ authors:
   - admin
 featured: true
 image:
-  filename: circular-carbon-efuels-cover.jpg
+  filename: featured.jpg
   caption: "Circular carbon e-fuels connect biomass, captured CO₂, and low-carbon hydrogen into sustainable liquid fuel pathways."
 ---
 
