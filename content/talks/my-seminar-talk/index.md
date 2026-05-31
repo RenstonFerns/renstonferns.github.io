@@ -8,13 +8,10 @@ authors:
 tags:
   - E-Methanol
   - Techno-Economic Analysis
-  - Aspen Plus
+  - Process Modelling
   - Biomass
   - Circular Carbon
   - CO₂ Utilization
-  - Sugarcane
-  - Sugar Beet
-  - Clean Fuels
   - Sustainable Fuels
 featured: true
 draft: false
