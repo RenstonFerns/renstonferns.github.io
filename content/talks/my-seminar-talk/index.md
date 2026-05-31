@@ -16,7 +16,7 @@ tags:
 featured: true
 draft: false
 image:
-  filename: featured.jpg
+  filename: featured.png
   caption: "Integrated e-methanol production pathway using biomass fermentation, CO₂ capture, residue gasification, and methanol synthesis."
 ---
 
