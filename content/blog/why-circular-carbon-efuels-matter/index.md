@@ -2,7 +2,7 @@
 
 ---
 title: "Why Circular Carbon E-Fuels Matter"
-date: 2026-06-01
+date: 2026-05-31
 summary: "A reflection on why biomass, captured CO₂, low-carbon hydrogen, and circular carbon systems matter for the future of sustainable liquid fuels."
 tags:
   - E-Fuels
