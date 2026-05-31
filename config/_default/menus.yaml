@@ -16,7 +16,7 @@ main:
     url: /blog
     weight: 40
   - name: Research Talks
-    url: /#talks
+    url: /talks
     weight: 50
   - name: Gallery
     url: /#gallery
