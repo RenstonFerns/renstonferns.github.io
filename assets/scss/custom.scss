@@ -228,3 +228,160 @@ body {
   width: 26px;
   height: 26px;
 }
+
+/* =========================================================
+   Mobile responsiveness for academic portfolio
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* General page spacing */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 1.65rem !important;
+    line-height: 1.25 !important;
+  }
+
+  h3 {
+    font-size: 1.05rem !important;
+    line-height: 1.35 !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Hero section */
+  #hero {
+    text-align: center !important;
+  }
+
+  #hero .cta,
+  #hero .buttons,
+  #hero [class*="button"],
+  #hero [class*="Button"] {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  #hero a {
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Research vision and teaching quote blocks */
+  #research-vision div,
+  #teaching div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  #research-vision blockquote,
+  #teaching blockquote {
+    padding: 1.5rem 1.2rem !important;
+    font-size: 1rem !important;
+    line-height: 1.75 !important;
+    text-align: left !important;
+    border-left-width: 4px !important;
+  }
+
+  /* Featured publications / custom wide cards */
+  .publication-card {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: 14px !important;
+  }
+
+  .publication-card h3 {
+    font-size: 1.05rem !important;
+  }
+
+  .publication-card p {
+    font-size: 0.92rem !important;
+  }
+
+  /* Technical toolkit */
+  #skills {
+    text-align: center !important;
+  }
+
+  #skills svg,
+  #skills img {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+  }
+
+  #skills [class*="card"],
+  #skills [class*="item"] {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+
+  /* Network cards if using markdown cards */
+  .network-card {
+    padding: 1.25rem !important;
+  }
+
+  /* Blog and talks video embeds */
+  iframe {
+    height: 240px !important;
+    max-width: 100% !important;
+  }
+
+  /* Any manually widened divs */
+  div[style*="90vw"],
+  div[style*="1250px"],
+  div[style*="1400px"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2 {
+    font-size: 1.45rem !important;
+  }
+
+  p {
+    font-size: 0.92rem !important;
+  }
+
+  #research-vision blockquote,
+  #teaching blockquote {
+    padding: 1.2rem 1rem !important;
+  }
+
+  .publication-card {
+    padding: 1.2rem 1rem !important;
+  }
+
+  iframe {
+    height: 210px !important;
+  }
+}
