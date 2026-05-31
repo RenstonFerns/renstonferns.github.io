@@ -6,7 +6,7 @@ date: 2026-05-28
 type: landing
 
 sections:
-  - block: dev-hero
+    - block: dev-hero
     id: hero
     content:
       username: admin
@@ -18,7 +18,7 @@ sections:
       bio: "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies."
       cta_buttons:
         - text: "Download CV"
-          url: "static/uploads/FERNANDES_CV.pdf"
+          url: "/uploads/FERNANDES_CV.pdf"
           icon: hero/document-arrow-down
         - text: "Connect on LinkedIn"
           url: "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
@@ -38,8 +38,7 @@ sections:
         pause_time: 2200
       show_status: true
       show_scroll_indicator: true
-
-    links:
+      links:
         - icon: brands/github
           url: "https://github.com/renstonferns"
           label: "GitHub"
@@ -57,7 +56,7 @@ sections:
           label: "ResearchGate"
     design:
       style: centered
-      avatar_shape: circle
+      avatar_shape: rounded
       show_avatar: true
       animations: true
       background:
@@ -74,7 +73,6 @@ sections:
           orb_count: 3
           animation: pulse
           intensity: bold
-
 
   - block: features
     id: research-areas
