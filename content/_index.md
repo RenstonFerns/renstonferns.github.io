@@ -11,7 +11,7 @@ sections:
     content:
       username: admin
       image:
-        filename: assets/media/authors/admin/avatar.png
+        filename: avatar.png
       greeting: "Hello, I'm"
       title: "Dr. Renston Jake Fernandes"
       tagline: "Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling"
