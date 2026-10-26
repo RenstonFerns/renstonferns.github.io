@@ -181,8 +181,10 @@ def publications():
             continue
         match = next((v for v in items.values() if norm_title(m["title"]) == norm_title(v["title"]) and v["type"] != "preprint"), None)
         if match:
-            if m.get("key"):
-                match["key"] = m["key"]
+            # manual entry wins for tidy metadata (title case, authors, venue, first-author flag)
+            for f in ("key", "title", "authors", "venue", "first_author", "url"):
+                if m.get(f) not in (None, "", []):
+                    match[f] = m[f]
             continue
         items[key] = {k: m.get(k) for k in ("title", "authors", "venue", "year", "type", "doi", "first_author", "url", "key")} | {"cites": m.get("cites")}
         if m.get("doi"):

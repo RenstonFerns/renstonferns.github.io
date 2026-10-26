@@ -117,13 +117,16 @@
    "added": "2026-10-26"
   },
   {
-   "title": "ANALYSIS OF CIRCULAR CARBON BIOFUEL AND E-FUEL PRODUCTION FROM SAUDI ARABIAN DATE PALM FRUIT AND PALM WASTE THROUGH INTEGRATED FERMENTATION, GASIFICATION, AND CO2 CAPTURE",
-   "authors": [],
-   "venue": "European Biomass Conference and Exhibition Proceedings",
+   "title": "Analysis of Circular Carbon Biofuel and E-Fuel Production from Saudi Arabian Date Palm Fruit and Palm Waste through Integrated Fermentation, Gasification, and CO₂ Capture",
+   "authors": [
+    "R. J. Fernandes",
+    "et al."
+   ],
+   "venue": "Proceedings of the European Biomass Conference and Exhibition (EUBCE)",
    "year": 2025,
    "type": "conference",
    "doi": "",
-   "first_author": false,
+   "first_author": true,
    "cites": null,
    "added": "2026-10-26"
   },
@@ -171,22 +174,6 @@
    "doi": "10.1201/9781032687568-23",
    "first_author": false,
    "cites": 1,
-   "added": "2026-10-26"
-  },
-  {
-   "title": "A rapid compression machine study of the low temperature combustion of cyclohexane at elevated pressures",
-   "authors": [
-    "S. Vranckx",
-    "C. L. E",
-    "H. K. Chakravarty",
-    "R. J. Fernandes"
-   ],
-   "venue": "Proceedings of the Combustion Institute",
-   "year": 2012,
-   "type": "conference",
-   "doi": "10.1016/j.proci.2012.06.071",
-   "first_author": false,
-   "cites": 56,
    "added": "2026-10-26"
   }
  ],

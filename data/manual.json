@@ -57,11 +57,23 @@
    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426012146",
    "first_author": true,
    "key": "bb-datepalm"
+  },
+  {
+   "title": "Analysis of Circular Carbon Biofuel and E-Fuel Production from Saudi Arabian Date Palm Fruit and Palm Waste through Integrated Fermentation, Gasification, and CO₂ Capture",
+   "authors": [
+    "R. J. Fernandes",
+    "et al."
+   ],
+   "venue": "Proceedings of the European Biomass Conference and Exhibition (EUBCE)",
+   "year": 2025,
+   "type": "conference",
+   "first_author": true
   }
  ],
  "hide_dois": [
-  "10.2139/ssrn.6569602",
-  "10.2139/ssrn.5185320"
+  "10.1016/j.proci.2012.06.071",
+  "10.2139/ssrn.5185320",
+  "10.2139/ssrn.6569602"
  ],
  "reviews_not_on_orcid": 0,
  "x_handle": ""
