@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-26T11:11:07.156651+00:00",
- "source": "orcid (manual import)",
+ "updated": "2026-10-26T11:30:21.709407+00:00",
+ "source": "orcid",
  "count": 29,
  "journals": [
   {
@@ -16,7 +16,7 @@
    "count": 3
   },
   {
-   "name": "Energies (MDPI)",
+   "name": "Energies",
    "count": 3
   },
   {
@@ -24,11 +24,11 @@
    "count": 2
   },
   {
-   "name": "Processes (MDPI)",
+   "name": "Processes",
    "count": 2
   },
   {
-   "name": "Journal of CO₂ Utilization",
+   "name": "Journal of CO2 Utilization",
    "count": 2
   },
   {

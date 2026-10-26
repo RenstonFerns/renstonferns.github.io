@@ -1,18 +1,19 @@
 {
- "updated": "2026-10-26T11:11:07.156651+00:00",
- "source": "google-scholar (manual import)",
+ "updated": "2026-10-26T11:30:21.709407+00:00",
+ "source": "orcid+openalex",
  "items": [
   {
-   "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
+   "title": "Circular Carbon E-fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
    "authors": [
     "R. J. Fernandes"
    ],
-   "venue": "Doctoral Thesis, KAUST",
+   "venue": "",
    "year": 2026,
    "type": "thesis",
-   "doi": "10.25781/KAUST-914YT",
+   "doi": "10.25781/kaust-914yt",
    "first_author": true,
-   "cites": 0
+   "cites": 0,
+   "added": "2026-10-26"
   },
   {
    "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
@@ -23,15 +24,46 @@
     "H. G. Im",
     "J. W. G. Turner"
    ],
-   "venue": "Biomass and Bioenergy 217, 110138",
-   "year": 2027,
+   "venue": "Biomass and Bioenergy",
+   "year": 2026,
    "type": "journal",
-   "doi": "",
+   "doi": "10.1016/j.biombioe.2026.110138",
    "first_author": true,
    "cites": 0,
-   "url": "https://www.sciencedirect.com/science/article/pii/S0961953426012146",
-   "added": "2026-10-26",
-   "key": "bb-datepalm"
+   "key": "bb-datepalm",
+   "added": "2026-10-26"
+  },
+  {
+   "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
+   "authors": [
+    "D. Nguyen",
+    "R. J. Fernandes",
+    "J. W. G. Turner",
+    "D. R. Emberson"
+   ],
+   "venue": "International Journal of Hydrogen Energy",
+   "year": 2025,
+   "type": "journal",
+   "doi": "10.1016/j.ijhydene.2025.02.331",
+   "first_author": false,
+   "cites": 41,
+   "added": "2026-10-26"
+  },
+  {
+   "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
+   "authors": [
+    "R. J. Fernandes",
+    "D. Nguyen",
+    "M. R. Shakeel",
+    "J. W. G. Turner"
+   ],
+   "venue": "Procedia CIRP",
+   "year": 2025,
+   "type": "conference",
+   "doi": "10.1016/j.procir.2025.01.057",
+   "first_author": true,
+   "cites": 5,
+   "added": "2026-10-26"
   },
   {
    "title": "Techno-Economic Analysis of an Integrated E-Methanol Production Plant Utilizing First and Second Generation Biomass Resources",
@@ -42,27 +74,13 @@
     "H. G. Im",
     "J. W. G. Turner"
    ],
-   "venue": "SAE Technical Paper 2025-01-0182",
+   "venue": "SAE technical papers on CD-ROM/SAE technical paper series",
    "year": 2025,
    "type": "conference",
    "doi": "10.4271/2025-01-0182",
    "first_author": true,
-   "cites": 4
-  },
-  {
-   "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
-   "authors": [
-    "R. J. Fernandes",
-    "D. Nguyen",
-    "M. R. Shakeel",
-    "J. W. G. Turner"
-   ],
-   "venue": "Procedia CIRP 135, 297–306",
-   "year": 2025,
-   "type": "conference",
-   "doi": "10.1016/j.procir.2025.01.057",
-   "first_author": true,
-   "cites": 5
+   "cites": 4,
+   "added": "2026-10-26"
   },
   {
    "title": "A Joule cycle-based approach to recover waste heat from marine and heavy-duty vehicles",
@@ -70,89 +88,106 @@
     "S. R. Gubba",
     "R. V. Kodaboina",
     "K. Y. Kenkoh",
-    "R. Fernandes",
+    "R. J. Fernandes",
     "J. W. G. Turner"
    ],
-   "venue": "Energy 337, 138755",
+   "venue": "Energy",
    "year": 2025,
    "type": "journal",
    "doi": "10.1016/j.energy.2025.138755",
    "first_author": false,
-   "cites": 2
-  },
-  {
-   "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
-   "authors": [
-    "D. Nguyen",
-    "R. J. Fernandes",
-    "J. W. G. Turner",
-    "D. R. Emberson"
-   ],
-   "venue": "International Journal of Hydrogen Energy 112, 15–30",
-   "year": 2025,
-   "type": "journal",
-   "doi": "10.1016/j.ijhydene.2025.02.331",
-   "first_author": false,
-   "cites": 41
+   "cites": 2,
+   "added": "2026-10-26"
   },
   {
    "title": "Evaluating the Performance, Emissions, and Well-to-Tank Carbon Footprint of Hydrogen-Enriched Euro-6 Gasoline in a Modified CFR Engine",
    "authors": [
     "A. Alrams",
-    "R. Fernandes",
+    "R. J. Fernandes",
     "X. Wang",
     "M. S. Panithasan",
-    "J. Turner"
+    "J. W. G. Turner"
    ],
-   "venue": "ASME ICEF 2025",
+   "venue": "ASME ICE Forward Conference (ICEF)",
    "year": 2025,
    "type": "conference",
-   "doi": "10.1115/ICEF2025-164599",
+   "doi": "10.1115/icef2025-164599",
    "first_author": false,
-   "cites": 0
+   "cites": 0,
+   "added": "2026-10-26"
   },
   {
-   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO₂ Utilization",
+   "title": "ANALYSIS OF CIRCULAR CARBON BIOFUEL AND E-FUEL PRODUCTION FROM SAUDI ARABIAN DATE PALM FRUIT AND PALM WASTE THROUGH INTEGRATED FERMENTATION, GASIFICATION, AND CO2 CAPTURE",
+   "authors": [],
+   "venue": "European Biomass Conference and Exhibition Proceedings",
+   "year": 2025,
+   "type": "conference",
+   "doi": "",
+   "first_author": false,
+   "cites": null,
+   "added": "2026-10-26"
+  },
+  {
+   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO 2 Utilization",
    "authors": [
     "R. J. Fernandes",
     "D. Nguyen",
     "M. R. Shakeel",
     "J. W. G. Turner"
    ],
-   "venue": "SAE Technical Paper 2024-01-2449",
+   "venue": "SAE technical papers on CD-ROM/SAE technical paper series",
    "year": 2024,
    "type": "conference",
    "doi": "10.4271/2024-01-2449",
    "first_author": true,
-   "cites": 8
+   "cites": 8,
+   "added": "2026-10-26"
   },
   {
    "title": "Variable Compression Ratio Hydrogen-Fueled Homogeneous Charge Compression Ignition Engine",
    "authors": [
-    "D. D. Nguyen",
-    "R. Fernandes",
+    "D. Nguyen",
+    "R. J. Fernandes",
     "J. W. G. Turner"
    ],
-   "venue": "SAE Technical Paper 2023-24-0067",
+   "venue": "SAE technical papers on CD-ROM/SAE technical paper series",
    "year": 2023,
    "type": "conference",
    "doi": "10.4271/2023-24-0067",
    "first_author": false,
-   "cites": 4
+   "cites": 4,
+   "added": "2026-10-26"
   },
   {
    "title": "Investigating the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics",
    "authors": [
-    "D. D. Nguyen",
-    "R. Fernandes",
+    "D. Nguyen",
+    "R. J. Fernandes",
     "J. W. G. Turner"
    ],
-   "venue": "Powertrain Systems for a Sustainable Future (book chapter)",
+   "venue": "CRC Press eBooks",
    "year": 2023,
    "type": "chapter",
    "doi": "10.1201/9781032687568-23",
    "first_author": false,
-   "cites": 1
+   "cites": 1,
+   "added": "2026-10-26"
+  },
+  {
+   "title": "A rapid compression machine study of the low temperature combustion of cyclohexane at elevated pressures",
+   "authors": [
+    "S. Vranckx",
+    "C. L. E",
+    "H. K. Chakravarty",
+    "R. J. Fernandes"
+   ],
+   "venue": "Proceedings of the Combustion Institute",
+   "year": 2012,
+   "type": "conference",
+   "doi": "10.1016/j.proci.2012.06.071",
+   "first_author": false,
+   "cites": 56,
+   "added": "2026-10-26"
   }
  ],
  "scholar": {
