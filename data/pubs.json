@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T11:30:21.709407+00:00",
+ "updated": "2026-10-26T18:41:46.669306+00:00",
  "source": "orcid+openalex",
  "items": [
   {
@@ -24,13 +24,14 @@
     "H. G. Im",
     "J. W. G. Turner"
    ],
-   "venue": "Biomass and Bioenergy",
+   "venue": "Biomass and Bioenergy 217, 110138",
    "year": 2026,
    "type": "journal",
    "doi": "10.1016/j.biombioe.2026.110138",
    "first_author": true,
    "cites": 0,
    "key": "bb-datepalm",
+   "url": "https://www.sciencedirect.com/science/article/pii/S0961953426012146",
    "added": "2026-10-26"
   },
   {
@@ -117,12 +118,9 @@
    "added": "2026-10-26"
   },
   {
-   "title": "Analysis of Circular Carbon Biofuel and E-Fuel Production from Saudi Arabian Date Palm Fruit and Palm Waste through Integrated Fermentation, Gasification, and CO₂ Capture",
-   "authors": [
-    "R. J. Fernandes",
-    "et al."
-   ],
-   "venue": "Proceedings of the European Biomass Conference and Exhibition (EUBCE)",
+   "title": "ANALYSIS OF CIRCULAR CARBON BIOFUEL AND E-FUEL PRODUCTION FROM SAUDI ARABIAN DATE PALM FRUIT AND PALM WASTE THROUGH INTEGRATED FERMENTATION, GASIFICATION, AND CO2 CAPTURE",
+   "authors": [],
+   "venue": "European Biomass Conference and Exhibition Proceedings",
    "year": 2025,
    "type": "conference",
    "doi": "",
