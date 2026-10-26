@@ -1,0 +1,18 @@
+{
+ "_help": "Settings for the daily auto-update (scripts/update.py).",
+ "orcid": "0000-0003-2769-6397",
+ "name_variants": [
+  "fernandes"
+ ],
+ "contact_email_for_apis": "renston.fernandes@kaust.edu.sa",
+ "instagram": true,
+ "instagram_posts": 6,
+ "rss_feeds": [
+  {
+   "_help": "Optional: any RSS/Atom feed (Substack, Medium, YouTube channel, blog). Example below is disabled.",
+   "name": "",
+   "url": ""
+  }
+ ],
+ "scholar_id": "2dFOscwAAAAJ"
+}

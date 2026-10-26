@@ -1,0 +1,328 @@
+{
+ "name": "Renston Jake Fernandes",
+ "honorific": "Dr.",
+ "postnominals": [
+  "B.Tech",
+  "M.Tech",
+  "M.Sc",
+  "Ph.D"
+ ],
+ "greeting": "Hello, I'm",
+ "photo": "assets/img/renston.jpg",
+ "affiliation": "King Abdullah University of Science and Technology · CERP",
+ "role": "Clean Fuels Researcher | LCA, TEA & Process Modelling",
+ "tagline": "Clean Fuels | Circular Carbon E-Fuels | LCA | TEA | Process Modelling",
+ "bio": "I develop integrated process modelling, life-cycle assessment, and techno-economic frameworks for circular carbon e-fuels from biomass, residues, and captured CO₂. My work connects Aspen Plus simulation, GREET/Sphera-based LCA, TEA, uncertainty analysis, and combustion assessment to support sustainable transport fuel strategies.",
+ "typewriter": {
+  "prefix": "I work on research pertaining to: ",
+  "strings": [
+   "circular carbon e-fuels",
+   "low-carbon fuel pathways",
+   "integrated process modelling",
+   "life cycle assessment",
+   "techno-economic analysis",
+   "clean combustion"
+  ]
+ },
+ "email": "renston.fernandes@kaust.edu.sa",
+ "cv": "uploads/FERNANDES_CV.pdf",
+ "research_areas": {
+  "title": "Research Areas",
+  "subtitle": "Connecting process engineering, sustainability assessment, clean combustion, circular economy, and data-driven decision support",
+  "items": [
+   {
+    "icon": "loop",
+    "name": "Circular Carbon E-Fuels",
+    "description": "Development of integrated bio-e-fuel pathways that convert biomass, agricultural residues, captured biogenic CO₂, and low-carbon hydrogen into ethanol, bio-methanol, and e-methanol."
+   },
+   {
+    "icon": "fire",
+    "name": "Biomass Valorization & Waste-to-Fuel Pathways",
+    "description": "Region-specific assessment of sugarcane, sugar beet, corn, date palm fruit, agricultural residues, waste plastic, and waste-derived resources for circular fuel and resource recovery systems."
+   },
+   {
+    "icon": "cog",
+    "name": "Process Modelling & Simulation",
+    "description": "Aspen Plus-based modelling of fermentation, gasification, syngas conditioning, CO₂ capture, CO₂ hydrogenation, methanol synthesis, separation systems, recycle loops, and integrated circular fuel biorefineries."
+   },
+   {
+    "icon": "chart",
+    "name": "Life Cycle & Techno-Economic Assessment",
+    "description": "ISO-aligned LCA, TEA, foreground LCI development, well-to-tank assessment, CAPEX/OPEX analysis, and scenario-based evaluation using GREET, Sphera/GaBi, ReCiPe 2016, GLAM, and Aspen-derived inventories."
+   },
+   {
+    "icon": "bolt",
+    "name": "Clean Combustion & Fuel Performance",
+    "description": "Experimental and modelling-based assessment of alcohol fuels, hydrogen, ammonia, and fuel blends for engine efficiency, emissions behaviour, knock resistance, HCCI operation, and sustainable transport applications."
+   },
+   {
+    "icon": "cpu",
+    "name": "AI, Uncertainty & Decision Support",
+    "description": "Development of Python-based workflows for Monte Carlo uncertainty, sensitivity analysis, KPI generation, AI-assisted LCA/TEA, surrogate modelling, NSGA-II optimization, and digital-twin-enabled decision support for CO₂-to-X systems."
+   }
+  ]
+ },
+ "vision": [
+  "My research focuses on developing scalable, regionally grounded pathways for low-carbon liquid fuels. I am particularly interested in how biomass, agricultural residues, captured CO₂, and low-carbon hydrogen can be integrated into circular fuel systems that are technically feasible, environmentally meaningful, and economically transparent.",
+  "My doctoral work developed integrated Aspen Plus models for biomass-to-e-methanol systems and connected them with life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation. This allows fuel pathways to be assessed not only by yield, but also by carbon utilization, life-cycle emissions, cost structure, and end-use performance.",
+  "Going forward, I aim to extend this work toward dynamic LCA/TEA, AI-assisted process assessment, digital-twin-enabled sustainability platforms, and decision-support tools for CO₂-to-X and biomass-derived fuel systems."
+ ],
+ "teaching": [
+  "I view teaching as an opportunity to build confidence, curiosity, and technical independence. My approach combines clear conceptual explanation with project-based learning, allowing students to connect engineering fundamentals with real-world sustainability, energy, and research challenges.",
+  "I have taught and mentored students in mechanical engineering, energy systems, renewable fuels, and applied research projects, with a strong emphasis on clarity, practical problem solving, scientific reasoning, and research-oriented thinking.",
+  "As a mentor, I aim to help students move beyond simply understanding concepts toward asking better questions, designing stronger solutions, and developing the confidence to apply technical knowledge in academic, industrial, and societal contexts."
+ ],
+ "publications_intro": "Selected research themes and scholarly outputs from my work on circular carbon e-fuels, biomass valorization, CO₂ utilization, process modelling, life cycle assessment, techno-economic analysis, hydrogen and ammonia fuels, waste heat recovery, and clean combustion.",
+ "affiliations": [
+  {
+   "name": "King Abdullah University of Science and Technology",
+   "short": "KAUST",
+   "role": "Clean Energy Research Platform (CERP)",
+   "url": "https://cerp.kaust.edu.sa"
+  },
+  {
+   "name": "Advanced Vehicle Propulsion Lab",
+   "short": "AVPL",
+   "role": "KAUST · Prof. James W. G. Turner",
+   "url": "https://avpl.kaust.edu.sa"
+  },
+  {
+   "name": "Renewable and Sustainable Energy Technology Group",
+   "short": "ReSET",
+   "role": "KAUST · Prof. Bassam Dally",
+   "url": "https://reset.kaust.edu.sa"
+  }
+ ],
+ "toolkit": {
+  "title": "Technical Toolkit",
+  "subtitle": "Key tools, platforms, and software",
+  "groups": [
+   {
+    "group": "Process & LCA Tools",
+    "items": [
+     {
+      "name": "Aspen Plus",
+      "logo": "assets/skills/aspen-plus.png"
+     },
+     {
+      "name": "Sphera / GaBi",
+      "logo": "assets/skills/sphera.png"
+     },
+     {
+      "name": "GREET",
+      "logo": "assets/skills/greet.png"
+     }
+    ]
+   },
+   {
+    "group": "Simulation & Analysis",
+    "items": [
+     {
+      "name": "MATLAB",
+      "logo": "assets/skills/matlab.png"
+     },
+     {
+      "name": "Python",
+      "logo": "assets/skills/python.png"
+     }
+    ]
+   },
+   {
+    "group": "Modelling & CAD",
+    "items": [
+     {
+      "name": "COMSOL",
+      "logo": "assets/skills/comsol.png"
+     },
+     {
+      "name": "SolidWorks",
+      "logo": "assets/skills/solidworks.png"
+     }
+    ]
+   },
+   {
+    "group": "Writing",
+    "items": [
+     {
+      "name": "Overleaf",
+      "logo": "assets/skills/overleaf.png"
+     }
+    ]
+   }
+  ]
+ },
+ "experience_intro": "Education, research experience, technical skills, and selected academic milestones.",
+ "experience": [
+  {
+   "when": "Aug 2021 – Apr 2026",
+   "what": "PhD Researcher",
+   "where": "King Abdullah University of Science and Technology",
+   "summary": [
+    "Developed Aspen Plus process models for circular carbon e-fuel production from biomass, agricultural residues, captured CO₂, and electrolytic hydrogen.",
+    "Integrated process simulation outputs with life cycle assessment, techno-economic analysis, and Monte Carlo uncertainty analysis to evaluate environmental and economic performance.",
+    "Conducted engine-based assessment of alcohol fuel blends with attention to combustion performance, efficiency, and emissions behaviour."
+   ]
+  },
+  {
+   "when": "Jun 2025 – Aug 2025",
+   "what": "Research Intern",
+   "where": "Aramco",
+   "summary": [
+    "Worked on techno-economic analysis of flue gas separation and e-methanol production.",
+    "Contributed to process modelling, CO₂ utilization assessment, and sustainability-oriented evaluation of low-carbon fuel pathways."
+   ]
+  },
+  {
+   "when": "Dec 2020 – May 2021",
+   "what": "Senior HR Associate II",
+   "where": "Amazon",
+   "summary": [
+    "Supported operational workflows, employee-facing processes, and large-scale organizational coordination."
+   ]
+  },
+  {
+   "when": "Sep 2020 – Nov 2020",
+   "what": "Business Development Manager",
+   "where": "Lido Learning",
+   "summary": [
+    "Worked on education-sector business development, stakeholder communication, and growth-oriented strategy."
+   ]
+  },
+  {
+   "when": "Aug 2016 – May 2018",
+   "what": "Assistant Professor",
+   "where": "Srinivas Institute of Technology, Mangalore",
+   "summary": [
+    "Taught mechanical engineering and energy-related subjects, including applied thermal engineering and renewable energy topics.",
+    "Mentored undergraduate engineering projects in renewable fuels, energy systems, and applied mechanical engineering."
+   ]
+  }
+ ],
+ "education": [
+  {
+   "when": "Oct 2021 – Apr 2026",
+   "what": "PhD in Environmental Science and Engineering",
+   "where": "King Abdullah University of Science and Technology",
+   "summary": [
+    "Thesis: Circular Carbon E-Fuels from Biomass: Techno-Economic, Environmental, and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy.",
+    "Developed integrated circular bio-e-fuel pathways connecting biomass fermentation, residue gasification, CO₂ capture, CO₂ hydrogenation, life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion evaluation."
+   ]
+  },
+  {
+   "when": "Sep 2018 – Sep 2019",
+   "what": "MSc Engineering Business Management",
+   "where": "University of Sussex",
+   "summary": [
+    "Focused on engineering management, innovation, technology strategy, business decision-making, and commercialization of engineering systems."
+   ]
+  },
+  {
+   "when": "Aug 2014 – Jun 2016",
+   "what": "M.Tech Energy Systems Engineering",
+   "where": "NMAM Institute of Technology, Nitte",
+   "summary": [
+    "Specialized in renewable energy systems, energy conversion, sustainable engineering, and applied energy technologies."
+   ]
+  },
+  {
+   "when": "Aug 2010 – Jun 2014",
+   "what": "B.E. Mechanical Engineering",
+   "where": "Visvesvaraya Technological University",
+   "summary": [
+    "Built a foundation in thermodynamics, fluid mechanics, heat transfer, machine design, manufacturing, and mechanical energy systems."
+   ]
+  }
+ ],
+ "awards": [
+  {
+   "title": "KAUST PhD Fellowship",
+   "year": "2021",
+   "summary": "Full doctoral fellowship awarded by King Abdullah University of Science and Technology."
+  },
+  {
+   "title": "Sussex India Scholarship",
+   "year": "2018",
+   "summary": "Scholarship awarded for postgraduate study at the University of Sussex."
+  },
+  {
+   "title": "KSCST Student Project Grant",
+   "year": "2015",
+   "summary": "Grant support for applied renewable fuel and engineering experimentation."
+  },
+  {
+   "title": "International Conference Presentations",
+   "year": "2025",
+   "summary": "Accepted presentations across international conferences in biomass conversion, life cycle engineering, fuels, and combustion."
+  }
+ ],
+ "languages": [
+  {
+   "name": "English",
+   "label": "Fluent",
+   "level": 5
+  },
+  {
+   "name": "Konkani",
+   "label": "Native",
+   "level": 5
+  },
+  {
+   "name": "Hindi",
+   "label": "Professional",
+   "level": 4
+  },
+  {
+   "name": "French",
+   "label": "Basic",
+   "level": 2
+  }
+ ],
+ "interests": [
+  "Circular carbon e-fuels",
+  "Biomass-to-methanol pathways",
+  "CO₂ capture and utilization",
+  "Life cycle assessment",
+  "Techno-economic analysis",
+  "Aspen Plus process modelling",
+  "Clean combustion and alcohol fuels",
+  "Uncertainty and scenario analysis",
+  "Sustainable transport fuels"
+ ],
+ "contact": {
+  "title": "Let's Collaborate",
+  "subtitle": "Open to postdoctoral research, academic collaborations, consulting, and policy-relevant fuel assessment",
+  "text": "I am open to collaborations in clean fuels, LCA, TEA, process modelling, CO₂ utilization, circular carbon fuel systems, and policy-relevant fuel assessment."
+ },
+ "links": [
+  {
+   "label": "LinkedIn",
+   "icon": "linkedin",
+   "url": "https://www.linkedin.com/in/renston-jake-fernandes-9154b143"
+  },
+  {
+   "label": "Google Scholar",
+   "icon": "scholar",
+   "url": "https://scholar.google.com/citations?user=2dFOscwAAAAJ&hl=en&authuser=3"
+  },
+  {
+   "label": "ORCID",
+   "icon": "orcid",
+   "url": "https://orcid.org/0000-0003-2769-6397"
+  },
+  {
+   "label": "ResearchGate",
+   "icon": "rg",
+   "url": "https://www.researchgate.net/profile/Renston-Fernandes?ev=hdr_xprf"
+  },
+  {
+   "label": "GitHub",
+   "icon": "github",
+   "url": "https://github.com/renstonferns"
+  },
+  {
+   "label": "Instagram",
+   "icon": "instagram",
+   "url": "https://www.instagram.com/renston_fernandes"
+  }
+ ]
+}

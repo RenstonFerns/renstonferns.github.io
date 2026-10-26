@@ -1,0 +1,50 @@
+name: Auto-update site data
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"  # every 3 hours: ORCID reviews, ORCID/OpenAlex papers, Instagram (Google Scholar once a day)
+  workflow_dispatch:         # "Run workflow" button for an instant refresh
+    inputs:
+      force_scholar:
+        description: "Also refresh Google Scholar now"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull papers, citations, reviews and posts
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          FORCE_SCHOLAR: ${{ inputs.force_scholar && '1' || '0' }}
+        run: python scripts/update.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "site-bot"
+          git config user.email "site-bot@users.noreply.github.com"
+          git add data assets
+          git diff --staged --quiet || git commit -m "Auto-update: papers, citations, reviews, posts"
+          git push
+
+  # pushes made by the bot don't trigger other workflows, so publish from here
+  deploy:
+    needs: update
+    uses: ./.github/workflows/deploy.yml

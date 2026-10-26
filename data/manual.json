@@ -1,0 +1,68 @@
+{
+ "_help": "The only file you need to edit by hand. Changes go live about 1 minute after you save.",
+ "stats": {
+  "_help": "Minimum numbers shown. Reviews and citations now sync automatically (ORCID / Google Scholar), so they're no longer set here. Talks has no auto source.",
+  "publications": 12,
+  "talks": 20,
+  "review_note": "Elsevier Q1 & MDPI journals"
+ },
+ "posts": [
+  {
+   "_help": "Talks, blog posts, LinkedIn or X posts. platform: talk | blog | linkedin | x | other. image is optional.",
+   "platform": "talk",
+   "date": "2025-04-24",
+   "title": "Techno-Economic Analysis of Integrated E-Methanol Production from Biomass Resources",
+   "text": "Seminar on integrated e-methanol production from first- and second-generation biomass resources, focusing on Aspen Plus process modelling, CO₂ utilization, CAPEX, OPEX, LCOM, and scenario-based techno-economic assessment.",
+   "url": "https://www.youtube.com/watch?v=6V-EBB4q4zw",
+   "image": "assets/img/talk-emethanol-tea.jpg"
+  }
+ ],
+ "blurbs": {
+  "_help": "One-line description shown under each paper, keyed by DOI. Add one when a new paper appears.",
+  "10.25781/kaust-914yt": "Doctoral thesis integrating Aspen Plus process modelling, life cycle assessment, techno-economic analysis, uncertainty analysis, and combustion assessment for circular carbon e-fuel pathways from agro-biomass.",
+  "10.4271/2025-01-0182": "First-author study on the techno-economic performance of integrated e-methanol production using first- and second-generation biomass resources.",
+  "10.1016/j.procir.2025.01.057": "First-author regional sustainability assessment of e-methanol production using GLAM-based life cycle impact assessment.",
+  "10.4271/2024-01-2449": "First-author study on sustainable e-methanol production from biomass with enhanced CO₂ utilization.",
+  "10.1016/j.ijhydene.2025.02.331": "Second-author journal article assessing ammonia and hydrogen as alternative fuels for marine internal combustion engines using life cycle assessment.",
+  "10.4271/2023-24-0067": "Second-author technical paper on hydrogen-fueled HCCI engine operation using variable compression ratio strategies.",
+  "10.1201/9781032687568-23": "Second-author publication on the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics.",
+  "10.1016/j.energy.2025.138755": "Second-author journal article on a Joule cycle-based waste heat recovery approach for marine and heavy-duty vehicle applications.",
+  "10.1115/icef2025-164599": "Second-author conference publication evaluating hydrogen-enriched Euro-6 gasoline in a modified CFR engine, including performance, emissions, and well-to-tank carbon footprint.",
+  "bb-datepalm": "First-author journal article on an integrated bio-/e-methanol pathway from Saudi date palm fruit and residues, combining process modelling, TEA, and LCA."
+ },
+ "extra_publications": [
+  {
+   "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
+   "authors": [
+    "R. J. Fernandes"
+   ],
+   "venue": "Doctoral Thesis, KAUST",
+   "year": 2026,
+   "type": "thesis",
+   "doi": "10.25781/KAUST-914YT",
+   "first_author": true
+  },
+  {
+   "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
+   "authors": [
+    "R. J. Fernandes",
+    "M. R. Shakeel",
+    "D. Nguyen",
+    "H. G. Im",
+    "J. W. G. Turner"
+   ],
+   "venue": "Biomass and Bioenergy 217, 110138",
+   "year": 2027,
+   "type": "journal",
+   "url": "https://www.sciencedirect.com/science/article/pii/S0961953426012146",
+   "first_author": true,
+   "key": "bb-datepalm"
+  }
+ ],
+ "hide_dois": [
+  "10.2139/ssrn.6569602",
+  "10.2139/ssrn.5185320"
+ ],
+ "reviews_not_on_orcid": 0,
+ "x_handle": ""
+}

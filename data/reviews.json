@@ -1,0 +1,51 @@
+{
+ "updated": "2026-10-26T11:11:07.156651+00:00",
+ "source": "orcid (manual import)",
+ "count": 29,
+ "journals": [
+  {
+   "name": "International Journal of Hydrogen Energy",
+   "count": 10
+  },
+  {
+   "name": "Fuel",
+   "count": 3
+  },
+  {
+   "name": "Fuel Processing Technology",
+   "count": 3
+  },
+  {
+   "name": "Energies (MDPI)",
+   "count": 3
+  },
+  {
+   "name": "Bioresource Technology Reports",
+   "count": 2
+  },
+  {
+   "name": "Processes (MDPI)",
+   "count": 2
+  },
+  {
+   "name": "Journal of CO₂ Utilization",
+   "count": 2
+  },
+  {
+   "name": "Energy",
+   "count": 1
+  },
+  {
+   "name": "Energy Strategy Reviews",
+   "count": 1
+  },
+  {
+   "name": "Journal of Cleaner Production",
+   "count": 1
+  },
+  {
+   "name": "Sustainable Energy Technologies and Assessments",
+   "count": 1
+  }
+ ]
+}
