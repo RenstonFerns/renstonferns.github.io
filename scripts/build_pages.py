@@ -41,6 +41,18 @@ PAGES = [
      "Contact", "Open to postdoctoral research, academic collaborations, consulting, and policy-relevant fuel assessment."),
 ]
 LABEL = {p[0]: p[4] for p in PAGES}
+
+# faded corner art per page; music gets a full-bleed live video header
+IMG = lambda src: f'<div class="phead-art" aria-hidden="true"><img src="{src}" alt="" loading="eager"></div>'
+ART = {
+    "research": (IMG("assets/img/blog-circular-carbon.jpg"), ""),
+    "publications": (IMG("assets/img/talk-emethanol-tea.jpg"), ""),
+    "talks": (IMG("assets/img/caricature.jpg"), ""),
+    "experience": (IMG("assets/img/renston.jpg"), ""),
+    "contact": (IMG("assets/img/caricature.jpg"), ""),
+    "music": ('<div class="phead-art" aria-hidden="true"><video class="lazyvid" data-src="https://tspalive.com/videos/7e138cb033bab1d8e057ca0993205573.mp4" '
+              'muted loop playsinline preload="none" poster="https://i.ytimg.com/vi/gA_jIbMnV5I/maxresdefault.jpg"></video></div>', " dark"),
+}
 ORDER = [p[0] for p in PAGES if p[0] != "home"]
 
 BLOCK = re.compile(r"<!--@pages ([a-z ]+)-->\n?(.*?)\n?<!--@end-->", re.S)
@@ -61,7 +73,8 @@ def build(key, path, title, desc, h1, sub):
     html = (html.replace("{{TITLE}}", esc(title)).replace("{{DESC}}", esc(desc))
                 .replace("{{PATH}}", path).replace("{{PAGE}}", key)
                 .replace("{{H1}}", h1.replace("&", "&amp;")).replace("{{SUB}}", esc(sub))
-                .replace("{{NEXT}}", nxt))
+                .replace("{{NEXT}}", nxt)
+                .replace("{{ART}}", ART.get(key, ("", ""))[0]).replace("{{PHEAD_CLASS}}", ART.get(key, ("", ""))[1]))
     html = html.replace(f'data-nav="{key}"', f'data-nav="{key}" aria-current="page"')
     out = ROOT / path / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
