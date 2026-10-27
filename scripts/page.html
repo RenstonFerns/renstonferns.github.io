@@ -65,7 +65,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead.dark .crumbs{color:#a9afbb}
 .phead.dark .crumbs a{color:#e9a64a}
 .phead.dark + main .stage{padding-top:clamp(32px,5vw,56px)}
-.livestrip{position:relative;margin:0 0 48px;border-radius:16px;overflow:hidden;aspect-ratio:21/9;max-width:100%;background:#000 url("https://i.ytimg.com/vi/7hjQOcdVU-s/hqdefault.jpg") center/cover;border:1px solid rgba(255,255,255,.1)}
+.livestrip{position:relative;margin:0 0 48px;border-radius:16px;overflow:hidden;aspect-ratio:21/9;max-width:100%;background:#000 url("https://i.ytimg.com/vi/wwk0YZ4q09k/hqdefault.jpg") center/cover;border:1px solid rgba(255,255,255,.1)}
 .livestrip video{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
 .livestrip video.on{opacity:1}
 .livestrip::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 40%);pointer-events:none}
@@ -80,7 +80,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead-art.yt,.livestrip{container-type:size}
 .lazyyt{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);border:0;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
 .lazyyt.on{opacity:1}
-.phead.dark .phead-art.yt{background:#0d0f14 url("https://i.ytimg.com/vi/90K5BCROdXA/maxresdefault.jpg") center/cover}
+.phead.dark .phead-art.yt{background:#0d0f14}
 .phead.dark .phead-art.yt .lazyyt{scale:1.15}
 .livestrip .lazyyt{scale:1.12}
 
@@ -595,8 +595,8 @@ body:not([data-page="home"]) main>section.s:first-of-type{border-top:0}
   </div>
   <div class="mstory" id="mStory"></div>
   <figure class="livestrip" aria-label="Renston live with Sounds Fishy">
-    <iframe class="lazyyt" title="Rock You Like a Hurricane, live at AIMIT (background)" tabindex="-1" data-src="https://www.youtube-nocookie.com/embed/7hjQOcdVU-s?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=7hjQOcdVU-s&amp;start=150&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
-    <figcaption><span class="rec"></span>LIVE · Rock You Like a Hurricane · Sounds Fishy at AIMIT</figcaption>
+    <iframe class="lazyyt" title="Square Hammer, live at AIMIT (background)" tabindex="-1" data-a="115" data-b="144" data-src="https://www.youtube-nocookie.com/embed/wwk0YZ4q09k?autoplay=1&amp;mute=1&amp;controls=0&amp;start=115&amp;end=144&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" allow="autoplay; encrypted-media"></iframe>
+    <figcaption><span class="rec"></span>LIVE · Square Hammer · Sounds Fishy at AIMIT</figcaption>
   </figure>
   <div class="vids" id="mVids"></div>
   <div class="mgrid">
@@ -757,10 +757,20 @@ function carbonLoop(){
   const art=document.querySelector(".phead-art>*");
   if(art&&!REDUCED){let tick=false;addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{art.style.transform="translateY("+(scrollY*0.18)+"px)";tick=false})},{passive:true})}
   const yts=[...document.querySelectorAll("iframe.lazyyt")];
-  const ytCmd=(f,fn)=>{try{f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:[]}),"*")}catch(e){}};
+  const ytCmd=(f,fn,args)=>{try{f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:args||[]}),"*")}catch(e){}};
+  /* data-a / data-b: loop only that segment (seconds) */
+  addEventListener("message",ev=>{
+    if(!/youtube/.test(ev.origin))return;
+    const f=yts.find(x=>x.contentWindow===ev.source);if(!f||!f.dataset.b)return;
+    let d;try{d=typeof ev.data=="string"?JSON.parse(ev.data):ev.data}catch(e){return}
+    const info=d&&d.info;if(!info)return;
+    const a=+f.dataset.a,b=+f.dataset.b;
+    if(info.playerState===0||(typeof info.currentTime=="number"&&info.currentTime>=b-0.25)){ytCmd(f,"seekTo",[a,true]);ytCmd(f,"playVideo")}
+  });
+  const listen=f=>{let n=0;const t=setInterval(()=>{try{f.contentWindow.postMessage(JSON.stringify({event:"listening",id:f.dataset.src.length,channel:"widget"}),"*")}catch(e){}if(++n>8)clearInterval(t)},500)};
   if(yts.length&&!REDUCED){
     const io2=new IntersectionObserver(es=>es.forEach(e=>{const f=e.target;
-      if(e.isIntersecting){if(!f.src){f.src=f.dataset.src;f.addEventListener("load",()=>setTimeout(()=>f.classList.add("on"),2200),{once:true})}else ytCmd(f,"playVideo")}
+      if(e.isIntersecting){if(!f.src){f.src=f.dataset.src;f.addEventListener("load",()=>{listen(f);setTimeout(()=>f.classList.add("on"),2200)},{once:true})}else ytCmd(f,"playVideo")}
       else if(f.src)ytCmd(f,"pauseVideo")}),{rootMargin:"120px 0px"});
     yts.forEach(f=>io2.observe(f));
   }
