@@ -144,6 +144,7 @@ section.s+section.s{border-top:1px solid var(--line)}
 
 /* research areas */
 .areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.areas>.area:first-child:nth-last-child(3n+1){grid-column:span 2}
 .area{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:10px;align-content:start;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
 .area::before{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--accent) 12%,transparent),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
 .area:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line));box-shadow:0 18px 40px -26px color-mix(in srgb,var(--fg) 60%,transparent)}
@@ -363,6 +364,7 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
   .tkg{grid-template-columns:1fr 1fr}
 }
 @media (max-width:560px){
+  .areas>.area:first-child{grid-column:auto}
   .vids,.presslist{grid-template-columns:1fr}
   .areas,.feed,.awards{grid-template-columns:1fr}
   .stats .col{grid-template-columns:repeat(2,minmax(0,1fr))}
