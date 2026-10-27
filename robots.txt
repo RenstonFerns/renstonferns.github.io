@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://renstonferns.github.io/sitemap.xml
+Sitemap: https://renstonfernandes.com/sitemap.xml
