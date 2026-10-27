@@ -60,6 +60,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead.dark .phead-art{inset:0;width:100%;opacity:1!important;-webkit-mask-image:none;mask-image:none}
 .phead.dark .phead-art::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0d0f14 0%,rgba(13,15,20,.55) 45%,rgba(13,15,20,.25) 100%)}
 .phead.dark .phead-art video{filter:saturate(.9) contrast(1.05)}
+.phead.dark .phead-art video.lazyvid{height:100%;object-position:50% 58%;animation:none}
 .phead.dark h1{color:#fff}
 .phead.dark p{color:#c9ced8}
 .phead.dark .crumbs{color:#a9afbb}
@@ -703,7 +704,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
   $("tagline").innerHTML=(pr.tagline||"").split("|").map(s=>s.trim()).filter(Boolean).map(s=>`<li>${esc(s)}</li>`).join("");
   $("bio").textContent=pr.bio||"";
   typewriter(pr.typewriter);
-  if(pr.photo){$("photo").src=pr.photo;document.querySelector(".logo img").src=pr.photo}
+  if(pr.photo)document.querySelector(".logo img").src=pr.photo;if(pr.hero_photo||pr.photo)$("photo").src=pr.hero_photo||pr.photo;
   if(pr.cv)$("cvbtn").href=pr.cv;
   $("cvbtn").insertAdjacentHTML("afterbegin",svgI("cv"));$("libtn").insertAdjacentHTML("afterbegin",svgI("linkedin"));
   const li=(pr.links||[]).find(l=>l.icon==="linkedin");if(li)$("libtn").href=li.url;
