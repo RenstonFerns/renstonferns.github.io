@@ -50,8 +50,8 @@ ART = {
     "talks": (IMG("assets/img/caricature.jpg"), ""),
     "experience": (IMG("assets/img/presenting.jpg"), ""),
     "contact": (IMG("assets/img/caricature.jpg"), ""),
-    "music": ('<div class="phead-art yt" aria-hidden="true"><iframe class="lazyyt" title="It\'s My Life (background)" tabindex="-1" data-a="146" data-b="189" '
-              'data-src="https://www.youtube-nocookie.com/embed/YNLsgCkfOGY?autoplay=1&amp;mute=1&amp;controls=0&amp;start=146&amp;end=189&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" '
+    "music": ('<div class="phead-art yt" aria-hidden="true"><iframe class="lazyyt" title="It\'s My Life (background)" tabindex="-1" data-a="153.5" data-b="173.4" '
+              'data-src="https://www.youtube-nocookie.com/embed/YNLsgCkfOGY?autoplay=1&amp;mute=1&amp;controls=0&amp;start=153&amp;end=174&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" '
               'allow="autoplay; encrypted-media"></iframe></div>', " dark"),
 }
 ORDER = [p[0] for p in PAGES if p[0] != "home"]
