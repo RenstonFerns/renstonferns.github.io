@@ -81,6 +81,12 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .lazyyt{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);border:0;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
 .lazyyt.on{opacity:1}
 .phead.dark .phead-art.yt{background:#0d0f14}
+/* music header: cut-reel of Ren-only shots */
+.phead-art.reel{container-type:size;background:#0d0f14}
+.phead-art.reel video{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100cqw,177.78cqh);height:auto;aspect-ratio:16/9;object-fit:cover;animation:none;opacity:0;scale:1.06;will-change:transform}
+.phead-art.reel video.on{opacity:1}
+.phead-art.reel video.zoom{scale:1;transform:scale(3);transform-origin:100% 29%;animation:reelpan var(--d,3s) linear forwards}
+@keyframes reelpan{from{transform-origin:100% 29%}to{transform-origin:100% 83%}}
 .phead.dark .phead-art.yt .lazyyt{scale:1.15}
 .livestrip .lazyyt{scale:1.12}
 
@@ -617,7 +623,29 @@ function carbonLoop(){
 
 /* page-header art: parallax drift, and videos that only load/play while on screen */
 (function(){
-  const art=document.querySelector(".phead-art>*");
+  const art=document.querySelector(".phead-art:not(.reel)>*");
+  /* music header reel: hop between Ren-only cuts of TSP videos; [source, from, to] in seconds */
+  const reel=document.querySelector(".phead-art.reel");
+  if(reel&&!REDUCED){
+    const SRC={i:"https://tspalive.com/videos/0747266c10fe21682a3739f867bd6f33.mp4",/* It's My Life */
+               g:"https://tspalive.com/videos/b0893071884334a6c5dc9fea799d9cf7.mp4"};/* Purple Waves live, guitar close-up */
+    const CL=[["i",154.2,157.4],["i",7,10.4],["g",76.3,79],["i",140,143.4],["i",15.1,18.2],["g",79,81.6],
+      ["i",160.6,163.6],["i",25.1,26.8],["i",176.1,178.9],["g",81.6,84.2],["i",147,151.6],["i",0.1,1.8],
+      ["i",166.4,170.4],["i",65.2,67.8],["i",185.1,188.4],["i",10.4,13.7],["i",170.4,173.7],["i",222.1,223.8],["i",18.2,20.8],["i",178.9,180.8]];
+    const mk=s=>{const v=document.createElement("video");v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute("playsinline","");v.preload="auto";v.src=SRC[s];v._s=s;reel.appendChild(v);return v};
+    const P={i:[mk("i"),mk("i")],g:[mk("g")]};
+    let k=0,cur=null,nxt=null,end=0,live=true,started=false;
+    const prep=c=>{const v=P[c[0]].find(p=>p!==cur)||P[c[0]][0];try{v.currentTime=c[1]}catch(e){}v.pause();return v};
+    const show=()=>{const c=CL[k],v=nxt;
+      v.classList.remove("zoom");if(c[0]=="g"){v.style.setProperty("--d",(c[2]-c[1])+"s");void v.offsetWidth;v.classList.add("zoom")}
+      v.play().catch(()=>{});v.classList.add("on");
+      if(cur&&cur!==v){cur.classList.remove("on");cur.pause()}
+      cur=v;end=c[2];k=(k+1)%CL.length;nxt=prep(CL[k])};
+    const tick=()=>{if(live&&cur&&cur.currentTime>=end-0.04)show();requestAnimationFrame(tick)};
+    nxt=prep(CL[0]);
+    nxt.addEventListener("canplay",()=>{if(started)return;started=true;show();requestAnimationFrame(tick)});
+    new IntersectionObserver(es=>{live=es[0].isIntersecting;if(cur){live?cur.play().catch(()=>{}):cur.pause()}}).observe(reel);
+  }
   if(art&&!REDUCED){let tick=false;addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{art.style.transform="translateY("+(scrollY*0.18)+"px)";tick=false})},{passive:true})}
   const yts=[...document.querySelectorAll("iframe.lazyyt")];
   const ytCmd=(f,fn,args)=>{try{f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:args||[]}),"*")}catch(e){}};
