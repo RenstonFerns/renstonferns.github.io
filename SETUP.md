@@ -70,3 +70,9 @@ You do (once):
 4. Put the site URL in the "Homepage" field of your Google Scholar profile, your ORCID "Websites" section, your LinkedIn contact info and your Instagram bio. Links from those high-authority pages are the strongest signal that this is your official site.
 
 Google usually picks up the new version within a few days to two weeks.
+
+## Pages
+The site is split into pages: `/`, `/research/`, `/publications/`, `/talks/`, `/music/`, `/experience/` and `/contact/`.
+- **Layout:** lives in `scripts/page.html`. Sections are wrapped in `<!--@pages ...-->` blocks that say which pages they appear on.
+- **Content:** lives in `data/*.json`, the same as before.
+- **Building:** `scripts/build_pages.py` generates every page and the sitemap, and the deploy runs it automatically. Don't edit the generated `index.html` files directly.

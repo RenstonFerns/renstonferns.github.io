@@ -25,6 +25,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Build pages from template
+        run: python3 scripts/build_pages.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

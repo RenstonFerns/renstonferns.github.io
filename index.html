@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<base href="/">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA &amp; E-Fuels</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Academic portfolio of Dr. Renston Jake Fernandes — circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, and clean combustion.">
-<meta property="og:title" content="Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA & E-Fuels">
+<meta name="description" content="Academic portfolio of Dr. Renston Jake Fernandes — circular carbon e-fuels, process modelling, life cycle assessment, techno-economic analysis, clean combustion, and rock music.">
+<meta property="og:title" content="Dr. Renston Jake Fernandes | Clean Fuels, LCA, TEA &amp; E-Fuels">
 <meta property="og:description" content="Circular carbon e-fuels · process modelling · LCA · TEA · clean combustion">
 <meta property="og:image" content="https://renstonfernandes.com/assets/img/renston.jpg">
 <link rel="canonical" href="https://renstonfernandes.com/">
@@ -47,6 +48,7 @@
   --deep:#0f2a24; --deep-fg:#e6f2ee; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (max-width:980px){html{scroll-padding-top:110px}}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65}
 a{color:var(--accent);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
@@ -354,11 +356,35 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
 .pr .o span{color:#a9afbb}
 .pr b{font-weight:600;font-size:14.5px;line-height:1.4}
 
+
+/* multi-page */
+.navlinks a[aria-current="page"]{color:var(--fg)}
+.navlinks a[aria-current="page"]::after{transform:scaleX(1)}
+.phead{padding-block:clamp(36px,6vw,64px) clamp(8px,2vw,16px);position:relative;overflow:hidden}
+.phead::before{content:"";position:absolute;right:-10%;top:-60%;width:60vw;height:60vw;max-width:700px;max-height:700px;border-radius:50%;background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 14%,transparent),transparent 72%);pointer-events:none}
+.phead .col{position:relative;display:grid;gap:10px}
+.phead h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-.015em;margin:0;text-wrap:balance;animation:fade .7s ease both}
+.phead p{margin:0;color:var(--muted);font-size:clamp(16px,1.8vw,19px);max-width:62ch;animation:fade .7s ease .1s both}
+.crumbs{display:flex;gap:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.crumbs a{color:var(--accent);text-decoration:none}
+body:not([data-page="home"]) main>section.s:first-of-type{border-top:0}
+.xgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.xcard{display:grid;gap:8px;align-content:start;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;color:var(--fg);transition:transform .25s,border-color .25s,box-shadow .25s}
+.xcard:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 16px 36px -24px color-mix(in srgb,var(--fg) 60%,transparent)}
+.xn{font-family:var(--mono);font-size:12px;color:var(--co2)}
+.xcard b{font-family:var(--display);font-size:22px;font-weight:600}
+.xcard p{margin:0;color:var(--muted);font-size:14.5px}
+.xgo{font-weight:600;font-size:14px;color:var(--accent);margin-top:6px}
+.nextp{padding-block:8px 64px}
+.nextp .col{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:860px){.xgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.xgrid{grid-template-columns:1fr}}
+
 @media (max-width:980px){
   .stats .col{grid-template-columns:repeat(3,minmax(0,1fr))}
   .stat:nth-child(4){border-left:0;padding-left:0}
   .stat:nth-child(-n+3){border-bottom:1px solid var(--line)}
-  .navlinks{display:none}.theme{margin-left:auto}
+  nav .col{height:auto;flex-wrap:wrap;padding-block:10px;row-gap:8px}.navlinks{order:3;width:100%;margin-left:0;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.navlinks::-webkit-scrollbar{display:none}.theme{margin-left:auto}
 }
 @media (max-width:860px){
   .mhead,.mgrid{grid-template-columns:1fr}
@@ -390,12 +416,12 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
 }
 </style>
 </head>
-<body>
+<body data-page="home">
 
 <nav class="gut"><div class="col">
-  <a class="logo" href="#top" aria-label="Home"><img src="assets/img/renston.jpg" alt=""><span>R. J. Fernandes</span></a>
+  <a class="logo" href="./" aria-label="Home"><img src="assets/img/renston.jpg" alt=""><span>R. J. Fernandes</span></a>
   <div class="navlinks">
-    <a href="#areas">Research</a><a href="#publications">Publications</a><a href="#reviewing">Reviewing</a><a href="#talks">Talks &amp; writing</a><a href="#music">Music</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="research/" data-nav="research">Research</a><a href="publications/" data-nav="publications">Publications</a><a href="talks/" data-nav="talks">Talks &amp; writing</a><a href="music/" data-nav="music">Music</a><a href="experience/" data-nav="experience">Experience</a><a href="contact/" data-nav="contact">Contact</a>
   </div>
   <button class="theme" id="theme" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
 </div></nav>
@@ -435,90 +461,32 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
   <div class="col" style="display:grid;gap:14px;width:100%"><p class="eyebrow">Affiliations</p><div class="track" id="affTrack"></div></div>
 </section>
 
+
 <main>
-<section class="s gut" id="areas"><div class="col">
-  <div class="shead"><div><p class="eyebrow">Research</p><h2 id="areasTitle">Research Areas</h2><p class="sub" id="areasSub"></p></div></div>
-  <div class="areas" id="areaGrid"></div>
-</div></section>
-
-<section class="s gut" id="vision"><div class="col">
-  <div class="quotes">
-    <div class="quote"><h3>Research Vision</h3><div id="visionTxt"></div></div>
-    <div class="quote"><h3>Teaching &amp; Mentorship</h3><div id="teachTxt"></div></div>
+<section class="s gut" id="explore"><div class="col">
+  <div class="shead"><div><p class="eyebrow">Explore</p><h2>Find your way around</h2></div></div>
+  <div class="xgrid">
+    <a class="xcard" href="research/"><span class="xn">01</span><b>Research</b><p>Research areas, vision and teaching philosophy.</p><span class="xgo">Open →</span></a>
+    <a class="xcard" href="publications/"><span class="xn">02</span><b>Publications &amp; Reviewing</b><p>Papers with live citation counts, and the journals I review for.</p><span class="xgo">Open →</span></a>
+    <a class="xcard" href="talks/"><span class="xn">03</span><b>Talks &amp; Writing</b><p>Seminars, blog posts and updates.</p><span class="xgo">Open →</span></a>
+    <a class="xcard" href="music/"><span class="xn">04</span><b>Music</b><p>Bands, releases, stages and press — rocker from dawn to dusk.</p><span class="xgo">Open →</span></a>
+    <a class="xcard" href="experience/"><span class="xn">05</span><b>Experience</b><p>Roles, education, awards, languages and toolkit.</p><span class="xgo">Open →</span></a>
+    <a class="xcard" href="contact/"><span class="xn">06</span><b>Contact</b><p>Collaborations, consulting and fuel-policy work.</p><span class="xgo">Open →</span></a>
   </div>
 </div></section>
 
-<section class="s gut" id="publications"><div class="col">
-  <div class="shead">
-    <div><p class="eyebrow">Publications</p><h2>Featured Research &amp; Publications</h2><p class="sub" id="pubIntro"></p></div>
-    <div class="ctrl">
-      <div class="ctrl" role="group" aria-label="Filter publications" id="filters"></div>
-      <label for="sort" class="eyebrow" style="margin-left:6px;color:var(--muted)">Sort</label>
-      <select id="sort"><option value="year">Newest</option><option value="cites">Most cited</option></select>
-    </div>
-  </div>
-  <div class="pubs" id="pubs"><ol class="seo-list"><li>Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy — R. J. Fernandes. Doctoral Thesis, KAUST, 2026.</li><li>Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment — R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. G. Im, J. W. G. Turner. Biomass and Bioenergy 217, 110138, 2027.</li><li>Techno-Economic Analysis of an Integrated E-Methanol Production Plant Utilizing First and Second Generation Biomass Resources — R. J. Fernandes, M. R. Shakeel, D. Nguyen, H. G. Im, J. W. G. Turner. SAE Technical Paper 2025-01-0182, 2025.</li><li>Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment — R. J. Fernandes, D. Nguyen, M. R. Shakeel, J. W. G. Turner. Procedia CIRP 135, 297–306, 2025.</li><li>A Joule cycle-based approach to recover waste heat from marine and heavy-duty vehicles — S. R. Gubba, R. V. Kodaboina, K. Y. Kenkoh, R. Fernandes, J. W. G. Turner. Energy 337, 138755, 2025.</li><li>Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines — D. Nguyen, R. J. Fernandes, J. W. G. Turner, D. R. Emberson. International Journal of Hydrogen Energy 112, 15–30, 2025.</li><li>Evaluating the Performance, Emissions, and Well-to-Tank Carbon Footprint of Hydrogen-Enriched Euro-6 Gasoline in a Modified CFR Engine — A. Alrams, R. Fernandes, X. Wang, M. S. Panithasan, J. Turner. ASME ICEF 2025, 2025.</li><li>Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO₂ Utilization — R. J. Fernandes, D. Nguyen, M. R. Shakeel, J. W. G. Turner. SAE Technical Paper 2024-01-2449, 2024.</li><li>Variable Compression Ratio Hydrogen-Fueled Homogeneous Charge Compression Ignition Engine — D. D. Nguyen, R. Fernandes, J. W. G. Turner. SAE Technical Paper 2023-24-0067, 2023.</li><li>Investigating the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics — D. D. Nguyen, R. Fernandes, J. W. G. Turner. Powertrain Systems for a Sustainable Future (book chapter), 2023.</li></ol></div>
-</div></section>
 
-<section class="s gut band" id="reviewing"><div class="col">
-  <div class="rev">
-    <div>
-      <p class="eyebrow">Peer review</p>
-      <div class="big" id="revBig">—</div>
-      <p style="margin:10px 0 0;max-width:34ch">journal articles peer-reviewed across <b id="revJ" style="color:#f0b65c">12</b> journals</p>
-      <p class="note" id="revTier" style="margin-top:6px">Elsevier · Q1 journals</p>
-    </div>
-    <div>
-      <h2 style="font-size:26px;margin-bottom:16px">Journals I review for</h2>
-      <div class="journals" id="journals"></div>
-      <p class="note">Verified reviews are pulled from ORCID, which Web of Science Reviewer Recognition updates automatically.</p>
-    </div>
-  </div>
-</div></section>
 
-<section class="s gut" id="talks"><div class="col">
-  <div class="shead">
-    <div><p class="eyebrow">Talks &amp; writing</p><h2>Seminars, blog &amp; posts</h2></div>
-    <div class="follow" id="follow"></div>
-  </div>
-  <div class="feed" id="feed"></div>
-</div></section>
 
-<section class="s gut stage" id="music"><div class="col">
-  <div class="mhead">
-    <div class="mtxt">
-      <p class="eyebrow" id="mEyebrow">Music</p>
-      <h2 id="mTitle">Rocker from dawn to dusk</h2>
-      <p class="mlead" id="mLead"></p>
-      <div class="listen" id="mListen"></div>
-    </div>
-    <div class="mfacts" id="mFacts"></div>
-  </div>
-  <div class="mstory" id="mStory"></div>
-  <div class="vids" id="mVids"></div>
-  <div class="mgrid">
-    <div><h3 class="mh">Projects</h3><div class="projects" id="mProjects"></div></div>
-    <div>
-      <h3 class="mh">Listen</h3><div class="spot" id="mSpot"></div>
-      <h3 class="mh" style="margin-top:28px">Discography</h3><ol class="disco" id="mDisco"></ol>
-    </div>
-  </div>
-  <div class="stages"><h3 class="mh">Stages</h3><div class="stagelist" id="mStages"></div></div>
-  <div class="press"><h3 class="mh">In the press</h3><div class="presslist" id="mPress"></div></div>
-</div></section>
 
-<section class="s gut" id="experience"><div class="col">
-  <div class="shead"><div><p class="eyebrow">Experience</p><h2>Education &amp; Experience</h2><p class="sub" id="expIntro"></p></div></div>
-  <div class="tl">
-    <div><h3 class="h">Education</h3><ol id="edu"></ol></div>
-    <div><h3 class="h">Experience</h3><ol id="exp"></ol></div>
-  </div>
-  <div class="extras">
-    <div><h3 class="h">Awards &amp; Scholarships</h3><div class="awards" id="awards"></div></div>
-    <div><h3 class="h">Languages</h3><div class="langs" id="langs"></div><div class="interests" id="interests"></div></div>
-  </div>
-  <div class="tk"><div><h3 class="h" id="tkTitle" style="font-family:var(--display);font-weight:600;font-size:23px;margin:0 0 4px">Technical Toolkit</h3><p class="sub" id="tkSub"></p></div><div class="tkg" id="toolkit"></div></div>
-</div></section>
+
+
+
+
+
+
+
+
 
 <section class="s gut" id="contact"><div class="col contact">
   <p class="eyebrow">Contact</p>
@@ -528,6 +496,7 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
   <div class="mail"><code id="email"></code><button class="btn" id="copy" type="button">Copy email</button></div>
   <div class="links" id="links"></div>
 </div></section>
+
 </main>
 
 <footer class="gut"><div class="col">
@@ -537,7 +506,7 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
 
 <script>
 (function(){
-const $=id=>document.getElementById(id);
+const $=id=>document.getElementById(id)||document.createElement("div");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt=n=>n==null?"—":Number(n).toLocaleString("en-US");
 const ME=/fernandes/i;
@@ -594,7 +563,7 @@ function typewriter(cfg){
 
 /* hero: circular-carbon loop drawn around the portrait */
 function carbonLoop(){
-  const cv=$("loop");const ctx=cv.getContext("2d");
+  const cv=$("loop");if(!cv.getContext)return;const ctx=cv.getContext("2d");
   const stages=[
     {label:"Biomass",sub:"residues",ang:-Math.PI/2,c:"--accent"},
     {label:"CO₂",sub:"captured",ang:0,c:"--co2"},
