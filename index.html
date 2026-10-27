@@ -336,6 +336,12 @@ footer .col{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betwe
 .disco b{color:#fff;font-weight:600}
 .disco small{color:#a9afbb;display:block;font-size:12px}
 .disco .rrole{display:block;font-style:normal;font-size:12px;color:#e9a64a;margin-top:2px}
+.disco .rt{color:inherit;text-decoration:none}
+.disco .rt:hover b{color:#e9a64a;text-decoration:underline;text-underline-offset:3px}
+.disco .rl{display:flex;gap:6px;margin-top:6px}
+.disco .rl a{width:28px;height:28px;border-radius:8px;border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;color:#d9dde5;transition:color .2s,border-color .2s,background .2s,transform .2s}
+.disco .rl a:hover{transform:translateY(-2px);border-color:#e9a64a;color:#fff;background:rgba(233,166,74,.14)}
+.disco .rl svg{width:13px;height:13px;fill:currentColor}
 .disco .t{font-family:var(--mono);font-size:11px;color:#e9a64a;border:1px solid rgba(233,166,74,.4);border-radius:4px;padding:0 6px}
 .stages{margin-top:44px}
 .stagelist{display:flex;flex-wrap:wrap;gap:8px}
@@ -791,7 +797,8 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
     document.querySelectorAll(".vbox").forEach(b=>b.addEventListener("click",()=>{b.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1&rel=0" title="YouTube video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`},{once:true}));
     $("mProjects").innerHTML=(mu.projects||[]).map(p=>`<article class="proj"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline"><h4>${esc(p.name)}</h4><span class="yr">${esc(p.years)}</span></div><span class="rl">${esc(p.role)}</span><p>${esc(p.blurb)}</p><div class="pl">${(p.links||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">${svgI(l.icon)}${esc(l.label)}</a>`).join("")}</div></article>`).join("");
     $("mSpot").innerHTML=(mu.spotify_embed||[]).map(id=>`<iframe src="https://open.spotify.com/embed/track/${esc(id)}?utm_source=generator&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify player"></iframe>`).join("");
-    $("mDisco").innerHTML=(mu.releases||[]).sort((a,b)=>b.year-a.year).map(r=>`<li><span class="y">${esc(r.year)}</span><span><b>${esc(r.title)}</b><small>${esc(r.artist)}</small>${r.role?`<em class="rrole">${esc(r.role)}</em>`:""}</span><span class="t">${esc(r.type)}</span></li>`).join("");
+    const RL=[["youtube","YouTube"],["spotify","Spotify"],["apple","Apple Music"]];
+    $("mDisco").innerHTML=(mu.releases||[]).sort((a,b)=>b.year-a.year).map(r=>{const lk=r.links||{};const first=RL.map(x=>lk[x[0]]).find(Boolean);return `<li><span class="y">${esc(r.year)}</span><span>${first?`<a class="rt" href="${esc(first)}" target="_blank" rel="noopener"><b>${esc(r.title)}</b></a>`:`<b>${esc(r.title)}</b>`}<small>${esc(r.artist)}</small>${r.role?`<em class="rrole">${esc(r.role)}</em>`:""}${RL.some(x=>lk[x[0]])?`<span class="rl">${RL.filter(x=>lk[x[0]]).map(x=>`<a href="${esc(lk[x[0]])}" target="_blank" rel="noopener" aria-label="${esc(r.title)} on ${x[1]}" title="${x[1]}">${svgI(x[0])}</a>`).join("")}</span>`:""}</span><span class="t">${esc(r.type)}</span></li>`}).join("");
     $("mStages").innerHTML=(mu.stages||[]).map(x=>`<span>${esc(x)}</span>`).join("");
     const md=d=>{try{return new Date(d).toLocaleDateString("en-GB",{month:"short",year:"numeric"})}catch(e){return""}};
     $("mPress").innerHTML=(mu.press||[]).sort((a,b)=>new Date(b.date)-new Date(a.date)).map(p=>`<a class="pr" href="${esc(p.url)}" target="_blank" rel="noopener"><span class="o">${esc(p.outlet)}<span>${md(p.date)}</span></span><b>${esc(p.title)}</b></a>`).join("");

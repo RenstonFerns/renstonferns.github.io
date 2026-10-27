@@ -1,5 +1,5 @@
 {
- "_help": "Everything in the Music section. Add new releases to 'releases' (newest first is not required). 'spotify_embed' takes a Spotify track or album ID; 'youtube' takes a video ID.",
+ "_help": "Everything in the Music section. Each release can have links: youtube, spotify, apple (full URLs). The title opens the first one available.",
  "eyebrow": "Music",
  "title": "Rocker from dawn to dusk",
  "lead": "Away from the lab, I'm a rock vocalist, songwriter and guitarist with more than a decade of live performance behind me — from the battle-of-the-bands circuit in Mangaluru to festival stages in the UK.",
@@ -130,49 +130,83 @@
    "title": "Rain It Down on Me",
    "artist": "The Speksy Pscyentist & Renston Jake Fernandes",
    "type": "Single",
-   "role": "Lead vocals & lyrics"
+   "role": "Lead vocals & lyrics",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=gA_jIbMnV5I",
+    "spotify": "https://open.spotify.com/track/4zI1KBOCz4mP1xSSAuBcdJ",
+    "apple": "https://music.apple.com/us/album/rain-it-down-on-me-single/1771788325"
+   }
   },
   {
    "year": 2024,
    "title": "Bones (feat. Russel Rodrigues)",
    "artist": "The Speksy Pscyentist & Renston Jake Fernandes",
    "type": "Single",
-   "role": "Lead vocals & concept"
+   "role": "Lead vocals & concept",
+   "links": {
+    "spotify": "https://open.spotify.com/track/7eUJsZFDaj2bV7SpEQw0YD",
+    "apple": "https://music.apple.com/us/album/bones-feat-russel-rodrigues-single/1750775141"
+   }
   },
   {
    "year": 2022,
    "title": "I'm (Not) Okay",
    "artist": "The Speksy Pscyentist",
    "type": "Single",
-   "role": "Guitars & music arrangement"
+   "role": "Guitars & music arrangement",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=pOFCBtGYWfg",
+    "spotify": "https://open.spotify.com/search/I%27m%20%28Not%29%20Okay%20The%20Speksy%20Pscyentist",
+    "apple": "https://music.apple.com/us/album/im-not-okay-single/1632643024"
+   }
   },
   {
    "year": 2022,
    "title": "Retribution",
    "artist": "Sounds Fishy",
    "type": "EP",
-   "role": "Lead vocals, lyrics & song titles"
+   "role": "Lead vocals, lyrics & song titles",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=shwHSHRVIb8",
+    "spotify": "https://open.spotify.com/search/Retribution%20Sounds%20Fishy",
+    "apple": "https://music.apple.com/us/album/retribution-single/1616987474"
+   }
   },
   {
    "year": 2019,
    "title": "Moment of Truth",
    "artist": "Sounds Fishy",
    "type": "Single",
-   "role": "Lead vocals, lyrics & title"
+   "role": "Lead vocals, lyrics & title",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=PemrgReTKkI",
+    "spotify": "https://open.spotify.com/search/Moment%20of%20Truth%20Sounds%20Fishy",
+    "apple": "https://music.apple.com/us/album/moment-of-truth-single/1478486716"
+   }
   },
   {
    "year": 2019,
    "title": "Train on a Highway",
    "artist": "Sounds Fishy",
    "type": "Single",
-   "role": "Lead vocals, lyrics & title"
+   "role": "Lead vocals, lyrics & title",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=06SrwjOD3H0",
+    "spotify": "https://open.spotify.com/search/Train%20on%20a%20Highway%20Sounds%20Fishy",
+    "apple": "https://music.apple.com/us/album/train-on-a-highway-single/1460905710"
+   }
   },
   {
    "year": 2019,
    "title": "Sympathetic Race",
    "artist": "Sounds Fishy",
    "type": "Single",
-   "role": "Lead vocals, lyrics & title"
+   "role": "Lead vocals, lyrics & title",
+   "links": {
+    "youtube": "https://www.youtube.com/watch?v=90K5BCROdXA",
+    "spotify": "https://open.spotify.com/search/Sympathetic%20Race%20Sounds%20Fishy",
+    "apple": "https://music.apple.com/us/album/sympathetic-race-single/1454478237"
+   }
   }
  ],
  "stages": [
