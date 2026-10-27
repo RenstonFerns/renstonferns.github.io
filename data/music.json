@@ -32,7 +32,7 @@
    "name": "The Speksy Pscyentist (TSP)",
    "years": "2018 – present",
    "role": "Vocals, guitars, songwriting & arrangement",
-   "blurb": "A duo with Jyoshma D'Souza blending rock with genre-crossing songwriting. Singles include \"Rain It Down on Me\" (VEVO feature, 2024), \"Bones\" ft. Russel Rodrigues (2024), \"I'm (Not) Okay\" (2022) and \"Self Love\" (2021).",
+   "blurb": "A duo with Jyoshma D'Souza blending rock with genre-crossing songwriting. Singles include \"Rain It Down on Me\" (VEVO feature, 2024), \"Bones\" ft. Russel Rodrigues (2024) and \"I'm (Not) Okay\" (2022).",
    "links": [
     {
      "label": "Website",
@@ -136,7 +136,8 @@
    "year": 2024,
    "title": "Bones (feat. Russel Rodrigues)",
    "artist": "The Speksy Pscyentist & Renston Jake Fernandes",
-   "type": "Single"
+   "type": "Single",
+   "role": "Lead vocals & concept"
   },
   {
    "year": 2022,
@@ -151,12 +152,6 @@
    "artist": "Sounds Fishy",
    "type": "EP",
    "role": "Lead vocals, lyrics & song titles"
-  },
-  {
-   "year": 2021,
-   "title": "Self Love",
-   "artist": "The Speksy Pscyentist",
-   "type": "Single"
   },
   {
    "year": 2019,
