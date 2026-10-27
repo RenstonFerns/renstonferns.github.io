@@ -649,17 +649,24 @@ function carbonLoop(){
     const P=[mk("i"),mk("i")];
     let k=0,cur=null,nxt=null,end=0,live=true,started=false;
     /* phones only load a video once play() is called, and ignore seeks before metadata */
-    const seek=(v,t)=>{if(v.readyState>=1){try{v.currentTime=t}catch(e){}}else v.addEventListener("loadedmetadata",()=>{try{v.currentTime=t}catch(e){}},{once:true})};
+    const seek=(v,t)=>{const go=()=>{if(Math.abs(v.currentTime-t)>0.3){try{v.currentTime=t}catch(e){}}};if(v.readyState>=1)go();else{v.addEventListener("loadedmetadata",go,{once:true});v.addEventListener("canplay",go,{once:true})}};
     const warm=v=>{const p=v.play();if(p&&p.then)p.then(()=>{if(v!==cur)v.pause()}).catch(()=>{})};
     const prep=c=>{const v=P.find(x=>x!==cur)||P[0];v._a=c[1];seek(v,c[1]);warm(v);return v};
     const show=()=>{const c=CL[k],v=nxt;
       if(v.readyState>=1&&Math.abs(v.currentTime-c[1])>0.6){try{v.currentTime=c[1]}catch(e){}}
-      v.play().catch(()=>{});v.classList.add("on");
+      v._a=c[1];v.play().catch(()=>{});
       if(cur&&cur!==v){cur.classList.remove("on");cur.pause()}
       cur=v;end=c[2];k=(k+1)%CL.length;nxt=prep(CL[k])};
-    const tick=()=>{if(live&&cur&&!cur.paused&&cur.currentTime>=end-0.04)show();requestAnimationFrame(tick)};
+    let lastFix=0;
+    const tick=now=>{
+      if(live&&cur){const t=cur.currentTime,a=cur._a;
+        if(!cur.paused&&t>=end-0.04)show();
+        else{/* only ever show Ren's clips: hide while outside the clip, and re-seek (iOS can drop seeks) */
+          const ok=t>=a-0.35&&t<=end+0.35;cur.classList.toggle("on",ok);
+          if(!ok&&cur.readyState>=1&&now-lastFix>700){lastFix=now;try{cur.currentTime=a}catch(e){}}}}
+      requestAnimationFrame(tick)};
     const begin=()=>{if(started)return;started=true;show();requestAnimationFrame(tick)};
-    const first=P[0];first._a=CL[0][1];seek(first,CL[0][1]);nxt=first;
+    const first=P[0];first.src=SRC.i+"#t="+CL[0][1];first._a=CL[0][1];seek(first,CL[0][1]);nxt=first;
     first.addEventListener("playing",begin,{once:true});
     first.play().catch(()=>{});
     /* Low Power Mode etc. block autoplay: start on the first touch instead */
