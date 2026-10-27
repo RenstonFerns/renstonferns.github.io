@@ -47,7 +47,7 @@ IMG = lambda src: f'<div class="phead-art" aria-hidden="true"><img src="{src}" a
 ART = {
     "research": (IMG("assets/img/blog-circular-carbon.jpg"), ""),
     "publications": (IMG("assets/img/talk-emethanol-tea.jpg"), ""),
-    "talks": (IMG("assets/img/caricature.jpg"), ""),
+    "talks": (IMG("assets/img/talk-podium.jpg"), ""),
     "experience": (IMG("assets/img/presenting.jpg"), ""),
     "contact": (IMG("assets/img/caricature.jpg"), ""),
     "music": ('<div class="phead-art reel" aria-hidden="true"></div>', " dark"),
