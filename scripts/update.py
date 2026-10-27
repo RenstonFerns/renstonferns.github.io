@@ -176,10 +176,7 @@ def publications():
         if not m.get("title"):
             continue
         key = norm_doi(m.get("doi")) or norm_title(m["title"])
-        if key in items:
-            items[key]["first_author"] = items[key]["first_author"] if items[key]["first_author"] is not None else m.get("first_author")
-            continue
-        match = next((v for v in items.values() if norm_title(m["title"]) == norm_title(v["title"]) and v["type"] != "preprint"), None)
+        match = items.get(key) or next((v for v in items.values() if norm_title(m["title"]) == norm_title(v["title"]) and v["type"] != "preprint"), None)
         if match:
             # manual entry wins for tidy metadata (title case, authors, venue, first-author flag)
             for f in ("key", "title", "authors", "venue", "first_author", "url"):

@@ -3,11 +3,11 @@
  "source": "orcid+openalex",
  "items": [
   {
-   "title": "Circular Carbon E-fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
+   "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
    "authors": [
     "R. J. Fernandes"
    ],
-   "venue": "",
+   "venue": "Doctoral Thesis, KAUST",
    "year": 2026,
    "type": "thesis",
    "doi": "10.25781/kaust-914yt",
@@ -118,9 +118,12 @@
    "added": "2026-10-26"
   },
   {
-   "title": "ANALYSIS OF CIRCULAR CARBON BIOFUEL AND E-FUEL PRODUCTION FROM SAUDI ARABIAN DATE PALM FRUIT AND PALM WASTE THROUGH INTEGRATED FERMENTATION, GASIFICATION, AND CO2 CAPTURE",
-   "authors": [],
-   "venue": "European Biomass Conference and Exhibition Proceedings",
+   "title": "Analysis of Circular Carbon Biofuel and E-Fuel Production from Saudi Arabian Date Palm Fruit and Palm Waste through Integrated Fermentation, Gasification, and CO₂ Capture",
+   "authors": [
+    "R. J. Fernandes",
+    "et al."
+   ],
+   "venue": "Proceedings of the European Biomass Conference and Exhibition (EUBCE)",
    "year": 2025,
    "type": "conference",
    "doi": "",
