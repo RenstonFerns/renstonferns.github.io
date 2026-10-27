@@ -65,7 +65,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead.dark .crumbs{color:#a9afbb}
 .phead.dark .crumbs a{color:#e9a64a}
 .phead.dark + main .stage{padding-top:clamp(32px,5vw,56px)}
-.livestrip{position:relative;margin:0 0 48px;border-radius:16px;overflow:hidden;aspect-ratio:21/9;max-width:100%;background:#000 url("https://i.ytimg.com/vi/gA_jIbMnV5I/hqdefault.jpg") center/cover;border:1px solid rgba(255,255,255,.1)}
+.livestrip{position:relative;margin:0 0 48px;border-radius:16px;overflow:hidden;aspect-ratio:21/9;max-width:100%;background:#000 url("https://i.ytimg.com/vi/7hjQOcdVU-s/hqdefault.jpg") center/cover;border:1px solid rgba(255,255,255,.1)}
 .livestrip video{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
 .livestrip video.on{opacity:1}
 .livestrip::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 40%);pointer-events:none}
@@ -74,6 +74,15 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 @keyframes rec{70%{box-shadow:0 0 0 8px rgba(255,59,59,0)}}
 @media (max-width:560px){.phead-art{width:70%;opacity:.14}.livestrip{aspect-ratio:16/9}}
 @media (prefers-reduced-motion:reduce){.phead-art img,.phead-art video{animation:none}}
+
+
+/* YouTube clips used as silent, cropped background loops */
+.phead-art.yt,.livestrip{container-type:size}
+.lazyyt{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);border:0;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
+.lazyyt.on{opacity:1}
+.phead.dark .phead-art.yt{background:#0d0f14 url("https://i.ytimg.com/vi/90K5BCROdXA/maxresdefault.jpg") center/cover}
+.phead.dark .phead-art.yt .lazyyt{scale:1.15}
+.livestrip .lazyyt{scale:1.12}
 
 @media (max-width:980px){html{scroll-padding-top:110px}}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65}
@@ -606,6 +615,14 @@ function carbonLoop(){
 (function(){
   const art=document.querySelector(".phead-art>*");
   if(art&&!REDUCED){let tick=false;addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{art.style.transform="translateY("+(scrollY*0.18)+"px)";tick=false})},{passive:true})}
+  const yts=[...document.querySelectorAll("iframe.lazyyt")];
+  const ytCmd=(f,fn)=>{try{f.contentWindow.postMessage(JSON.stringify({event:"command",func:fn,args:[]}),"*")}catch(e){}};
+  if(yts.length&&!REDUCED){
+    const io2=new IntersectionObserver(es=>es.forEach(e=>{const f=e.target;
+      if(e.isIntersecting){if(!f.src){f.src=f.dataset.src;f.addEventListener("load",()=>setTimeout(()=>f.classList.add("on"),2200),{once:true})}else ytCmd(f,"playVideo")}
+      else if(f.src)ytCmd(f,"pauseVideo")}),{rootMargin:"120px 0px"});
+    yts.forEach(f=>io2.observe(f));
+  }
   const vids=[...document.querySelectorAll("video.lazyvid")];
   if(!vids.length)return;
   const start=v=>{if(!v.src&&v.dataset.src){v.src=v.dataset.src;v.addEventListener("playing",()=>v.classList.add("on"),{once:true})}if(!REDUCED)v.play().catch(()=>{})};

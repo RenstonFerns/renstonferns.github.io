@@ -48,10 +48,11 @@ ART = {
     "research": (IMG("assets/img/blog-circular-carbon.jpg"), ""),
     "publications": (IMG("assets/img/talk-emethanol-tea.jpg"), ""),
     "talks": (IMG("assets/img/caricature.jpg"), ""),
-    "experience": (IMG("assets/img/renston.jpg"), ""),
+    "experience": (IMG("assets/img/presenting.jpg"), ""),
     "contact": (IMG("assets/img/caricature.jpg"), ""),
-    "music": ('<div class="phead-art" aria-hidden="true"><video class="lazyvid" data-src="https://tspalive.com/videos/7e138cb033bab1d8e057ca0993205573.mp4" '
-              'muted loop playsinline preload="none" poster="https://i.ytimg.com/vi/gA_jIbMnV5I/maxresdefault.jpg"></video></div>', " dark"),
+    "music": ('<div class="phead-art yt" aria-hidden="true"><iframe class="lazyyt" title="Sympathetic Race (background)" tabindex="-1" '
+              'data-src="https://www.youtube-nocookie.com/embed/90K5BCROdXA?autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1&amp;playlist=90K5BCROdXA&amp;start=106&amp;playsinline=1&amp;rel=0&amp;modestbranding=1&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1" '
+              'allow="autoplay; encrypted-media"></iframe></div>', " dark"),
 }
 ORDER = [p[0] for p in PAGES if p[0] != "home"]
 
