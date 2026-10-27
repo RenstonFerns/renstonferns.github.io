@@ -1,0 +1,86 @@
+{
+ "_help": "Everything in the Music section. Add new releases to 'releases' (newest first is not required). 'spotify_embed' takes a Spotify track or album ID; 'youtube' takes a video ID.",
+ "eyebrow": "Music",
+ "title": "Rocker from dawn to dusk",
+ "lead": "Away from the lab, I'm a rock vocalist, songwriter and guitarist with more than a decade of live performance behind me — from the battle-of-the-bands circuit in Mangaluru to festival stages in the UK.",
+ "story": [
+  "I started out fronting Avalanche Brakedown, a six-piece hard rock band from Mangaluru, as lead vocalist and primary songwriter. In its first year the band won ten battle-of-the-bands titles and represented the city at IIT Madras's Saarang, finishing sixth of forty acts nationally.",
+  "From 2016 to 2022 I was the lead vocalist and lyricist of Sounds Fishy, a hard rock and ambient metal band. Our debut original, \"Sympathetic Race\", made us the first band from Mangaluru to be played on British radio, our songs reached radio in the UK, New Zealand and the USA, and our debut EP, Retribution — loosely built around the seven deadly sins — was featured by Rolling Stone India.",
+  "Today my main project is The Speksy Pscyentist (TSP), a duo with fellow researcher Jyoshma D'Souza, where science meets symphony. Our 2024 single \"Rain It Down on Me\" was featured on VEVO, likely a first for a Mangalurean act."
+ ],
+ "facts": [
+  {"value": "14+", "label": "years performing live"},
+  {"value": "10", "label": "battle-of-the-bands titles in one year (Avalanche Brakedown)"},
+  {"value": "3", "label": "countries with radio airplay (UK · NZ · USA)"},
+  {"value": "VEVO", "label": "featured artist, 2024 (TSP)"}
+ ],
+ "projects": [
+  {
+   "name": "The Speksy Pscyentist (TSP)",
+   "years": "2018 – present",
+   "role": "Vocals, guitars, songwriting & arrangement",
+   "blurb": "A duo with Jyoshma D'Souza blending rock with genre-crossing songwriting. Singles include \"Rain It Down on Me\" (VEVO feature, 2024), \"Bones\" ft. Russel Rodrigues (2024), \"I'm (Not) Okay\" (2022) and \"Self Love\" (2021).",
+   "links": [
+    {"label": "Website", "icon": "globe", "url": "https://tspalive.com/"},
+    {"label": "Spotify", "icon": "spotify", "url": "https://open.spotify.com/artist/4W7TG4rJTWUTXe1jnnPgu3"},
+    {"label": "Apple Music", "icon": "apple", "url": "https://music.apple.com/us/artist/the-speksy-pscyentist/1547483206"},
+    {"label": "YouTube", "icon": "youtube", "url": "https://www.youtube.com/@TheSpeksyPscyentist"}
+   ]
+  },
+  {
+   "name": "Sounds Fishy",
+   "years": "2016 – 2022",
+   "role": "Lead vocals & lyrics",
+   "blurb": "Mangaluru hard rock / ambient metal band. Runners-up for Best Rock Act of Mangaluru at their first contest, Hard Rock Rising winners (2017), and the only Asian act in the opening poll for the UK's Stonedead Festival 2020. Debut EP Retribution (2022).",
+   "links": [
+    {"label": "Spotify", "icon": "spotify", "url": "https://open.spotify.com/artist/41KZGMZttGmQ2SlP0DsqKg"},
+    {"label": "Apple Music", "icon": "apple", "url": "https://music.apple.com/us/artist/sounds-fishy/1454477670"},
+    {"label": "Retribution EP", "icon": "youtube", "url": "https://youtu.be/shwHSHRVIb8"}
+   ]
+  },
+  {
+   "name": "Avalanche Brakedown",
+   "years": "2014 – 2016",
+   "role": "Frontman, lead vocals & primary songwriter",
+   "blurb": "Six-piece hard rock band influenced by Scorpions, Megadeth, Pink Floyd and Dream Theater. Ten battle-of-the-bands wins in a year, sixth of forty at IIT Madras Saarang, and the single \"Kill My Pain\".",
+   "links": [
+    {"label": "Live at Pulse 2015", "icon": "youtube", "url": "https://www.youtube.com/watch?v=taNrnIhRJWk"}
+   ]
+  }
+ ],
+ "featured": [
+  {"title": "Rain It Down on Me", "artist": "The Speksy Pscyentist", "note": "Official music video · VEVO feature · 2024", "youtube": "gA_jIbMnV5I"},
+  {"title": "Sympathetic Race", "artist": "Sounds Fishy", "note": "Official music video · first Mangaluru band on UK radio · 2019", "youtube": "90K5BCROdXA"},
+  {"title": "Retribution", "artist": "Sounds Fishy", "note": "Debut EP, full stream · Rolling Stone India · 2022", "youtube": "shwHSHRVIb8"}
+ ],
+ "spotify_embed": ["4zI1KBOCz4mP1xSSAuBcdJ", "7eUJsZFDaj2bV7SpEQw0YD"],
+ "releases": [
+  {"year": 2024, "title": "Rain It Down on Me", "artist": "The Speksy Pscyentist & Renston Jake Fernandes", "type": "Single"},
+  {"year": 2024, "title": "Bones (feat. Russel Rodrigues)", "artist": "The Speksy Pscyentist & Renston Jake Fernandes", "type": "Single"},
+  {"year": 2023, "title": "Injustice", "artist": "Sounds Fishy", "type": "Single"},
+  {"year": 2022, "title": "I'm (Not) Okay", "artist": "The Speksy Pscyentist", "type": "Single"},
+  {"year": 2022, "title": "Retribution", "artist": "Sounds Fishy", "type": "EP"},
+  {"year": 2021, "title": "Self Love", "artist": "The Speksy Pscyentist", "type": "Single"},
+  {"year": 2019, "title": "Moment of Truth", "artist": "Sounds Fishy", "type": "Single"},
+  {"year": 2019, "title": "Train on a Highway", "artist": "Sounds Fishy", "type": "Single"},
+  {"year": 2019, "title": "Sympathetic Race", "artist": "Sounds Fishy", "type": "Single"}
+ ],
+ "stages": ["Corefest 2019 (UK)", "Shoreham Music Festival 2019 (UK)", "Worthing Music Festival 2019 (UK)", "Hard Rock Cafe Bengaluru", "B2R Rocktober Fest 2022 (Goa)", "Mangalore Alive Launch 2023", "Community Music Festival 2022 (KSA)", "IIT Madras Saarang"],
+ "press": [
+  {"outlet": "Rolling Stone India", "date": "2022-05-24", "title": "Mangaluru Rockers Sounds Fishy Sing About the Seven Deadly Sins on Debut EP 'Retribution'", "url": "https://rollingstoneindia.com/mangaluru-rockers-sounds-fishy-sing-about-the-seven-deadly-sins-on-debut-ep-retribution/"},
+  {"outlet": "Daijiworld", "date": "2024-10-22", "title": "Mangaluru's first: TSP featured on VEVO with 'Rain It Down on Me'", "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1237398"},
+  {"outlet": "Daijiworld", "date": "2022-06-19", "title": "'I'm (Not) Okay' single released on Father's Day", "url": "https://www.daijiworld.com/news/newsDisplay?newsID=971797"},
+  {"outlet": "Daijiworld", "date": "2019-04-03", "title": "Mangaluru based 'Sounds Fishy' band is rock sensation now", "url": "https://www.daijiworld.com/news/newsDisplay.aspx?newsID=575768"},
+  {"outlet": "Mangalorean.com", "date": "2020-03-13", "title": "Sounds Fishy rocked AIMIT like a hurricane at EPITOME 2020", "url": "https://www.mangalorean.com/kudlas-hard-rock-band-sounds-fishy-rocked-aimit-like-a-hurricane-at-epitome-2020-cultural-bash/"},
+  {"outlet": "Mangalorean.com", "date": "2019-11-30", "title": "Sounds Fishy inches close to play at Stonedead Festival 2020 (UK)", "url": "https://www.mangalorean.com/sounds-fishy-an-ambient-metal-hard-rock-band-from-mluru-inches-close-to-play-at-stonedead-festival-2020-uk/"},
+  {"outlet": "Mangalorean.com", "date": "2015-09-12", "title": "Rock band 'Avalanche Brakedown' – here they are to rock you like a hurricane!", "url": "https://www.mangalorean.com/mangaluru-rock-band-avalanche-brakedown-here-they-are-to-rock-you-like-a-hurricane/"},
+  {"outlet": "UniteAsia", "date": "2019-05-16", "title": "Hard rock band Sounds Fishy release 'Train on a Highway'", "url": "https://uniteasia.org/hard-rock-band-sounds-fishy-release-new-music-video-india/"},
+  {"outlet": "UniteAsia", "date": "2019-03-15", "title": "Hard rock/metal act Sounds Fishy release 'Sympathetic Race'", "url": "https://uniteasia.org/hard-rock-metal-act-sounds-fishy-release-music-video-india/"}
+ ],
+ "listen": [
+  {"label": "Spotify", "icon": "spotify", "url": "https://open.spotify.com/artist/1jFdO7F9Byi2UqhHMl7e6b"},
+  {"label": "Apple Music", "icon": "apple", "url": "https://music.apple.com/us/artist/renston-jake-fernandes/1750774720"},
+  {"label": "SoundCloud", "icon": "soundcloud", "url": "https://soundcloud.com/renston-fernandes"},
+  {"label": "YouTube (TSP)", "icon": "youtube", "url": "https://www.youtube.com/@TheSpeksyPscyentist"}
+ ]
+}

@@ -286,7 +286,8 @@
   "Aspen Plus process modelling",
   "Clean combustion and alcohol fuels",
   "Uncertainty and scenario analysis",
-  "Sustainable transport fuels"
+  "Sustainable transport fuels",
+  "Rock vocalist & songwriter"
  ],
  "contact": {
   "title": "Let's Collaborate",
@@ -323,6 +324,21 @@
    "label": "Instagram",
    "icon": "instagram",
    "url": "https://www.instagram.com/renston_fernandes"
+  },
+  {
+   "label": "Spotify",
+   "icon": "spotify",
+   "url": "https://open.spotify.com/artist/1jFdO7F9Byi2UqhHMl7e6b"
+  },
+  {
+   "label": "Apple Music",
+   "icon": "apple",
+   "url": "https://music.apple.com/us/artist/renston-jake-fernandes/1750774720"
+  },
+  {
+   "label": "SoundCloud",
+   "icon": "soundcloud",
+   "url": "https://soundcloud.com/renston-fernandes"
   }
  ],
  "wikidata": "Q141883476"
