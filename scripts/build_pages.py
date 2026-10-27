@@ -45,7 +45,7 @@ LABEL = {p[0]: p[4] for p in PAGES}
 # faded corner art per page; music gets a full-bleed live video header
 IMG = lambda src: f'<div class="phead-art" aria-hidden="true"><img src="{src}" alt="" loading="eager"></div>'
 ART = {
-    "research": ('<div class="phead-art side" aria-hidden="true"><video class="lazyvid" data-src="assets/video/research-talk.mp4" poster="assets/img/research-talk-poster.jpg" muted loop playsinline preload="none"></video></div>', " dark"),
+    "research": ('<div class="phead-art side" aria-hidden="true"><video class="lazyvid" data-src="assets/video/research-talk.mp4?v=3" poster="assets/img/research-talk-poster.jpg?v=3" muted loop playsinline preload="none"></video></div>', " dark"),
     "publications": (IMG("assets/img/talk-emethanol-tea.jpg"), ""),
     "talks": (IMG("assets/img/talk-podium2.jpg"), ""),
     "experience": (IMG("assets/img/presenting.jpg"), ""),
