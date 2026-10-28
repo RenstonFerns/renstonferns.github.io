@@ -2,7 +2,7 @@ name: Auto-update site data
 
 on:
   schedule:
-    - cron: "17 */3 * * *"  # every 3 hours: ORCID reviews, ORCID/OpenAlex papers, Instagram (Google Scholar once a day)
+    - cron: "17 * * * *"  # hourly: ORCID reviews, ORCID/OpenAlex papers, Instagram (Google Scholar once a day)
   workflow_dispatch:         # "Run workflow" button for an instant refresh
     inputs:
       force_scholar:
