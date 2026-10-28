@@ -72,8 +72,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead.dark .phead-art.side video{position:absolute;right:0;top:0;width:64%;height:100%;object-position:50% 20%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 38%);mask-image:linear-gradient(90deg,transparent 0%,#000 38%)}
 .phead.dark .phead-art.side video{filter:none}
 .phead.dark .phead-art.reel video{filter:brightness(1.06) contrast(1.04)}
-.phead.dark .phead-art.reel video.zoom{filter:brightness(1.12) contrast(1.04)}
-.phead.dark .phead-art.reel::after{background:linear-gradient(0deg,#0d0f14 0%,rgba(13,15,20,.4) 32%,rgba(13,15,20,.08) 70%,rgba(13,15,20,0) 100%)}
+.phead.dark .phead.dark .phead-art.reel::after{background:linear-gradient(0deg,#0d0f14 0%,rgba(13,15,20,.4) 32%,rgba(13,15,20,.08) 70%,rgba(13,15,20,0) 100%)}
 .phead.dark .phead-art.side::after{background:linear-gradient(0deg,#0d0f14 0%,rgba(13,15,20,.25) 22%,rgba(13,15,20,0) 45%)}
 @media (max-width:760px){.phead.dark .phead-art.side video{width:100%;-webkit-mask-image:none;mask-image:none}}
 .phead.dark h1{color:#fff}
@@ -101,9 +100,10 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .phead-art.reel{container-type:size;background:#0d0f14}
 .phead-art.reel video{position:absolute;left:50%;top:50%;translate:-50% -50%;width:max(100cqw,177.78cqh);height:auto;aspect-ratio:16/9;object-fit:cover;animation:none;opacity:0;scale:1.06;will-change:transform}
 .phead-art.reel video.on{opacity:1}
+.phead-art.reel video.zoom{left:auto;right:0;top:0;translate:none;width:58%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:100% 30%;scale:1;transform:scale(1.75);transform-origin:100% 26%;animation:reelpan var(--d,3s) ease-in-out forwards;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 42%);mask-image:linear-gradient(90deg,transparent 0%,#000 42%)}
+@keyframes reelpan{from{transform-origin:100% 22%}to{transform-origin:100% 60%}}
+@media (max-width:760px){.phead-art.reel video.zoom{width:100%;transform:scale(1.9);-webkit-mask-image:none;mask-image:none}}
 @supports not (width:1cqw){.phead-art.reel video{width:100%;height:100%;aspect-ratio:auto}}
-.phead-art.reel video.zoom{scale:1;transform:scale(3);transform-origin:100% 28%;animation:reelpan var(--d,3s) linear forwards}
-@keyframes reelpan{from{transform-origin:100% 28%}to{transform-origin:100% 72%}}
 .phead.dark .phead-art.yt .lazyyt{scale:1.15}
 .livestrip .lazyyt{scale:1.12}
 
@@ -473,6 +473,7 @@ body:not([data-page="home"]) main>section.s:first-of-type{border-top:0}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .rv.hold{opacity:1;transform:none}
 }
+.loc{display:inline-flex;align-items:center;gap:6px;margin-top:4px;font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--muted)}
 </style>
 </head>
 <body data-page="experience">
@@ -644,20 +645,19 @@ function carbonLoop(){
   /* music header reel: hop between Ren-only cuts of TSP videos; [source, from, to] in seconds */
   const reel=document.querySelector(".phead-art.reel");
   if(reel){
-    const SRC={i:"https://tspalive.com/videos/0747266c10fe21682a3739f867bd6f33.mp4"};/* It's My Life */
-    const CL=[["i",154.2,157.4],["i",7,10.4],["i",140,143.4],["i",15.1,18.2],
-      ["i",160.6,163.6],["i",25.1,26.8],["i",176.1,178.9],["i",147,151.6],["i",0.1,1.8],
-      ["i",166.4,170.4],["i",65.2,67.8],["i",185.1,188.4],["i",10.4,13.7],["i",170.4,173.7],["i",222.1,223.8],["i",18.2,20.8],["i",178.9,180.8]];
+    const SRC={i:"https://tspalive.com/videos/0747266c10fe21682a3739f867bd6f33.mp4",/* It's My Life */
+               g:"https://tspalive.com/videos/b0893071884334a6c5dc9fea799d9cf7.mp4"};/* Purple Waves live: Ren on guitar */
+    const CL=[["i",154.2,157.4],["i",7,10.4],["i",140,143.4],["g",76.3,79.0],["i",15.1,18.2],["i",160.6,163.6],["i",25.1,26.8],["i",176.1,178.9],["i",147,151.6],["g",79.0,81.6],["i",0.1,1.8],["i",166.4,170.4],["i",65.2,67.8],["i",185.1,188.4],["i",10.4,13.7],["g",81.6,84.2],["i",170.4,173.7],["i",222.1,223.8],["i",18.2,20.8],["i",178.9,180.8]];
     const mk=s=>{const v=document.createElement("video");v.muted=true;v.defaultMuted=true;v.setAttribute("muted","");v.playsInline=true;v.setAttribute("playsinline","");v.setAttribute("webkit-playsinline","");v.preload="auto";v.src=SRC[s];reel.appendChild(v);return v};
-    const P=[mk("i"),mk("i")];
+    const P={i:[mk("i"),mk("i")],g:[mk("g")]};
     let k=0,cur=null,nxt=null,end=0,live=true,started=false;
     /* phones only load a video once play() is called, and ignore seeks before metadata */
     const seek=(v,t)=>{const go=()=>{if(Math.abs(v.currentTime-t)>0.3){try{v.currentTime=t}catch(e){}}};if(v.readyState>=1)go();else{v.addEventListener("loadedmetadata",go,{once:true});v.addEventListener("canplay",go,{once:true})}};
     const warm=v=>{const p=v.play();if(p&&p.then)p.then(()=>{if(v!==cur)v.pause()}).catch(()=>{})};
-    const prep=c=>{const v=P.find(x=>x!==cur)||P[0];v._a=c[1];seek(v,c[1]);warm(v);return v};
+    const prep=c=>{const v=P[c[0]].find(x=>x!==cur)||P[c[0]][0];v._a=c[1];seek(v,c[1]);warm(v);return v};
     const show=()=>{const c=CL[k],v=nxt;
       if(v.readyState>=1&&Math.abs(v.currentTime-c[1])>0.6){try{v.currentTime=c[1]}catch(e){}}
-      v._a=c[1];v.play().catch(()=>{});
+      v._a=c[1];v.classList.remove("zoom");if(c[0]=="g"){v.style.setProperty("--d",(c[2]-c[1])+"s");void v.offsetWidth;v.classList.add("zoom")}v.play().catch(()=>{});
       if(cur&&cur!==v){cur.classList.remove("on");cur.pause()}
       cur=v;end=c[2];k=(k+1)%CL.length;nxt=prep(CL[k])};
     let lastFix=0;
@@ -669,7 +669,7 @@ function carbonLoop(){
           if(!ok&&cur.readyState>=1&&now-lastFix>700){lastFix=now;try{cur.currentTime=a}catch(e){}}}}
       requestAnimationFrame(tick)};
     const begin=()=>{if(started)return;started=true;show();requestAnimationFrame(tick)};
-    const first=P[0];first.src=SRC.i+"#t="+CL[0][1];first._a=CL[0][1];seek(first,CL[0][1]);nxt=first;
+    const first=P.i[0];first.src=SRC.i+"#t="+CL[0][1];first._a=CL[0][1];seek(first,CL[0][1]);nxt=first;
     first.addEventListener("playing",begin,{once:true});
     first.play().catch(()=>{});
     /* Low Power Mode etc. block autoplay: start on the first touch instead */
@@ -831,7 +831,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
 
   /* experience & education */
   $("expIntro").textContent=pr.experience_intro||"";
-  const ol=arr=>(arr||[]).map(x=>`<li><span class="w">${esc(x.when)}</span><span class="t">${esc(x.what)}</span><span class="p">${esc(x.where)}</span>${(x.summary||[]).length?`<ul>${x.summary.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}</li>`).join("");
+  const ol=arr=>(arr||[]).map(x=>`<li><span class="w">${esc(x.when)}</span><span class="t">${esc(x.what)}</span><span class="p">${esc(x.where)}</span>${x.place?`<span class="loc"><svg aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>${esc(x.place)}</span>`:""}${(x.summary||[]).length?`<ul>${x.summary.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}</li>`).join("");
   $("edu").innerHTML=ol(pr.education);$("exp").innerHTML=ol(pr.experience);
   $("awards").innerHTML=(pr.awards||[]).map(a=>`<div class="award"><span class="y">${esc(a.year)}</span><b>${esc(a.title)}</b><p>${esc(a.summary)}</p></div>`).join("");
   $("langs").innerHTML=(pr.languages||[]).map(l=>`<div class="lang"><span>${esc(l.name)}</span><span class="meter"><i data-w="${l.level*20}%"></i></span><small>${esc(l.label)}</small></div>`).join("");
