@@ -1,11 +1,15 @@
 {
- "updated": "2026-10-28T05:44:18.878244+00:00",
+ "updated": "2026-10-28T12:27:07.521028+00:00",
  "source": "orcid",
- "count": 30,
+ "count": 31,
  "journals": [
   {
    "name": "International Journal of Hydrogen Energy",
    "count": 10
+  },
+  {
+   "name": "Energies",
+   "count": 4
   },
   {
    "name": "Fuel",
@@ -13,10 +17,6 @@
   },
   {
    "name": "Fuel Processing Technology",
-   "count": 3
-  },
-  {
-   "name": "Energies",
    "count": 3
   },
   {
