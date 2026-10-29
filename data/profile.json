@@ -84,13 +84,15 @@
    "name": "King Abdullah University of Science and Technology",
    "short": "KAUST",
    "role": "Clean Energy Research Platform (CERP)",
-   "url": "https://cerp.kaust.edu.sa"
+   "url": "https://ccrc.kaust.edu.sa",
+   "logo": "https://avpl.kaust.edu.sa/images/default-source/themes/educati/kaust-logo-white.png?sfvrsn=3e6340ba_8"
   },
   {
    "name": "Advanced Vehicle Propulsion Lab",
    "short": "AVPL",
    "role": "KAUST · Prof. James W. G. Turner",
-   "url": "https://avpl.kaust.edu.sa"
+   "url": "https://avpl.kaust.edu.sa",
+   "logo": "https://avpl.kaust.edu.sa/images/default-source/default/avpl_white_96a5f01834c74af091c5ed3b29e54d9e.png?sfvrsn=4f62ba76_0"
   },
   {
    "name": "Renewable and Sustainable Energy Technology Group",
