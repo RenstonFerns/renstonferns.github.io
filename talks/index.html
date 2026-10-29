@@ -302,6 +302,7 @@ select{font-family:inherit;font-size:13.5px;border:1px solid var(--line);backgro
 .tl .w{font-family:var(--mono);font-size:12px;color:var(--co2)}
 .tl .t{font-weight:700;display:block;font-size:16.5px;line-height:1.35}
 .tl .p{color:var(--muted);font-size:14.5px;display:block}
+.tl .glink{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.tl .glink:hover{text-decoration-thickness:2px}
 .tl ul{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--fg);display:grid;gap:4px;list-style:disc}
 .tl ul li{padding:0}
 .extras{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);margin-top:48px}
@@ -829,7 +830,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
 
   /* experience & education */
   $("expIntro").textContent=pr.experience_intro||"";
-  const ol=arr=>(arr||[]).map(x=>`<li><span class="w">${esc(x.when)}</span><span class="t">${esc(x.what)}</span><span class="p">${esc(x.where)}</span>${x.place?`<span class="loc"><svg aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>${esc(x.place)}</span>`:""}${(x.summary||[]).length?`<ul>${x.summary.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}</li>`).join("");
+  const ol=arr=>(arr||[]).map(x=>`<li><span class="w">${esc(x.when)}</span><span class="t">${esc(x.what)}</span><span class="p">${esc(x.where)}${x.group?` · ${x.group_url?`<a class="glink" href="${esc(x.group_url)}" target="_blank" rel="noopener">${esc(x.group)}</a>`:esc(x.group)}`:""}</span>${x.place?`<span class="loc"><svg aria-hidden="true" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>${esc(x.place)}</span>`:""}${(x.summary||[]).length?`<ul>${x.summary.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}</li>`).join("");
   $("edu").innerHTML=ol(pr.education);$("exp").innerHTML=ol(pr.experience);
   $("awards").innerHTML=(pr.awards||[]).map(a=>`<div class="award"><span class="y">${esc(a.year)}</span><b>${esc(a.title)}</b><p>${esc(a.summary)}</p></div>`).join("");
   $("langs").innerHTML=(pr.languages||[]).map(l=>`<div class="lang"><span>${esc(l.name)}</span><span class="meter"><i data-w="${l.level*20}%"></i></span><small>${esc(l.label)}</small></div>`).join("");

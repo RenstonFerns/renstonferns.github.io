@@ -164,14 +164,16 @@
   {
    "when": "Jun 2026 – Present",
    "what": "Post-PhD Research Associate (Post-PhD Extension)",
-   "where": "King Abdullah University of Science and Technology · ReSET Group, Prof. Bassam Dally",
+   "where": "King Abdullah University of Science and Technology",
    "summary": [
     "Working on industrial decarbonisation and thermochemical conversion in the Renewable and Sustainable Energy Technology (ReSET) group at KAUST's Clean Energy Research Platform.",
     "Building an integrated cement-to-sustainable-aviation-fuel pathway: an oxyfuel cement kiln with CO₂ purification, alkaline electrolysis, reverse water-gas shift, Fischer–Tropsch synthesis and hydrocracking, modelled in Aspen Plus with techno-economic analysis and life cycle assessment (Sphera LCA FE and GREET).",
     "Running CO₂ mineralisation experiments on bypass cement dust, turning an industrial residue into a carbon sink, with multi-objective (NSGA-II) optimisation of carbonation performance."
    ],
    "country": "Saudi Arabia",
-   "place": "Thuwal, Saudi Arabia"
+   "place": "Thuwal, Saudi Arabia",
+   "group": "ReSET Group, Prof. Bassam Dally",
+   "group_url": "https://reset.kaust.edu.sa"
   },
   {
    "when": "Oct 2021 – May 2026",
@@ -183,7 +185,9 @@
     "Conducted engine-based assessment of alcohol fuel blends with attention to combustion performance, efficiency, and emissions behaviour."
    ],
    "country": "Saudi Arabia",
-   "place": "Thuwal, Saudi Arabia"
+   "place": "Thuwal, Saudi Arabia",
+   "group": "AVPL, Prof. James W. G. Turner",
+   "group_url": "https://avpl.kaust.edu.sa"
   },
   {
    "when": "Jun 2025 – Aug 2025",
