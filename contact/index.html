@@ -505,6 +505,44 @@ nav.scrolled{box-shadow:0 10px 30px -18px color-mix(in srgb,var(--fg) 60%,transp
 .hero .col>div:first-child{will-change:transform,opacity}
 .stats .col>*{transition:transform .6s cubic-bezier(.2,.75,.2,1)}
 @media (prefers-reduced-motion:reduce){.sprog{display:none}.rv.hold{filter:none}.shead.hold h2::after{transform:none}.phead h1 .ch{animation:none}.tl ol::after{transform:none}}
+
+/* ===== round 2: molecules, pathway, equaliser, page transitions, halo ===== */
+.hero .mols{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}
+.orbit .halo{position:absolute;left:50%;top:50%;width:62%;aspect-ratio:1/1;translate:-50% -50%;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),var(--co2),#4aa3ff,#b26bff,var(--accent));filter:blur(26px);opacity:.5;animation:halo 12s linear infinite,haloP 5s ease-in-out infinite alternate;pointer-events:none}
+@keyframes halo{to{rotate:360deg}}
+@keyframes haloP{from{scale:.96;opacity:.38}to{scale:1.06;opacity:.62}}
+.flowwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:18px;background:radial-gradient(120% 140% at 50% 0%,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface));padding:clamp(10px,2vw,22px)}
+.flow{display:block;width:100%;min-width:720px;height:auto;font-family:var(--body)}
+.flow .fl{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.75,.2,1)}
+.flow.on .fl{stroke-dashoffset:0}
+.flow .l-bio{stroke:#4cb06c}.flow .l-co2{stroke:var(--co2)}.flow .l-h2{stroke:#4aa3ff}.flow .l-out{stroke:var(--accent)}
+.flow .d-bio{fill:#4cb06c}.flow .d-co2{fill:var(--co2)}.flow .d-h2{fill:#4aa3ff}.flow .d-out{fill:var(--accent)}
+.flow .fl-dots circle{filter:drop-shadow(0 0 4px currentColor);opacity:0;transition:opacity .6s 1s}
+.flow.on .fl-dots circle{opacity:1}
+.flow .fn rect{fill:var(--surface);stroke:var(--line);stroke-width:1.5;transition:stroke .3s}
+.flow .fn{opacity:0;transform:translateY(12px);transform-box:fill-box;transition:opacity .7s,transform .7s cubic-bezier(.2,.75,.2,1)}
+.flow.on .fn{opacity:1;transform:none}
+.flow.on .fn:nth-child(2){transition-delay:.1s}.flow.on .fn:nth-child(3){transition-delay:.2s}.flow.on .fn:nth-child(4){transition-delay:.45s}.flow.on .fn:nth-child(5){transition-delay:.8s}.flow.on .fn:nth-child(6){transition-delay:.9s}
+.flow .n-bio rect{stroke:#4cb06c}.flow .n-co2 rect{stroke:var(--co2)}.flow .n-h2 rect{stroke:#4aa3ff}.flow .n-hub rect{stroke:var(--accent);stroke-width:2;fill:color-mix(in srgb,var(--accent) 9%,var(--surface))}.flow .n-out rect{stroke:var(--accent)}
+.flow .fn:hover rect{stroke-width:2.5}
+.flow .t1{fill:var(--fg);font-weight:700;font-size:17px}
+.flow .t2{fill:var(--muted);font-size:13px}
+.flow .t3{fill:var(--muted);font-family:var(--mono);font-size:12px;opacity:0;transition:opacity .8s 1.2s}
+.flow.on .t3{opacity:1}
+.eq{display:inline-flex;align-items:flex-end;gap:3px;height:22px;margin-bottom:10px}
+.eq i{display:block;width:4px;height:100%;border-radius:2px;background:linear-gradient(#ff6b5a,#e9a64a);transform-origin:50% 100%;animation:eq 1s ease-in-out infinite alternate}
+.eq i:nth-child(2){animation-duration:.7s;animation-delay:-.2s}.eq i:nth-child(3){animation-duration:1.2s;animation-delay:-.5s}.eq i:nth-child(4){animation-duration:.85s;animation-delay:-.1s}.eq i:nth-child(5){animation-duration:1.05s;animation-delay:-.7s}.eq i:nth-child(6){animation-duration:.75s;animation-delay:-.35s}.eq i:nth-child(7){animation-duration:.95s;animation-delay:-.6s}
+@keyframes eq{0%{transform:scaleY(.15)}50%{transform:scaleY(.9)}100%{transform:scaleY(.4)}}
+.eq.sm{height:12px;margin:0 0 0 8px;gap:2px;vertical-align:-1px;opacity:0;transition:opacity .25s}
+.eq.sm i{width:3px;animation-play-state:paused}
+.disco li:hover .eq.sm{opacity:1}.disco li:hover .eq.sm i{animation-play-state:running}
+@view-transition{navigation:auto}
+nav{view-transition-name:topnav}
+::view-transition-old(root){animation:vtout .3s ease both}
+::view-transition-new(root){animation:vtin .55s cubic-bezier(.2,.75,.2,1) both}
+@keyframes vtout{to{opacity:0;transform:translateY(-14px);filter:blur(4px)}}
+@keyframes vtin{from{opacity:0;transform:translateY(22px);filter:blur(6px)}}
+@media (prefers-reduced-motion:reduce){.orbit .halo,.eq i{animation:none}.flow .fl{stroke-dashoffset:0}.flow .fn,.flow .t3,.flow .fl-dots circle{opacity:1;transform:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
 </style>
 </head>
 <body data-page="contact">
@@ -529,6 +567,8 @@ nav.scrolled{box-shadow:0 10px 30px -18px color-mix(in srgb,var(--fg) 60%,transp
   <p>Open to postdoctoral research, academic collaborations, consulting, and policy-relevant fuel assessment.</p>
 </div></header>
 <main>
+
+
 
 
 
@@ -735,6 +775,64 @@ function carbonLoop(){
   vids.forEach(v=>io.observe(v));
 })();
 carbonLoop();
+
+/* ===== round 2 motion ===== */
+(function(){
+  /* pathway diagram: draw in when it scrolls into view, animate only while visible */
+  const flow=document.querySelector(".flow");
+  if(flow){
+    if(REDUCED){flow.classList.add("on");try{flow.pauseAnimations()}catch(e){}}
+    else if("IntersectionObserver" in window){try{flow.pauseAnimations()}catch(e){}
+      new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){flow.classList.add("on");try{flow.unpauseAnimations()}catch(x){}}else{try{flow.pauseAnimations()}catch(x){}}}),{threshold:.25}).observe(flow)}
+    else flow.classList.add("on");
+  }
+  /* homepage: drifting molecules (CO2, H2, methanol) that move away from the cursor */
+  const cv=document.querySelector(".hero .mols");
+  if(!cv)return;
+  const hero=cv.parentElement,ctx=cv.getContext("2d");
+  const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  let W=0,H=0,dpr=1,col={};
+  const SHAPES={
+    co2:{atoms:[[-15,0,5.5,"o"],[0,0,6.5,"c"],[15,0,5.5,"o"]],bonds:[[0,1,2],[1,2,2]]},
+    h2:{atoms:[[-7,0,4.5,"h"],[7,0,4.5,"h"]],bonds:[[0,1,1]]},
+    meoh:{atoms:[[0,0,6.5,"c"],[15,-4,5.5,"o"],[23,4,3.5,"h"],[-8,-10,3.5,"h"],[-10,9,3.5,"h"],[2,13,3.5,"h"]],bonds:[[0,1,1],[1,2,1],[0,3,1],[0,4,1],[0,5,1]]}
+  };
+  const kinds=["co2","co2","h2","h2","meoh"];
+  let mols=[];
+  const size=()=>{const r=hero.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    col={c:css("--fg"),o:css("--co2"),h:css("--accent"),line:css("--muted")};
+    const n=Math.round(Math.min(34,Math.max(12,W*H/26000)));
+    while(mols.length<n)mols.push({k:kinds[mols.length%kinds.length],x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,a:Math.random()*6.28,va:(Math.random()-.5)*.006,s:.8+Math.random()*.6});
+    mols.length=n};
+  let mx=-9999,my=-9999;
+  hero.addEventListener("pointermove",e=>{const r=hero.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top},{passive:true});
+  hero.addEventListener("pointerleave",()=>{mx=my=-9999});
+  const draw=()=>{ctx.clearRect(0,0,W,H);
+    for(const m of mols){const sh=SHAPES[m.k],c=Math.cos(m.a),s=Math.sin(m.a);
+      const P=sh.atoms.map(([x,y,r,t])=>[m.x+(x*c-y*s)*m.s,m.y+(x*s+y*c)*m.s,r*m.s,t]);
+      ctx.globalAlpha=.55;ctx.strokeStyle=col.line;ctx.lineWidth=1.4;
+      for(const [i,j,o] of sh.bonds){const [x1,y1]=P[i],[x2,y2]=P[j];
+        if(o===2){const dx=y2-y1,dy=x1-x2,L=Math.hypot(dx,dy)||1,ox=dx/L*1.8,oy=dy/L*1.8;ctx.beginPath();ctx.moveTo(x1+ox,y1+oy);ctx.lineTo(x2+ox,y2+oy);ctx.moveTo(x1-ox,y1-oy);ctx.lineTo(x2-ox,y2-oy);ctx.stroke()}
+        else{ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke()}}
+      ctx.globalAlpha=.8;
+      for(const [x,y,r,t] of P){ctx.beginPath();ctx.arc(x,y,r,0,6.283);ctx.fillStyle=t==="o"?col.o:t==="h"?col.h:col.c;ctx.globalAlpha=t==="c"?.45:.75;ctx.fill()}}
+    ctx.globalAlpha=1};
+  const step=()=>{for(const m of mols){
+      const dx=m.x-mx,dy=m.y-my,d2=dx*dx+dy*dy;
+      if(d2<150*150){const d=Math.sqrt(d2)||1,f=(150-d)/150*.6;m.vx+=dx/d*f;m.vy+=dy/d*f;m.va+=(Math.random()-.5)*.01}
+      m.vx*=.97;m.vy*=.97;m.vx+=(Math.random()-.5)*.012;m.vy+=(Math.random()-.5)*.012;
+      const sp=Math.hypot(m.vx,m.vy);if(sp<.12){m.vx+=(Math.random()-.5)*.05;m.vy+=(Math.random()-.5)*.05}
+      m.x+=m.vx;m.y+=m.vy;m.a+=m.va;m.va*=.995;
+      if(m.x<-30)m.x=W+30;if(m.x>W+30)m.x=-30;if(m.y<-30)m.y=H+30;if(m.y>H+30)m.y=-30}};
+  let run=false;
+  const loop=()=>{if(!run)return;step();draw();requestAnimationFrame(loop)};
+  size();draw();
+  addEventListener("resize",()=>{size();draw()});
+  new MutationObserver(()=>{size();draw()}).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+  if(REDUCED)return;
+  new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!run){run=true;requestAnimationFrame(loop)}else if(!v)run=false}).observe(hero);
+  document.addEventListener("visibilitychange",()=>{if(document.hidden)run=false;else if(hero.getBoundingClientRect().bottom>0){run=true;requestAnimationFrame(loop)}});
+})();
 /* ===== scroll motion pack ===== */
 (function(){
   const bar=document.createElement("div");bar.className="sprog";bar.setAttribute("aria-hidden","true");document.body.appendChild(bar);
@@ -935,6 +1033,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
     $("mSpot").innerHTML=(mu.spotify_embed||[]).map(id=>`<iframe src="https://open.spotify.com/embed/track/${esc(id)}?utm_source=generator&theme=0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify player"></iframe>`).join("");
     const RL=[["youtube","YouTube"],["spotify","Spotify"],["apple","Apple Music"]];
     $("mDisco").innerHTML=(mu.releases||[]).sort((a,b)=>b.year-a.year).map(r=>{const lk=r.links||{};const first=RL.map(x=>lk[x[0]]).find(Boolean);return `<li><span class="y">${esc(r.year)}</span><span>${first?`<a class="rt" href="${esc(first)}" target="_blank" rel="noopener"><b>${esc(r.title)}</b></a>`:`<b>${esc(r.title)}</b>`}<small>${esc(r.artist)}</small>${r.role?`<em class="rrole">${esc(r.role)}</em>`:""}${RL.some(x=>lk[x[0]])?`<span class="rl">${RL.filter(x=>lk[x[0]]).map(x=>`<a href="${esc(lk[x[0]])}" target="_blank" rel="noopener" aria-label="${esc(r.title)} on ${x[1]}" title="${x[1]}">${svgI(x[0])}</a>`).join("")}</span>`:""}</span><span class="t">${esc(r.type)}</span></li>`}).join("");
+    $("mDisco").querySelectorAll("li b").forEach(b=>b.insertAdjacentHTML("afterend",'<span class="eq sm" aria-hidden="true"><i></i><i></i><i></i><i></i></span>'));
     $("mStages").innerHTML=(mu.stages||[]).map(x=>`<span>${esc(x)}</span>`).join("");
     const md=d=>{try{return new Date(d).toLocaleDateString("en-GB",{month:"short",year:"numeric"})}catch(e){return""}};
     $("mPress").innerHTML=(mu.press||[]).sort((a,b)=>new Date(b.date)-new Date(a.date)).map(p=>`<a class="pr" href="${esc(p.url)}" target="_blank" rel="noopener"><span class="o">${esc(p.outlet)}<span>${md(p.date)}</span></span><b>${esc(p.title)}</b></a>`).join("");
