@@ -546,10 +546,10 @@ nav{view-transition-name:topnav}
 
 /* ===== stage-light beams (music) ===== */
 .stage .beams{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.stage .beams i{position:absolute;top:-12%;width:clamp(160px,22vw,340px);height:150%;transform-origin:50% 0;mix-blend-mode:screen;filter:blur(10px);opacity:.0;transition:opacity 1.2s;
+.stage .beams i{position:absolute;top:-12%;width:clamp(160px,22vw,340px);height:150%;transform-origin:50% 0;mix-blend-mode:screen;filter:blur(18px);opacity:0;transition:opacity 1.2s;
   background:linear-gradient(180deg,var(--bc) 0%,color-mix(in srgb,var(--bc) 30%,transparent) 45%,transparent 80%);clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);
   transform:rotate(calc(var(--b0) + var(--sw,0) * var(--bd)));animation:sway var(--bt) ease-in-out infinite alternate}
-.stage.lit .beams i{opacity:.38}
+.stage.lit .beams i{opacity:.26}
 .stage .beams i:nth-child(1){left:2%;--bc:#e9a64a;--b0:-24deg;--bd:30deg;--bt:7s}
 .stage .beams i:nth-child(2){left:22%;--bc:#ff5a6e;--b0:14deg;--bd:-26deg;--bt:9s}
 .stage .beams i:nth-child(3){left:44%;--bc:#a46bff;--b0:-10deg;--bd:34deg;--bt:8s}
