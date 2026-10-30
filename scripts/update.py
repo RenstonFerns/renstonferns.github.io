@@ -78,11 +78,11 @@ def kind(oa_type, venue):
 
 # ---------------------------------------------------------------- google scholar
 def scholar_profile(old):
-    """Google Scholar has no public API; SerpAPI's free plan (100 calls/month) covers one call a day.
+    """Google Scholar has no public API. Uses SerpAPI when SERPAPI_KEY is set, otherwise reads the public profile page directly.
     Skipped (keeping the last numbers) when SERPAPI_KEY is not set or the last fetch is under 20 h old."""
     key = os.environ.get("SERPAPI_KEY")
     sid = CFG.get("scholar_id")
-    if not key or not sid:
+    if not sid:
         return None
     last = old.get("scholar_fetched")
     if last and os.environ.get("FORCE_SCHOLAR") != "1":
@@ -91,6 +91,8 @@ def scholar_profile(old):
                 return None
         except Exception:
             pass
+    if not key:
+        return scholar_direct(sid)
     try:
         arts, start = [], 0
         while True:
@@ -112,6 +114,41 @@ def scholar_profile(old):
         return {"articles": arts, "totals": totals, "fetched": NOW.isoformat()}
     except Exception as e:
         print("Scholar skipped:", e, file=sys.stderr)
+        return None
+
+
+def scholar_direct(sid):
+    """No SerpAPI key: read the public profile page itself. Google sometimes answers bots with a
+    captcha; then this returns None and the last known numbers stay on the site."""
+    import html as H
+    try:
+        url = f"https://scholar.google.com/citations?user={sid}&hl=en&cstart=0&pagesize=100"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml", "Accept-Language": "en-US,en;q=0.9"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            page = r.read().decode("utf-8", "replace")
+        nums = [int(x) for x in re.findall(r'<td class="gsc_rsb_std">(\d+)</td>', page)]
+        if len(nums) < 6 or "gsc_a_tr" not in page:
+            print("Scholar (direct) skipped: no profile table (probably a captcha)", file=sys.stderr)
+            return None
+        totals = {"citations": nums[0], "h_index": nums[2], "i10_index": nums[4]}
+        arts = []
+        for row in re.findall(r'<tr class="gsc_a_tr">(.*?)</tr>', page, re.S):
+            t = re.search(r'class="gsc_a_at"[^>]*>(.*?)</a>', row, re.S)
+            if not t:
+                continue
+            grays = [H.unescape(re.sub("<[^>]+>", "", g)) for g in re.findall(r'<div class="gs_gray">(.*?)</div>', row, re.S)]
+            c = re.search(r'class="gsc_a_ac[^"]*"[^>]*>(\d*)<', row)
+            y = re.search(r'class="gsc_a_h gsc_a_hc gs_ibl">(\d{4})<', row)
+            arts.append({"title": H.unescape(re.sub("<[^>]+>", "", t.group(1))).strip(),
+                         "authors": grays[0] if grays else None, "publication": grays[1] if len(grays) > 1 else None,
+                         "year": y.group(1) if y else None, "link": None,
+                         "cites": int(c.group(1)) if c and c.group(1) else 0})
+        print(f"scholar (direct): {len(arts)} articles, {totals}")
+        return {"articles": arts, "totals": totals, "fetched": NOW.isoformat()}
+    except Exception as e:
+        print("Scholar (direct) skipped:", e, file=sys.stderr)
         return None
 
 
