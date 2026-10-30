@@ -578,6 +578,43 @@ nav{view-transition-name:topnav}
 @keyframes sentPop{40%{transform:scale(1.015);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 22%,transparent)}}
 @media (max-width:640px){.cf-row{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.stage .beams i{animation:none}}
+
+/* ===== two-pathway diagrams ===== */
+.ptabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.ptabs button{font:inherit;font-size:14px;font-weight:600;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;transition:color .2s,border-color .2s,background .2s,transform .2s}
+.ptabs button b{font-family:var(--mono);font-size:12px;color:var(--co2);margin-right:4px}
+.ptabs button:hover{transform:translateY(-1px);border-color:var(--accent)}
+.ptabs button[aria-selected="true"]{color:var(--fg);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface));box-shadow:0 8px 22px -14px var(--accent)}
+.flowstack{display:grid}
+.fpane{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .5s,visibility 0s .5s}
+.fpane.on{opacity:1;visibility:visible;transition:opacity .5s}
+.flow{min-width:820px}
+.flow .fd{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:7 7;opacity:0;transition:opacity 1s}
+.flow.on .fd{opacity:1;animation:dashrun 1.2s linear infinite}
+@keyframes dashrun{to{stroke-dashoffset:-14}}
+.flow .l-gas{stroke:#c08a5a}.flow .d-gas{fill:#c08a5a}
+.flow .l-elec{stroke:#f2c14e}.flow .d-elec{fill:#f2c14e}
+.flow .l-grey{stroke:var(--muted)}.flow .d-grey{fill:var(--muted)}
+.flow .l-red{stroke:#e5534b}.flow .d-red{fill:#e5534b}
+.flow .bnd{fill:none;stroke:var(--muted);stroke-width:1.6;stroke-dasharray:8 6;opacity:0;transition:opacity 1s}
+.flow.on .bnd{opacity:.7}
+.flow .tb{fill:var(--muted);font-style:italic;font-size:13px}
+.flow .tl{fill:#4aa3ff;font-weight:700;font-size:13px}
+.flow .tc{fill:var(--co2);font-weight:700;font-size:13px}
+.flow .tr{fill:#e5534b;font-weight:700;font-size:13px}
+.flow .tx{fill:var(--muted);font-style:italic;font-size:13px}
+.flow .fl-txt text{opacity:0;transition:opacity .8s .6s}
+.flow.on .fl-txt text{opacity:1}
+.flow .n-x rect{stroke:var(--muted);stroke-dasharray:5 4;fill:transparent}.flow .n-x .t1{fill:var(--muted);font-weight:500}
+.flow .n-h2o rect{stroke:#4aa3ff;fill:transparent}
+.flow .n-co2o rect{stroke:var(--co2);fill:transparent}
+.flow .n-dot rect{stroke:#4cb06c;stroke-dasharray:3 4;fill:transparent}.flow .n-dot .t1{fill:#4cb06c}
+.flow .n-red rect{stroke:#e5534b}
+.flow .n-elec rect{stroke:#f2c14e;fill:color-mix(in srgb,#f2c14e 12%,var(--surface))}
+.flow .n-big rect{stroke-width:2.5;fill:color-mix(in srgb,var(--accent) 12%,var(--surface))}
+.flow .n-bio rect{stroke:#4cb06c;fill:color-mix(in srgb,#4cb06c 10%,var(--surface))}
+.flow .n-co2 rect{stroke:var(--co2)}
+@media (prefers-reduced-motion:reduce){.flow .fd,.flow .bnd,.flow .fl-txt text{opacity:1;animation:none}}
 </style>
 </head>
 <body data-page="experience">
@@ -847,13 +884,20 @@ carbonLoop();
 })();
 /* ===== round 2 motion ===== */
 (function(){
-  /* pathway diagram: draw in when it scrolls into view, animate only while visible */
-  const flow=document.querySelector(".flow");
-  if(flow){
-    if(REDUCED){flow.classList.add("on");try{flow.pauseAnimations()}catch(e){}}
-    else if("IntersectionObserver" in window){try{flow.pauseAnimations()}catch(e){}
-      new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){flow.classList.add("on");try{flow.unpauseAnimations()}catch(x){}}else{try{flow.pauseAnimations()}catch(x){}}}),{threshold:.25}).observe(flow)}
-    else flow.classList.add("on");
+  /* pathway diagrams: tabs; draw in when visible; animate only the visible one */
+  const sec=document.getElementById("pathway");
+  if(sec){
+    const panes=[...sec.querySelectorAll(".fpane")],tabs=[...sec.querySelectorAll(".ptabs button")];
+    let cur=0,seen=false;
+    panes.forEach(p=>{const f=p.querySelector(".flow");f.querySelectorAll(".fn").forEach((n,i)=>n.style.transitionDelay=(i*0.07).toFixed(2)+"s");try{f.pauseAnimations()}catch(e){}});
+    const show=i=>{cur=i;panes.forEach((p,j)=>{const f=p.querySelector(".flow");p.classList.toggle("on",j===i);
+        if(j===i){f.classList.remove("on");void f.getBoundingClientRect();if(seen||REDUCED){f.classList.add("on");try{REDUCED?f.pauseAnimations():f.unpauseAnimations()}catch(e){}}}
+        else{f.classList.remove("on");try{f.pauseAnimations()}catch(e){}}});
+      tabs.forEach((t,j)=>t.setAttribute("aria-selected",String(j===i)))};
+    tabs.forEach((t,j)=>t.addEventListener("click",()=>show(j)));
+    if(REDUCED||!("IntersectionObserver" in window)){seen=true;show(0)}
+    else new IntersectionObserver(es=>es.forEach(e=>{const f=panes[cur].querySelector(".flow");
+      if(e.isIntersecting){if(!seen){seen=true;show(cur)}else try{f.unpauseAnimations()}catch(x){}}else try{f.pauseAnimations()}catch(x){}}),{threshold:.2}).observe(sec);
   }
   /* homepage: drifting molecules (CO2, H2, methanol) that move away from the cursor */
   const cv=document.querySelector(".hero .mols");
