@@ -543,6 +543,41 @@ nav{view-transition-name:topnav}
 @keyframes vtout{to{opacity:0;transform:translateY(-14px);filter:blur(4px)}}
 @keyframes vtin{from{opacity:0;transform:translateY(22px);filter:blur(6px)}}
 @media (prefers-reduced-motion:reduce){.orbit .halo,.eq i{animation:none}.flow .fl{stroke-dashoffset:0}.flow .fn,.flow .t3,.flow .fl-dots circle{opacity:1;transform:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
+
+/* ===== stage-light beams (music) ===== */
+.stage .beams{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.stage .beams i{position:absolute;top:-12%;width:clamp(160px,22vw,340px);height:150%;transform-origin:50% 0;mix-blend-mode:screen;filter:blur(10px);opacity:.0;transition:opacity 1.2s;
+  background:linear-gradient(180deg,var(--bc) 0%,color-mix(in srgb,var(--bc) 30%,transparent) 45%,transparent 80%);clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);
+  transform:rotate(calc(var(--b0) + var(--sw,0) * var(--bd)));animation:sway var(--bt) ease-in-out infinite alternate}
+.stage.lit .beams i{opacity:.38}
+.stage .beams i:nth-child(1){left:2%;--bc:#e9a64a;--b0:-24deg;--bd:30deg;--bt:7s}
+.stage .beams i:nth-child(2){left:22%;--bc:#ff5a6e;--b0:14deg;--bd:-26deg;--bt:9s}
+.stage .beams i:nth-child(3){left:44%;--bc:#a46bff;--b0:-10deg;--bd:34deg;--bt:8s}
+.stage .beams i:nth-child(4){left:66%;--bc:#4aa3ff;--b0:20deg;--bd:-30deg;--bt:10s}
+.stage .beams i:nth-child(5){left:84%;--bc:#e9a64a;--b0:-16deg;--bd:24deg;--bt:7.5s}
+@keyframes sway{from{translate:-18px 0}to{translate:18px 0}}
+.stage .col{z-index:1}
+/* ===== contact form ===== */
+.cform{display:grid;gap:14px;margin-top:10px;padding:clamp(18px,3vw,28px);border:1px solid var(--line);border-radius:18px;background:var(--surface);max-width:780px}
+.cf-h{margin:0;font-family:var(--display);font-weight:600;font-size:22px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cform label{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--muted)}
+.cform input,.cform select,.cform textarea{font:inherit;font-size:15px;font-weight:400;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 13px;width:100%;transition:border-color .2s,box-shadow .2s}
+.cform textarea{resize:vertical;min-height:120px}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)}
+.cform .bad{border-color:#e5534b!important}
+.cf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.cf-go{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.cform button{position:relative;min-width:170px}
+.cf-spin{display:none;width:16px;height:16px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;animation:spin .7s linear infinite;margin-left:8px}
+.cform.sending .cf-spin{display:inline-block}.cform.sending button{opacity:.8;pointer-events:none}
+@keyframes spin{to{rotate:360deg}}
+.cf-stat{margin:0;font-size:14px}
+.cf-stat.ok{color:var(--accent);font-weight:600}.cf-stat.err{color:#e5534b}
+.cform.sent{animation:sentPop .6s cubic-bezier(.2,.75,.2,1)}
+@keyframes sentPop{40%{transform:scale(1.015);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 22%,transparent)}}
+@media (max-width:640px){.cf-row{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.stage .beams i{animation:none}}
 </style>
 </head>
 <body data-page="contact">
@@ -591,6 +626,19 @@ nav{view-transition-name:topnav}
   <p id="cText" style="margin:0;max-width:64ch"></p>
   <div class="mail"><code id="email"></code><button class="btn" id="copy" type="button">Copy email</button></div>
   <div class="links" id="links"></div>
+  <form class="cform" id="cform" novalidate>
+    <p class="cf-h">Or send a message right here</p>
+    <div class="cf-row">
+      <label><span>Your name</span><input name="name" required autocomplete="name" maxlength="120"></label>
+      <label><span>Your email</span><input type="email" name="email" required autocomplete="email" maxlength="160"></label>
+    </div>
+    <label><span>What's it about?</span><select name="topic">
+      <option>Research collaboration</option><option>Postdoc / job opportunity</option><option>Consulting</option>
+      <option>Speaking / talk invitation</option><option>Music / gigs</option><option>Something else</option></select></label>
+    <label><span>Message</span><textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+    <input type="text" name="_honey" class="cf-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="cf-go"><button class="btn primary" type="submit"><span class="cf-lbl">Send message</span><span class="cf-spin" aria-hidden="true"></span></button><p class="cf-stat" role="status" aria-live="polite"></p></div>
+  </form>
 </div></section>
 <section class="gut nextp"><div class="col"><a class="btn" href="./">← Home</a></div></section>
 </main>
@@ -776,6 +824,36 @@ function carbonLoop(){
 })();
 carbonLoop();
 
+
+/* ===== stage beams follow the scroll; contact form ===== */
+(function(){
+  const st=document.querySelector(".stage");
+  if(st&&!REDUCED){
+    let t=false;const up=()=>{const r=st.getBoundingClientRect();const p=((innerHeight/2)-(r.top+r.height/2))/(innerHeight/2+r.height/2);
+      st.style.setProperty("--sw",Math.max(-1,Math.min(1,p)).toFixed(3));st.classList.toggle("lit",r.top<innerHeight*.85&&r.bottom>innerHeight*.1);t=false};
+    addEventListener("scroll",()=>{if(!t){t=true;requestAnimationFrame(up)}},{passive:true});up();
+  }
+  const f=document.getElementById("cform");if(!f)return;
+  const stat=f.querySelector(".cf-stat"),TO="hello@renstonfernandes.com";
+  f.addEventListener("submit",async e=>{e.preventDefault();
+    const d=Object.fromEntries(new FormData(f));let ok=true;
+    f.querySelectorAll("[required]").forEach(x=>{const bad=!x.value.trim()||(x.type==="email"&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x.value));x.classList.toggle("bad",bad);if(bad)ok=false});
+    if(!ok){stat.className="cf-stat err";stat.textContent="Please fill in your name, a valid email and a message.";return}
+    if(d._honey){stat.className="cf-stat ok";stat.textContent="Thanks!";return}
+    f.classList.add("sending");stat.className="cf-stat";stat.textContent="Sending…";
+    try{
+      const r=await fetch("https://formsubmit.co/ajax/"+TO,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+        body:JSON.stringify({name:d.name,email:d.email,_replyto:d.email,topic:d.topic,message:d.message,_subject:`Website: ${d.topic} — ${d.name}`,_template:"table",_captcha:"false"})});
+      const j=await r.json().catch(()=>({}));
+      if(!r.ok||String(j.success)==="false")throw new Error(j.message||r.status);
+      f.reset();f.classList.remove("sending");f.classList.add("sent");stat.className="cf-stat ok";stat.textContent="✓ Message sent — I'll get back to you soon.";
+      setTimeout(()=>f.classList.remove("sent"),800);
+    }catch(err){f.classList.remove("sending");stat.className="cf-stat err";
+      const body=encodeURIComponent(`${d.message}\n\n— ${d.name} (${d.email})`);
+      stat.innerHTML=`Couldn't send right now. <a href="mailto:${TO}?subject=${encodeURIComponent("Website: "+d.topic)}&body=${body}">Email me instead</a>.`}
+  });
+  f.querySelectorAll("input,textarea").forEach(x=>x.addEventListener("input",()=>x.classList.remove("bad")));
+})();
 /* ===== round 2 motion ===== */
 (function(){
   /* pathway diagram: draw in when it scrolls into view, animate only while visible */
