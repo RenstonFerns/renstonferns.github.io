@@ -621,11 +621,11 @@ nav{view-transition-name:topnav}
 .presslogos{display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px}
 .presslogos a{color:var(--muted);text-decoration:none;opacity:.55;filter:grayscale(1);transition:opacity .3s,color .3s,transform .3s,text-shadow .3s;line-height:1;white-space:nowrap}
 .presslogos a:hover{opacity:1;color:var(--fg);transform:translateY(-2px);text-shadow:0 0 18px color-mix(in srgb,var(--accent) 45%,transparent)}
-.presslogos .serif{font-family:var(--display);font-weight:700;font-size:21px;font-style:italic;letter-spacing:-.01em}
-.presslogos .wide{font-family:var(--body);font-weight:800;font-size:20px;letter-spacing:.32em}
-.presslogos .sans{font-family:var(--body);font-weight:800;font-size:20px;letter-spacing:-.02em}
-.presslogos .slab{font-family:Georgia,serif;font-weight:700;font-size:19px}
-.presslogos .mono{font-family:var(--mono);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase}
+.presslogos .ps-serif{font-family:var(--display);font-weight:700;font-size:21px;font-style:italic;letter-spacing:-.01em}
+.presslogos .ps-wide{font-family:var(--body);font-weight:800;font-size:20px;letter-spacing:.32em}
+.presslogos .ps-sans{font-family:var(--body);font-weight:800;font-size:20px;letter-spacing:-.02em}
+.presslogos .ps-slab{font-family:Georgia,serif;font-weight:700;font-size:19px}
+.presslogos .ps-mono{font-family:var(--mono);font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase}
 .pressband.on-stage{background:#0d0f14;border-color:rgba(255,255,255,.08)}
 .pressband.on-stage .eyebrow,.pressband.on-stage a{color:#a9afbb}.pressband.on-stage a:hover{color:#fff;text-shadow:0 0 18px rgba(233,166,74,.5)}
 /* ===== journey globe ===== */
@@ -1247,7 +1247,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
   if(pr.contact&&pr.contact.title)$("statusTxt").textContent="Open to collaboration";
 
   /* press band */
-  const pressHTML=(pr.press_strip||[]).map(x=>`<a class="${esc(x.style||"sans")}" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join("");
+  const pressHTML=(pr.press_strip||[]).map(x=>`<a class="ps-${esc(x.style||"sans")}" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join("");
   document.querySelectorAll(".presslogos").forEach(el=>el.innerHTML=pressHTML);
   if(pr.journey&&window.__journey)window.__journey(pr.journey,pr.journey_arcs||[]);
   /* affiliations */
