@@ -383,5 +383,104 @@
    "url": "https://soundcloud.com/renston-fernandes"
   }
  ],
- "wikidata": "Q141883476"
+ "wikidata": "Q141883476",
+ "journey": [
+  {
+   "city": "Mangaluru",
+   "country": "India",
+   "lat": 12.91,
+   "lon": 74.86,
+   "when": "2010 – 2018 · 2020 – 2021",
+   "what": [
+    "B.E. Mechanical Engineering (VTU) and M.Tech Energy Systems (NMAM, Nitte)",
+    "Assistant Professor, Srinivas Institute of Technology",
+    "Fronted Avalanche Brakedown and Sounds Fishy",
+    "Back in India 2020–21: Amazon and Lido Learning"
+   ]
+  },
+  {
+   "city": "Brighton",
+   "country": "United Kingdom",
+   "lat": 50.82,
+   "lon": -0.14,
+   "when": "2018 – 2020",
+   "what": [
+    "MSc Engineering Business Management, University of Sussex",
+    "Lead vocals and guitar, The Southern Bandits",
+    "Corefest, Shoreham and Worthing festival stages"
+   ]
+  },
+  {
+   "city": "Thuwal",
+   "country": "Saudi Arabia",
+   "lat": 22.31,
+   "lon": 39.1,
+   "when": "2021 – present",
+   "what": [
+    "PhD, KAUST (AVPL, Prof. James W. G. Turner)",
+    "Post-PhD Research Associate, ReSET (Prof. Bassam Dally)",
+    "Circular carbon e-fuels, LCA and TEA; The Speksy Pscyentist"
+   ]
+  },
+  {
+   "city": "Dhahran",
+   "country": "Saudi Arabia",
+   "lat": 26.29,
+   "lon": 50.11,
+   "when": "Summer 2025",
+   "what": [
+    "Research Intern, Aramco",
+    "TEA of flue-gas separation and e-methanol production"
+   ]
+  }
+ ],
+ "journey_arcs": [
+  [
+   0,
+   1,
+   "2018"
+  ],
+  [
+   1,
+   0,
+   "2020"
+  ],
+  [
+   0,
+   2,
+   "2021"
+  ],
+  [
+   2,
+   3,
+   "2025"
+  ]
+ ],
+ "press_strip": [
+  {
+   "name": "Rolling Stone India",
+   "url": "https://rollingstoneindia.com/mangaluru-rockers-sounds-fishy-sing-about-the-seven-deadly-sins-on-debut-ep-retribution/",
+   "style": "serif"
+  },
+  {
+   "name": "VEVO",
+   "url": "https://www.youtube.com/watch?v=gA_jIbMnV5I",
+   "style": "wide"
+  },
+  {
+   "name": "Daijiworld",
+   "url": "https://www.daijiworld.com/news/newsDisplay?newsID=1237398",
+   "style": "sans"
+  },
+  {
+   "name": "Mangalorean.com",
+   "url": "https://www.mangalorean.com/sounds-fishy-an-ambient-metal-hard-rock-band-from-mluru-inches-close-to-play-at-stonedead-festival-2020-uk/",
+   "style": "slab"
+  },
+  {
+   "name": "UniteAsia",
+   "url": "https://uniteasia.org/hard-rock-metal-act-sounds-fishy-release-music-video-india/",
+   "style": "mono"
+  }
+ ]
 }
