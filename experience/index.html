@@ -645,6 +645,11 @@ nav{view-transition-name:topnav}
 .jcard .jw{font-family:var(--mono);font-size:12px;color:var(--co2);margin:4px 0 12px;display:block}
 .jcard ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15px}
 @media (max-width:820px){.jwrap{grid-template-columns:1fr}.globe{max-width:380px}}
+.jgl{flex-basis:100%;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.jstops button.conf i{color:#4aa3ff}
+.jstops button.conf[aria-selected="true"]{border-color:#4aa3ff;background:color-mix(in srgb,#4aa3ff 14%,var(--surface))}
+.jcard .jw.c{color:#4aa3ff}
+.jcard .jlink{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);text-decoration:none}.jcard .jlink:hover{text-decoration:underline}
 </style>
 </head>
 <body data-page="experience">
@@ -915,9 +920,10 @@ carbonLoop();
     let rot=[-45,-24,0],target=null,auto=!REDUCED,sel=0,drag=null,t0=performance.now();
     const pts=data.map(x=>[x.lon,x.lat]);
     const card=document.getElementById("jcard"),stops=document.getElementById("jstops");
-    stops.innerHTML=data.map((x,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}"><i>0${i+1}</i>${esc(x.city)}</button>`).join("");
+    const btn=(x,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}" class="${x.kind==="conf"?"conf":""}"><i>${x.kind==="conf"?"◆":"0"+(i+1)}</i>${esc(x.city)}</button>`;
+    stops.innerHTML=`<span class="jgl">Home bases</span>`+data.map((x,i)=>x.kind!=="conf"?btn(x,i):"").join("")+(data.some(x=>x.kind==="conf")?`<span class="jgl">Conferences &amp; training · 2025</span>`+data.map((x,i)=>x.kind==="conf"?btn(x,i):"").join(""):"");
     const pick=i=>{sel=i;const x=data[i];stops.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-selected",String(j===i)));
-      card.innerHTML=`<h3>${esc(x.city)}, ${esc(x.country)}</h3><span class="jw">${esc(x.when)}</span><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>`;
+      card.innerHTML=`<h3>${esc(x.city)}, ${esc(x.country)}</h3><span class="jw${x.kind==="conf"?" c":""}">${esc(x.when)}</span><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${x.link?`<a class="jlink" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.link_label||"Read more")} →</a>`:""}`;
       card.style.animation="none";void card.offsetWidth;card.style.animation="";
       target={from:rot.slice(),to:[-x.lon,-x.lat*0.8,0],t:performance.now()};auto=false;clearTimeout(pick._t);pick._t=setTimeout(()=>{auto=!REDUCED},7000)};
     stops.addEventListener("click",e=>{const b=e.target.closest("button");if(b)pick(+b.dataset.i)});
@@ -948,8 +954,10 @@ carbonLoop();
       /* cities */
       const centre=proj.invert([W/2,W/2]);
       pts.forEach((p,i)=>{if(d3.geoDistance(p,centre)>1.52)return;const c=proj(p),on=i===sel,pu=REDUCED?0:(Math.sin(tt*3+i)+1)/2;
-        ctx.beginPath();ctx.arc(c[0],c[1],(on?9:6)+pu*5,0,6.283);ctx.fillStyle=on?co2:acc;ctx.globalAlpha=.22;ctx.fill();ctx.globalAlpha=1;
-        ctx.beginPath();ctx.arc(c[0],c[1],on?5.5:4,0,6.283);ctx.fillStyle=on?co2:acc;ctx.fill();ctx.lineWidth=2;ctx.strokeStyle=surf;ctx.stroke();
+        const cf=data[i].kind==="conf",dot=cf?(on?co2:"#4aa3ff"):(on?co2:acc);
+        ctx.beginPath();ctx.arc(c[0],c[1],(on?9:cf?4:6)+pu*(cf?3:5),0,6.283);ctx.fillStyle=dot;ctx.globalAlpha=.22;ctx.fill();ctx.globalAlpha=1;
+        if(cf&&!on){ctx.save();ctx.translate(c[0],c[1]);ctx.rotate(Math.PI/4);ctx.fillStyle=dot;ctx.fillRect(-3,-3,6,6);ctx.lineWidth=1.5;ctx.strokeStyle=surf;ctx.strokeRect(-3,-3,6,6);ctx.restore();return}
+        ctx.beginPath();ctx.arc(c[0],c[1],on?5.5:4,0,6.283);ctx.fillStyle=dot;ctx.fill();ctx.lineWidth=2;ctx.strokeStyle=surf;ctx.stroke();
         ctx.font=`${on?700:600} ${on?14:12}px ${css("--body")}`;ctx.textAlign="left";ctx.lineWidth=4;ctx.strokeStyle=surf;ctx.strokeText(data[i].city,c[0]+11,c[1]+4);ctx.fillStyle=on?fg:mut;ctx.fillText(data[i].city,c[0]+11,c[1]+4)});
     };
     requestAnimationFrame(frame);
@@ -1087,7 +1095,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
   /* press band */
   const pressHTML=(pr.press_strip||[]).map(x=>`<a class="ps-${esc(x.style||"sans")}" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join("");
   document.querySelectorAll(".presslogos").forEach(el=>el.innerHTML=pressHTML);
-  if(pr.journey&&window.__journey)window.__journey(pr.journey,pr.journey_arcs||[]);
+  if(pr.journey&&window.__journey)window.__journey(pr.journey.concat(pr.journey_events||[]),pr.journey_arcs||[]);
   /* affiliations */
   const affHTML=(pr.affiliations||[]).map(a=>`<a class="aff" href="${esc(a.url)}" target="_blank" rel="noopener"><span class="mono">${a.logo?`<img src="${esc(a.logo)}" alt="" onload="this.parentNode.classList.add('haslogo')">`:""}<i>${esc(a.short)}</i></span><span><b>${esc(a.name)}</b><small>${esc(a.role)}</small></span></a>`).join("");
   $("affTrack").innerHTML=affHTML;

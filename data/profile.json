@@ -482,5 +482,85 @@
    "url": "https://uniteasia.org/hard-rock-metal-act-sounds-fishy-release-music-video-india/",
    "style": "mono"
   }
+ ],
+ "journey_events": [
+  {
+   "kind": "conf",
+   "city": "Manchester",
+   "country": "United Kingdom",
+   "lat": 53.48,
+   "lon": -2.24,
+   "when": "April 2025 · Oral presentation",
+   "what": [
+    "32nd CIRP Conference on Life Cycle Engineering, University of Manchester",
+    "Evaluating regional sustainability of e-methanol production through GLAM-based life cycle impact assessment"
+   ],
+   "link": "https://doi.org/10.1016/j.procir.2025.01.057",
+   "link_label": "Read the paper (Procedia CIRP)"
+  },
+  {
+   "kind": "conf",
+   "city": "Valencia",
+   "country": "Spain",
+   "lat": 39.47,
+   "lon": -0.38,
+   "when": "June 2025 · Oral presentation",
+   "what": [
+    "33rd European Biomass Conference & Exhibition (EUBCE 2025)",
+    "Circular carbon biofuel and e-fuel production from Saudi Arabian date palm biomass: a process simulation study"
+   ],
+   "link": "https://doi.org/10.5071/33rdEUBCE2025-5DO.3.3",
+   "link_label": "Read the paper (EUBCE proceedings)"
+  },
+  {
+   "kind": "conf",
+   "city": "Aachen",
+   "country": "Germany",
+   "lat": 50.78,
+   "lon": 6.08,
+   "when": "June 2025 · Oral presentation",
+   "what": [
+    "13th International Conference “Fuel Science: From Production to Propulsion”, RWTH Aachen University",
+    "Sustainable e-methanol production using corn and its waste in renewable energy systems"
+   ]
+  },
+  {
+   "kind": "conf",
+   "city": "Busan",
+   "country": "South Korea",
+   "lat": 35.18,
+   "lon": 129.08,
+   "when": "June 2025 · Oral presentation",
+   "what": [
+    "KSAE/SAE Powertrains, Energy and Lubricants (PEL) Conference",
+    "Techno-economic analysis of integrated e-methanol production systems using first- and second-generation biomass"
+   ],
+   "link": "https://doi.org/10.4271/2025-01-0182",
+   "link_label": "Read the paper (SAE Technical Paper)"
+  },
+  {
+   "kind": "conf",
+   "city": "Palermo",
+   "country": "Italy",
+   "lat": 38.12,
+   "lon": 13.36,
+   "when": "September 2025 · Poster",
+   "what": [
+    "12th International Conference on Life Cycle Management (LCM 2025)",
+    "Life cycle assessment of e-methanol production from dates"
+   ]
+  },
+  {
+   "kind": "conf",
+   "city": "Hangzhou",
+   "country": "China",
+   "lat": 30.27,
+   "lon": 120.15,
+   "when": "November 2025 · Research trainee",
+   "what": [
+    "Zhejiang University: 9th International Training Workshop on Waste-to-Energy",
+    "Advanced waste management and incineration, AI-enabled smart waste-to-energy, waste-to-X"
+   ]
+  }
  ]
 }
