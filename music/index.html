@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; media-src 'self' https://tspalive.com; connect-src 'self' https://cdn.jsdelivr.net https://formsubmit.co https://cloudflareinsights.com; frame-src https://open.spotify.com https://www.youtube-nocookie.com https://www.youtube.com; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <base href="/">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Music | Dr. Renston Jake Fernandes</title>
@@ -911,9 +913,12 @@ carbonLoop();
     const hub=d.findIndex(x=>/^Jeddah/.test(x.city));
     if(hub>=0)d.forEach((x,i)=>{if(x.kind==="conf")arcs.push([hub,i,"","trip"])});
     start()};
-  const load=src=>new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=rej;document.head.appendChild(s)});
-  const libs=()=>ready||(ready=Promise.all([load("https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"),load("https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js")])
-      .then(()=>fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json")).then(r=>r.json()));
+  /* third-party files are pinned to exact versions and integrity-checked: a tampered copy is refused */
+  const load=(src,sri)=>new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.integrity=sri;s.crossOrigin="anonymous";s.referrerPolicy="no-referrer";s.onload=res;s.onerror=rej;document.head.appendChild(s)});
+  const libs=()=>ready||(ready=Promise.all([
+      load("https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js","sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"),
+      load("https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js","sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67")])
+      .then(()=>fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json",{integrity:"sha384-5oFOGoMd0tkagYW08lVco4uAi7XDEDBwBxOdeKx+SA1ihbsHiR/aFAJGretluTzG"})).then(r=>r.json()));
   let started=false;
   function start(){if(started||!data)return;
     const go=()=>{if(started)return;started=true;libs().then(run).catch(()=>{cv.parentElement.innerHTML='<p class="sub">Mangaluru → Brighton → Jeddah (KAUST) → Dhahran</p>'})};
