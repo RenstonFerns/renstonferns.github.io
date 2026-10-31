@@ -697,7 +697,6 @@ nav{view-transition-name:topnav}
 <section class="affband gut" aria-label="Affiliations">
   <div class="col" style="display:grid;gap:14px;width:100%"><p class="eyebrow">Affiliations</p><div class="track" id="affTrack"></div></div>
 </section>
-<section class="pressband gut" aria-label="As featured in"><div class="col"><p class="eyebrow">As featured in</p><div class="presslogos"></div></div></section>
 <!--@end-->
 
 <!--@pages research publications talks music experience contact-->
@@ -822,9 +821,9 @@ nav{view-transition-name:topnav}
 
 <!--@pages experience-->
 <section class="s gut" id="journey"><div class="col">
-  <div class="shead"><div><p class="eyebrow">The journey</p><h2>From Mangaluru to Thuwal</h2><p class="sub">Where the research and the music happened. Drag the globe, or pick a stop.</p></div></div>
+  <div class="shead"><div><p class="eyebrow">The journey</p><h2>From Mangaluru to Jeddah</h2><p class="sub">Where the research and the music happened. Drag the globe, or pick a stop.</p></div></div>
   <div class="jwrap">
-    <div class="globe"><canvas id="globe" aria-label="Interactive globe showing Ren's journey: Mangaluru, Brighton, Thuwal and Dhahran" role="img"></canvas><span class="ghint">drag to spin</span></div>
+    <div class="globe"><canvas id="globe" aria-label="Interactive globe showing Ren's journey: Mangaluru, Brighton, Jeddah (KAUST) and Dhahran" role="img"></canvas><span class="ghint">drag to spin</span></div>
     <div class="jside"><div class="jstops" id="jstops" role="tablist" aria-label="Stops"></div><div class="jcard" id="jcard" aria-live="polite"></div></div>
   </div>
 </div></section>
@@ -1063,7 +1062,7 @@ carbonLoop();
       .then(()=>fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/land-110m.json")).then(r=>r.json()));
   let started=false;
   function start(){if(started||!data)return;
-    const go=()=>{if(started)return;started=true;libs().then(run).catch(()=>{cv.parentElement.innerHTML='<p class="sub">Mangaluru → Brighton → Thuwal → Dhahran</p>'})};
+    const go=()=>{if(started)return;started=true;libs().then(run).catch(()=>{cv.parentElement.innerHTML='<p class="sub">Mangaluru → Brighton → Jeddah (KAUST) → Dhahran</p>'})};
     if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();go()}},{rootMargin:"300px 0px"});io.observe(cv)}else go()}
   function run(world){
     const d3=window.d3,land=topojson.feature(world,world.objects.land);
