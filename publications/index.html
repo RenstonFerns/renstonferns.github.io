@@ -634,7 +634,7 @@ nav{view-transition-name:topnav}
 .globe:active{cursor:grabbing}
 .globe canvas{width:100%;height:100%;display:block}
 .globe::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%);filter:blur(24px);z-index:-1}
-.ghint{position:absolute;left:50%;bottom:2%;translate:-50% 0;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;opacity:.7;pointer-events:none}
+.ghint{margin:10px 0 0;text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;opacity:.7;pointer-events:none}
 .jstops{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
 .jstops button{font:inherit;font-size:14px;font-weight:600;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;transition:all .2s}
 .jstops button:hover{border-color:var(--accent);color:var(--fg)}
@@ -650,6 +650,7 @@ nav{view-transition-name:topnav}
 .jstops button.conf[aria-selected="true"]{border-color:#4aa3ff;background:color-mix(in srgb,#4aa3ff 14%,var(--surface))}
 .jcard .jw.c{color:#4aa3ff}
 .jcard .jlink{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);text-decoration:none}.jcard .jlink:hover{text-decoration:underline}
+.jstops button small{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
 </style>
 </head>
 <body data-page="publications">
@@ -926,8 +927,8 @@ carbonLoop();
     let rot=[-45,-24,0],target=null,auto=!REDUCED,sel=0,drag=null,t0=performance.now();
     const pts=data.map(x=>[x.lon,x.lat]);
     const card=document.getElementById("jcard"),stops=document.getElementById("jstops");
-    const btn=(x,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}" class="${x.kind==="conf"?"conf":""}"><i>${x.kind==="conf"?"◆":"0"+(i+1)}</i>${esc(x.city)}</button>`;
-    stops.innerHTML=`<span class="jgl">Home bases</span>`+data.map((x,i)=>x.kind!=="conf"?btn(x,i):"").join("")+(data.some(x=>x.kind==="conf")?`<span class="jgl">Conferences &amp; training · 2025</span>`+data.map((x,i)=>x.kind==="conf"?btn(x,i):"").join(""):"");
+    const btn=(x,i)=>`<button role="tab" aria-selected="${i===0}" data-i="${i}" class="${x.kind==="conf"?"conf":""}"><i>${x.kind==="conf"?"◆":"0"+(i+1)}</i>${esc(x.city)}<small>${esc(x.country)}</small></button>`;
+    stops.innerHTML=`<span class="jgl">Home bases</span>`+data.map((x,i)=>x.kind!=="conf"?btn(x,i):"").join("")+(data.some(x=>x.kind==="conf")?`<span class="jgl">Conferences &amp; training · 2024–25</span>`+data.map((x,i)=>x.kind==="conf"?btn(x,i):"").join(""):"");
     const pick=i=>{sel=i;const x=data[i];stops.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-selected",String(j===i)));
       card.innerHTML=`<h3>${esc(x.city)}, ${esc(x.country)}</h3><span class="jw${x.kind==="conf"?" c":""}">${esc(x.when)}</span><ul>${x.what.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${x.link?`<a class="jlink" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.link_label||"Read more")} →</a>`:""}`;
       card.style.animation="none";void card.offsetWidth;card.style.animation="";

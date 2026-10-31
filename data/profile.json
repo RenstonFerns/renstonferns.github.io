@@ -486,6 +486,18 @@
  "journey_events": [
   {
    "kind": "conf",
+   "city": "Nijmegen",
+   "country": "Netherlands",
+   "lat": 51.84,
+   "lon": 5.86,
+   "when": "July 2024 · Summer school",
+   "what": [
+    "Radboud University Summer School: Advances in Environmental Life Cycle Modeling",
+    "Advanced training in life cycle assessment: inventory modelling and impact assessment"
+   ]
+  },
+  {
+   "kind": "conf",
    "city": "Manchester",
    "country": "United Kingdom",
    "lat": 53.48,
