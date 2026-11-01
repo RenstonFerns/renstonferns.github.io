@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-01T02:13:19.616628+00:00",
+ "updated": "2026-11-01T09:16:57.042105+00:00",
  "source": "orcid",
- "count": 31,
+ "count": 32,
  "journals": [
   {
    "name": "International Journal of Hydrogen Energy",
@@ -37,6 +37,10 @@
   },
   {
    "name": "Energy Strategy Reviews",
+   "count": 1
+  },
+  {
+   "name": "Industrial Crops and Products",
    "count": 1
   },
   {
