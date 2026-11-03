@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-02T18:21:03.542595+00:00",
- "source": "orcid+openalex",
+ "updated": "2026-11-03T01:35:17.439704+00:00",
+ "source": "scholar+orcid+openalex",
  "items": [
   {
    "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
@@ -47,7 +47,7 @@
    "type": "journal",
    "doi": "10.1016/j.ijhydene.2025.02.331",
    "first_author": false,
-   "cites": 42,
+   "cites": 43,
    "added": "2026-10-26"
   },
   {
@@ -179,9 +179,9 @@
   }
  ],
  "scholar": {
-  "citations": 66,
+  "citations": 67,
   "h_index": 4,
   "i10_index": 1
  },
- "scholar_fetched": "2026-11-01T20:29:40.882057+00:00"
+ "scholar_fetched": "2026-11-03T01:35:17.439704+00:00"
 }
