@@ -1,20 +1,7 @@
 {
- "updated": "2026-11-05T10:53:27.422085+00:00",
+ "updated": "2026-11-05T18:44:08.348111+00:00",
  "source": "orcid+openalex",
  "items": [
-  {
-   "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
-   "authors": [
-    "R. J. Fernandes"
-   ],
-   "venue": "Doctoral Thesis, KAUST",
-   "year": 2026,
-   "type": "thesis",
-   "doi": "10.25781/kaust-914yt",
-   "first_author": true,
-   "cites": 0,
-   "added": "2026-10-26"
-  },
   {
    "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
    "authors": [
@@ -35,6 +22,21 @@
    "added": "2026-10-26"
   },
   {
+   "title": "Circular Carbon E-Fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
+   "authors": [
+    "R. J. Fernandes"
+   ],
+   "venue": "Doctoral Thesis, KAUST",
+   "year": 2026,
+   "type": "thesis",
+   "doi": "10.25781/kaust-914yt",
+   "first_author": true,
+   "url": null,
+   "key": null,
+   "cites": 0,
+   "added": "2026-10-26"
+  },
+  {
    "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
    "authors": [
     "D. Nguyen",
@@ -52,34 +54,23 @@
   },
   {
    "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
-   "authors": [
-    "R. J. Fernandes",
-    "D. Nguyen",
-    "M. R. Shakeel",
-    "J. W. G. Turner"
-   ],
+   "authors": [],
    "venue": "Procedia CIRP",
    "year": 2025,
    "type": "conference",
    "doi": "10.1016/j.procir.2025.01.057",
-   "first_author": true,
+   "first_author": false,
    "cites": 5,
    "added": "2026-10-26"
   },
   {
    "title": "Techno-Economic Analysis of an Integrated E-Methanol Production Plant Utilizing First and Second Generation Biomass Resources",
-   "authors": [
-    "R. J. Fernandes",
-    "M. R. Shakeel",
-    "D. Nguyen",
-    "H. G. Im",
-    "J. W. G. Turner"
-   ],
-   "venue": "SAE technical papers on CD-ROM/SAE technical paper series",
+   "authors": [],
+   "venue": "SAE Technical Papers",
    "year": 2025,
    "type": "conference",
    "doi": "10.4271/2025-01-0182",
-   "first_author": true,
+   "first_author": false,
    "cites": 4,
    "added": "2026-10-26"
   },
@@ -132,18 +123,13 @@
    "added": "2026-10-26"
   },
   {
-   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO 2 Utilization",
-   "authors": [
-    "R. J. Fernandes",
-    "D. Nguyen",
-    "M. R. Shakeel",
-    "J. W. G. Turner"
-   ],
-   "venue": "SAE technical papers on CD-ROM/SAE technical paper series",
+   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO2 Utilization",
+   "authors": [],
+   "venue": "SAE Technical Papers",
    "year": 2024,
    "type": "conference",
    "doi": "10.4271/2024-01-2449",
-   "first_author": true,
+   "first_author": false,
    "cites": 8,
    "added": "2026-10-26"
   },
