@@ -653,6 +653,14 @@ nav{view-transition-name:topnav}
 .jcard .jw.c{color:#4aa3ff}
 .jcard .jlink{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);text-decoration:none}.jcard .jlink:hover{text-decoration:underline}
 .jstops button small{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
+.journals .jr{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s}
+a.jr:hover{border-color:var(--accent);transform:translateY(-1px)}
+.jr .jm{display:inline-flex;align-items:center;gap:6px}
+.jr i{font-style:normal;font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 7px;border-radius:6px;line-height:1.4}
+.jr .q1{background:#1f7a43;color:#fff}.jr .q2{background:#3950e6;color:#fff}.jr .q3,.jr .q4{background:#6d6a67;color:#fff}
+.jr .if{background:color-mix(in srgb,#f0b65c 22%,transparent);color:inherit;border:1px solid color-mix(in srgb,#f0b65c 55%,transparent)}
+.btn.orcidv{margin-top:14px;display:inline-flex}
+#revBig:hover{text-decoration:underline!important;text-decoration-thickness:2px!important}
 </style>
 </head>
 <body data-page="home">
@@ -692,7 +700,7 @@ nav{view-transition-name:topnav}
   <div class="stat"><b id="kFirst">—</b><span>First-author</span></div>
   <div class="stat"><b id="kCites">—</b><span>Citations</span></div>
   <div class="stat"><b id="kH">—</b><span>h-index</span></div>
-  <div class="stat hl"><b id="kRev">—</b><span>Q1 journal articles peer-reviewed</span></div>
+  <div class="stat hl"><b id="kRev">—</b><span>journal articles peer-reviewed</span></div>
   <div class="stat"><b id="kTalks">—</b><span>Talks &amp; presentations</span></div>
   <div class="sync"><span class="dot"></span><span id="sync">Synced daily from ORCID &amp; OpenAlex</span></div>
 </div></section>
@@ -1209,7 +1217,11 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
   /* reviewing */
   const revAuto=rv.count==null&&!mn.reviews_not_on_orcid?null:(rv.count||0)+(mn.reviews_not_on_orcid||0);
   v=best(revAuto,floor.reviews);count($("revBig"),v[0],v[1]);count($("kRev"),v[0],v[1]);
-  $("journals").innerHTML=(rv.journals||[]).length?rv.journals.map(j=>`<span class="jr">${esc(j.name)}<b>×${j.count}</b></span>`).join(""):`<span class="jr">Elsevier · Q1</span>`;
+  {const JM=mn.journal_meta||{};const js=(rv.journals||[]).slice().sort((a,b)=>(b.count-a.count)||((JM[b.name]||{}).if||0)-((JM[a.name]||{}).if||0));
+   $("journals").innerHTML=js.length?js.map(j=>{const m=JM[j.name]||{};const inner=`<span class="jn">${esc(j.name)}</span><span class="jm">${m.q?`<i class="q q${esc(m.q.slice(1))}">${esc(m.q)}</i>`:""}${m.if?`<i class="if">IF ${Number(m.if).toFixed(1)}</i>`:""}<b>×${j.count}</b></span>`;
+     return m.url?`<a class="jr" href="${esc(m.url)}" target="_blank" rel="noopener" title="${esc(j.name)}${m.pub?" · "+esc(m.pub):""}: journal homepage">${inner}</a>`:`<span class="jr">${inner}</span>`}).join(""):`<span class="jr">Elsevier · Q1</span>`;
+   const q1=js.reduce((s,j)=>s+((JM[j.name]||{}).q==="Q1"?j.count:0),0);if($("revQ1"))$("revQ1").textContent=q1?`${q1} of these in Q1 journals`:"";
+   if(mn.journal_meta_note&&$("jmNote"))$("jmNote").textContent=mn.journal_meta_note;}
   {const nj=Math.max((rv.journals||[]).length,floor.review_journals||0);$("revJ").textContent=nj||"—";if(floor.review_note)$("revTier").textContent=floor.review_note}
 
   /* talks, blog & posts */

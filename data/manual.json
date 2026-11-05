@@ -76,5 +76,86 @@
   "10.2139/ssrn.6569602"
  ],
  "reviews_not_on_orcid": 0,
- "x_handle": ""
+ "x_handle": "",
+ "journal_meta": {
+  "International Journal of Hydrogen Energy": {
+   "url": "https://www.sciencedirect.com/journal/international-journal-of-hydrogen-energy",
+   "if": 9.2,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Fuel": {
+   "url": "https://www.sciencedirect.com/journal/fuel",
+   "if": 7.8,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Energy": {
+   "url": "https://www.sciencedirect.com/journal/energy",
+   "if": 10.1,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Fuel Processing Technology": {
+   "url": "https://www.sciencedirect.com/journal/fuel-processing-technology",
+   "if": 7.8,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Energy Strategy Reviews": {
+   "url": "https://www.sciencedirect.com/journal/energy-strategy-reviews",
+   "if": 12.1,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Bioresource Technology Reports": {
+   "url": "https://www.sciencedirect.com/journal/bioresource-technology-reports",
+   "if": 5.0,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Applied Energy": {
+   "url": "https://www.sciencedirect.com/journal/applied-energy",
+   "if": 12.2,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Journal of Cleaner Production": {
+   "url": "https://www.sciencedirect.com/journal/journal-of-cleaner-production",
+   "if": 10.7,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Sustainable Energy Technologies and Assessments": {
+   "url": "https://www.sciencedirect.com/journal/sustainable-energy-technologies-and-assessments",
+   "if": 7.4,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Journal of CO2 Utilization": {
+   "url": "https://www.sciencedirect.com/journal/journal-of-co2-utilization",
+   "if": 8.6,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Industrial Crops and Products": {
+   "url": "https://www.sciencedirect.com/journal/industrial-crops-and-products",
+   "if": 6.4,
+   "q": "Q1",
+   "pub": "Elsevier"
+  },
+  "Energies": {
+   "url": "https://www.mdpi.com/journal/energies",
+   "if": 3.9,
+   "q": "Q1",
+   "pub": "MDPI"
+  },
+  "Processes": {
+   "url": "https://www.mdpi.com/journal/processes",
+   "if": 3.4,
+   "q": "Q2",
+   "pub": "MDPI"
+  }
+ },
+ "journal_meta_note": "Impact factors as listed on each journal's homepage (Nov 2026); quartiles are each journal's best SJR quartile (Scimago, 2025)."
 }
