@@ -196,15 +196,21 @@ def publications():
                 continue
             year = (((s.get("publication-date") or {}).get("year") or {}) or {}).get("value")
             venue = ((s.get("journal-title") or {}) or {}).get("value") or ""
-            cites = None
+            cites, authors, first = None, [], None
             if doi:
+                # OpenAlex sometimes drops the ORCID link on a work: look it up by DOI to keep the author list
                 try:
-                    cites = get(f"https://api.openalex.org/works/doi:{doi}?select=cited_by_count&mailto={EMAIL}").get("cited_by_count")
+                    w = get(f"https://api.openalex.org/works/doi:{doi}?select=cited_by_count,authorships&mailto={EMAIL}")
+                    cites = w.get("cited_by_count")
+                    au = w.get("authorships") or []
+                    authors = [short(a["author"].get("display_name")) for a in au]
+                    if au:
+                        first = (ORCID in (au[0]["author"].get("orcid") or "")) or is_me(au[0]["author"].get("display_name"))
                 except Exception:
                     pass
-            items[key] = {"title": title, "authors": [], "venue": venue, "year": int(year) if year else None,
+            items[key] = {"title": title, "authors": authors, "venue": venue, "year": int(year) if year else None,
                           "type": kind((s.get("type") or "").replace("_", "-"), venue), "doi": doi,
-                          "first_author": None, "cites": cites}
+                          "first_author": first, "cites": cites}
     except Exception as e:
         print("ORCID works skipped:", e, file=sys.stderr)
 
@@ -239,6 +245,10 @@ def publications():
             match = next((v for v in items.values() if norm_title(v["title"]).startswith(st[:60]) or st.startswith(norm_title(v["title"])[:60])), None)
             if match:
                 match["cites"] = a.get("cites", 0)
+                if not match.get("authors"):
+                    match["authors"] = [x.strip() for x in (a.get("authors") or "").split(",") if x.strip()]
+                    if match["authors"] and match.get("first_author") is None:
+                        match["first_author"] = is_me(match["authors"][0])
                 scholar_titles.add(norm_title(match["title"]))
             else:
                 key = st
@@ -256,6 +266,15 @@ def publications():
         if t and t not in have and not any(t.startswith(h[:60]) or h.startswith(t[:60]) for h in have):
             items[norm_doi(p.get("doi")) or t] = dict(p)
             have.add(t)
+
+    # 7) never lose metadata a source dropped this run: reuse the last known authors / first-author flag
+    old_meta = {norm_title(p.get("title")): p for p in old.get("items", [])}
+    for v in items.values():
+        o = old_meta.get(norm_title(v.get("title")))
+        if o and not v.get("authors") and o.get("authors"):
+            v["authors"] = o["authors"]
+            if v.get("first_author") in (None, False) and o.get("first_author"):
+                v["first_author"] = True
 
     hide = {norm_doi(d) for d in MAN.get("hide_dois", [])}
     out = []

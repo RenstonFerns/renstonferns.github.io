@@ -1180,7 +1180,7 @@ Promise.all(["data/profile.json","data/pubs.json","data/reviews.json","data/soci
   count($("kFirst"),items.filter(p=>p.first_author).length);
   const sch=pb.scholar||{};
   const sumC=known.length?known.reduce((a,b)=>a+b,0):null;
-  v=best(sch.citations!=null?Math.max(sch.citations,sumC||0):sumC,floor.citations);count($("kCites"),v[0],v[1]);
+  v=best(sch.citations!=null?sch.citations:sumC,floor.citations);count($("kCites"),v[0],v[1]);
   count($("kH"),sch.h_index??hindex(cites));
   count($("kTalks"),floor.talks,true);
   const when=ago(pb.updated);

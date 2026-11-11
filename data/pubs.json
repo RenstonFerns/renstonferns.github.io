@@ -54,23 +54,34 @@
   },
   {
    "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
-   "authors": [],
+   "authors": [
+    "R. J. Fernandes",
+    "D. Nguyen",
+    "M. R. Shakeel",
+    "J. W. G. Turner"
+   ],
    "venue": "Procedia CIRP",
    "year": 2025,
    "type": "conference",
    "doi": "10.1016/j.procir.2025.01.057",
-   "first_author": false,
+   "first_author": true,
    "cites": 5,
    "added": "2026-10-26"
   },
   {
    "title": "Techno-Economic Analysis of an Integrated E-Methanol Production Plant Utilizing First and Second Generation Biomass Resources",
-   "authors": [],
+   "authors": [
+    "R. J. Fernandes",
+    "M. R. Shakeel",
+    "D. Nguyen",
+    "H. G. Im",
+    "J. W. G. Turner"
+   ],
    "venue": "SAE Technical Papers",
    "year": 2025,
    "type": "conference",
    "doi": "10.4271/2025-01-0182",
-   "first_author": false,
+   "first_author": true,
    "cites": 4,
    "added": "2026-10-26"
   },
@@ -124,12 +135,17 @@
   },
   {
    "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO2 Utilization",
-   "authors": [],
+   "authors": [
+    "R. J. Fernandes",
+    "D. Nguyen",
+    "M. R. Shakeel",
+    "J. W. G. Turner"
+   ],
    "venue": "SAE Technical Papers",
    "year": 2024,
    "type": "conference",
    "doi": "10.4271/2024-01-2449",
-   "first_author": false,
+   "first_author": true,
    "cites": 8,
    "added": "2026-10-26"
   },
