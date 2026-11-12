@@ -236,6 +236,14 @@ def publications():
 
     # 5) Google Scholar (via SerpAPI): authoritative citation counts + profile totals + any paper Scholar has first
     scholar = scholar_profile(old)
+    if scholar and scholar.get("articles"):
+        live_scholar = True
+    else:
+        # Scholar unreachable this run (throttled or captcha): reuse the last per-paper Scholar counts,
+        # so every paper keeps Scholar's number instead of falling back to OpenAlex's
+        live_scholar = False
+        if old.get("scholar_articles"):
+            scholar = {"articles": old["scholar_articles"]}
     scholar_titles = set()
     if scholar and scholar.get("articles"):
         for a in scholar["articles"]:
@@ -288,13 +296,16 @@ def publications():
         v["added"] = first_seen.get(k) or (TODAY if old.get("source") != "seed" and old.get("items") else None)
         out.append(v)
     out.sort(key=lambda p: (-(p["year"] or 0), -(p["cites"] or 0)))
-    rec = {"updated": NOW.isoformat(), "source": "scholar+orcid+openalex" if scholar else "orcid+openalex", "items": out}
-    if scholar:
+    rec = {"updated": NOW.isoformat(), "source": "scholar+orcid+openalex" if live_scholar else "orcid+openalex", "items": out}
+    if live_scholar:
         rec["scholar"] = scholar["totals"]
         rec["scholar_fetched"] = scholar["fetched"]
-    elif old.get("scholar"):
-        rec["scholar"] = old["scholar"]
-        rec["scholar_fetched"] = old.get("scholar_fetched")
+        rec["scholar_articles"] = [{"title": a["title"], "cites": a.get("cites", 0), "authors": a.get("authors"),
+                                    "publication": a.get("publication"), "year": a.get("year")} for a in scholar["articles"]]
+    else:
+        for k in ("scholar", "scholar_fetched", "scholar_articles"):
+            if old.get(k) is not None:
+                rec[k] = old[k]
     save("pubs.json", rec)
     print(f"pubs: {len(out)} items")
 

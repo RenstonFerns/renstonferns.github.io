@@ -185,5 +185,56 @@
   "h_index": 4,
   "i10_index": 1
  },
- "scholar_fetched": "2026-11-12T02:57:49.286950+00:00"
+ "scholar_fetched": "2026-11-12T10:45:00+00:00",
+ "scholar_articles": [
+  {
+   "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels",
+   "cites": 43,
+   "authors": "D Nguyen, RJ Fernandes, JWG Turner",
+   "publication": "",
+   "year": "2025"
+  },
+  {
+   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production",
+   "cites": 8,
+   "authors": "RJ Fernandes, D Nguyen, MR Shakeel, JWG Turner",
+   "publication": "",
+   "year": "2024"
+  },
+  {
+   "title": "Evaluating Regional Sustainability of E-Methanol Production",
+   "cites": 5,
+   "authors": "RJ Fernandes, D Nguyen, MR Shakeel, JWG Turner",
+   "publication": "",
+   "year": "2025"
+  },
+  {
+   "title": "Techno-economic analysis of an integrated e-methanol production",
+   "cites": 4,
+   "authors": "RJ Fernandes, MR Shakeel, D Nguyen",
+   "publication": "",
+   "year": "2025"
+  },
+  {
+   "title": "Variable compression ratio hydrogen-fueled homogeneous charge compression",
+   "cites": 4,
+   "authors": "D Nguyen, R Fernandes, JWG Turner",
+   "publication": "",
+   "year": "2023"
+  },
+  {
+   "title": "A Joule cycle-based approach to recover waste heat from marine",
+   "cites": 2,
+   "authors": "SR Gubba, RV Kodaboina, KY Kenkoh, R Fernandes",
+   "publication": "",
+   "year": "2025"
+  },
+  {
+   "title": "Investigating the effect of intake temperature on hydrogen HCCI",
+   "cites": 1,
+   "authors": "D Nguyen, R Fernandes, JWG Turner",
+   "publication": "",
+   "year": "2023"
+  }
+ ]
 }
