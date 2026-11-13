@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13T00:21:14.887658+00:00",
- "source": "orcid+openalex",
+ "updated": "2026-11-13T07:55:44.815336+00:00",
+ "source": "scholar+orcid+openalex",
  "items": [
   {
    "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
@@ -185,56 +185,91 @@
   "h_index": 4,
   "i10_index": 1
  },
- "scholar_fetched": "2026-11-12T10:45:00+00:00",
+ "scholar_fetched": "2026-11-13T07:55:44.815336+00:00",
  "scholar_articles": [
   {
-   "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels",
+   "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
    "cites": 43,
-   "authors": "D Nguyen, RJ Fernandes, JWG Turner",
-   "publication": "",
+   "authors": "D Nguyen, RJ Fernandes, JWG Turner, DR Emberson",
+   "publication": "International Journal of Hydrogen Energy 112, 15-30, 2025",
    "year": "2025"
   },
   {
-   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production",
+   "title": "Advanced Biomass Conversion: Sustainable e-Methanol Production with Enhanced CO2 Utilization",
    "cites": 8,
    "authors": "RJ Fernandes, D Nguyen, MR Shakeel, JWG Turner",
-   "publication": "",
+   "publication": "WCX SAE World Congress Experience 288443, 2024",
    "year": "2024"
   },
   {
-   "title": "Evaluating Regional Sustainability of E-Methanol Production",
+   "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
    "cites": 5,
    "authors": "RJ Fernandes, D Nguyen, MR Shakeel, JWG Turner",
-   "publication": "",
+   "publication": "Procedia CIRP 135, 297-306, 2025",
    "year": "2025"
   },
   {
-   "title": "Techno-economic analysis of an integrated e-methanol production",
+   "title": "Techno-economic analysis of an integrated e-methanol production plant utilizing first and second generation biomass resources",
    "cites": 4,
-   "authors": "RJ Fernandes, MR Shakeel, D Nguyen",
-   "publication": "",
+   "authors": "RJ Fernandes, MR Shakeel, D Nguyen, HG Im, JWG Turner",
+   "publication": "KSAE/SAE 2025 Powertrain, Energy & Lubricants Conference & Exhibition 361994, 2025",
    "year": "2025"
   },
   {
-   "title": "Variable compression ratio hydrogen-fueled homogeneous charge compression",
+   "title": "Variable compression ratio hydrogen-fueled homogeneous charge compression ignition engine",
    "cites": 4,
    "authors": "D Nguyen, R Fernandes, JWG Turner",
-   "publication": "",
+   "publication": "16th International Conference on Engines & Vehicles 343443, 2023",
    "year": "2023"
   },
   {
-   "title": "A Joule cycle-based approach to recover waste heat from marine",
+   "title": "A Joule cycle-based approach to recover waste heat from marine and heavy-duty vehicles",
    "cites": 2,
-   "authors": "SR Gubba, RV Kodaboina, KY Kenkoh, R Fernandes",
-   "publication": "",
+   "authors": "SR Gubba, RV Kodaboina, KY Kenkoh, R Fernandes, JWG Turner",
+   "publication": "Energy 337, 138755, 2025",
    "year": "2025"
   },
   {
-   "title": "Investigating the effect of intake temperature on hydrogen HCCI",
+   "title": "Investigating the effect of intake temperature on hydrogen HCCI engine combustion and performance characteristics",
    "cites": 1,
    "authors": "D Nguyen, R Fernandes, JWG Turner",
-   "publication": "",
+   "publication": "Powertrain Systems for a Sustainable Future: Proceedings of the …, 2023",
    "year": "2023"
+  },
+  {
+   "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and …",
+   "cites": 0,
+   "authors": "RJ Fernandes, MR Shakeel, D Nguyen, HG Im, JWG Turner",
+   "publication": "Biomass and Bioenergy 217, 110138, 2027",
+   "year": "2027"
+  },
+  {
+   "title": "Circular Carbon E-fuels from Agro-Biomass: Techno-Economic, Environmental and Combustion Assessment Towards a Nation-Centric Sustainable Fuel Strategy",
+   "cites": 0,
+   "authors": "RJ Fernandes",
+   "publication": "",
+   "year": "2026"
+  },
+  {
+   "title": "Quantifying the potential of Saudi date palm fruit and its waste for e-methanol production using integrated process modelling, techno-economic analysis and life-cycle assessment",
+   "cites": 0,
+   "authors": "R Fernandes, MR Shakeel, D Nguyen, H Im, J Turner",
+   "publication": "Available at SSRN 6569602, 2026",
+   "year": "2026"
+  },
+  {
+   "title": "Evaluating the Performance, Emissions, and Well-to-Tank Carbon Footprint of Hydrogen-Enriched Euro-6 Gasoline in a Modified CFR Engine",
+   "cites": 0,
+   "authors": "A Alrams, R Fernandes, X Wang, MS Panithasan, J Turner",
+   "publication": "Internal Combustion Engine Division Fall Technical Conference 89305, V001T02A007, 2025",
+   "year": "2025"
+  },
+  {
+   "title": "Waste Heat Recovery from Marine and Heady-Duty Vehicles-a Joule Cycle Based Approach",
+   "cites": 0,
+   "authors": "SR Gubba, RV Kodaboina, KY Kenkoh, R Fernandes, J Turner",
+   "publication": "Available at SSRN 5185320, 0",
+   "year": null
   }
  ]
 }
