@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18T21:55:15.621626+00:00",
- "source": "orcid+openalex",
+ "updated": "2026-11-19T03:25:22.288653+00:00",
+ "source": "scholar+orcid+openalex",
  "items": [
   {
    "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
@@ -82,7 +82,7 @@
    "type": "conference",
    "doi": "10.4271/2025-01-0182",
    "first_author": true,
-   "cites": 4,
+   "cites": 5,
    "added": "2026-10-26"
   },
   {
@@ -181,11 +181,11 @@
   }
  ],
  "scholar": {
-  "citations": 67,
+  "citations": 68,
   "h_index": 4,
   "i10_index": 1
  },
- "scholar_fetched": "2026-11-17T22:21:52.226896+00:00",
+ "scholar_fetched": "2026-11-19T03:25:22.288653+00:00",
  "scholar_articles": [
   {
    "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
@@ -202,17 +202,17 @@
    "year": "2024"
   },
   {
+   "title": "Techno-economic analysis of an integrated e-methanol production plant utilizing first and second generation biomass resources",
+   "cites": 5,
+   "authors": "RJ Fernandes, MR Shakeel, D Nguyen, HG Im, JWG Turner",
+   "publication": "KSAE/SAE 2025 Powertrain, Energy & Lubricants Conference & Exhibition 361994, 2025",
+   "year": "2025"
+  },
+  {
    "title": "Evaluating Regional Sustainability of E-Methanol Production through GLAM-Based Life Cycle Impact Assessment",
    "cites": 5,
    "authors": "RJ Fernandes, D Nguyen, MR Shakeel, JWG Turner",
    "publication": "Procedia CIRP 135, 297-306, 2025",
-   "year": "2025"
-  },
-  {
-   "title": "Techno-economic analysis of an integrated e-methanol production plant utilizing first and second generation biomass resources",
-   "cites": 4,
-   "authors": "RJ Fernandes, MR Shakeel, D Nguyen, HG Im, JWG Turner",
-   "publication": "KSAE/SAE 2025 Powertrain, Energy & Lubricants Conference & Exhibition 361994, 2025",
    "year": "2025"
   },
   {
