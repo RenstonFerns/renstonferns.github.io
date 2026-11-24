@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-24T06:00:08.328443+00:00",
+ "updated": "2026-11-24T11:32:33.150126+00:00",
  "source": "orcid",
- "count": 34,
+ "count": 37,
  "journals": [
   {
    "name": "International Journal of Hydrogen Energy",
-   "count": 10
+   "count": 12
   },
   {
    "name": "Energies",
@@ -22,6 +22,10 @@
   {
    "name": "Bioresource Technology Reports",
    "count": 3
+  },
+  {
+   "name": "Applied Energy",
+   "count": 2
   },
   {
    "name": "Processes",
@@ -41,10 +45,6 @@
   },
   {
    "name": "Industrial Crops and Products",
-   "count": 1
-  },
-  {
-   "name": "Applied Energy",
    "count": 1
   },
   {
