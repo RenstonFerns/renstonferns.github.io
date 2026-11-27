@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T23:51:29.122717+00:00",
- "source": "orcid+openalex",
+ "updated": "2026-11-27T08:27:48.726330+00:00",
+ "source": "scholar+orcid+openalex",
  "items": [
   {
    "title": "Assessing the potential of an integrated bio-/e-methanol production pathway from Saudi date palm fruit and its residues using process modelling, techno-economic analysis and life-cycle assessment",
@@ -99,7 +99,7 @@
    "type": "journal",
    "doi": "10.1016/j.energy.2025.138755",
    "first_author": false,
-   "cites": 2,
+   "cites": 3,
    "added": "2026-10-26"
   },
   {
@@ -161,7 +161,7 @@
    "type": "conference",
    "doi": "10.4271/2023-24-0067",
    "first_author": false,
-   "cites": 4,
+   "cites": 5,
    "added": "2026-10-26"
   },
   {
@@ -181,11 +181,11 @@
   }
  ],
  "scholar": {
-  "citations": 69,
-  "h_index": 4,
+  "citations": 71,
+  "h_index": 5,
   "i10_index": 1
  },
- "scholar_fetched": "2026-11-26T05:01:26.467139+00:00",
+ "scholar_fetched": "2026-11-27T08:27:48.726330+00:00",
  "scholar_articles": [
   {
    "title": "Life cycle assessment of ammonia and hydrogen as alternative fuels for marine internal combustion engines",
@@ -217,14 +217,14 @@
   },
   {
    "title": "Variable compression ratio hydrogen-fueled homogeneous charge compression ignition engine",
-   "cites": 4,
+   "cites": 5,
    "authors": "D Nguyen, R Fernandes, JWG Turner",
    "publication": "16th International Conference on Engines & Vehicles 343443, 2023",
    "year": "2023"
   },
   {
    "title": "A Joule cycle-based approach to recover waste heat from marine and heavy-duty vehicles",
-   "cites": 2,
+   "cites": 3,
    "authors": "SR Gubba, RV Kodaboina, KY Kenkoh, R Fernandes, JWG Turner",
    "publication": "Energy 337, 138755, 2025",
    "year": "2025"
